@@ -70,6 +70,20 @@ modules:
         url: https://github.com/VSCodium/vscodium/releases/download/1.46.0/codium_1.46.0-1591900305_amd64.deb
         sha256: ac7e6cdb5f43e2f4f8b42ac83fbc1e3bde1b2cab1f9fec8db3ed386fd71f53f6
         dest-filename: codium.deb
+        only-arches:
+          - x86_64
+      - type: file
+        url: https://github.com/VSCodium/vscodium/releases/download/1.46.0/codium_1.46.0-1591900344_arm64.deb
+        sha256: bed66e30a21d84cc53ec73520fa06b465e8a0849238c06a7d6d5310f5f69669a
+        dest-filename: codium.deb
+        only-arches:
+          - aarch64
+      - type: file
+        url: https://github.com/VSCodium/vscodium/releases/download/1.46.0/codium_1.46.0-1591900344_armhf.deb
+        sha256: 90f7d048a0f02bfccb0ac1efec744d9db87b0056973279072d79d99094d74026
+        dest-filename: codium.deb
+        only-arches:
+          - arm
       - type: file
         url: https://raw.githubusercontent.com/VSCodium/vscodium/master/src/src/vs/workbench/contrib/update/browser/media/code-icon.svg
         sha256: 4b0b8f198fda18a79bfd293f6ef7ba3db167f35324c97cbafda881840be8a981
