@@ -34,7 +34,7 @@ To get support for additional languages, you have to install SDK extensions, e.g
 
   $ flatpak install flathub org.freedesktop.Sdk.Extension.dotnet
   $ flatpak install flathub org.freedesktop.Sdk.Extension.golang
-  $ FLATPAK_ENABLE_SDK=dotnet,golang flatpak run com.vscodium.codium
+  $ FLATPAK_ENABLE_SDK_EXT=dotnet,golang flatpak run com.vscodium.codium
 
 You can use
 
