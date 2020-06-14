@@ -61,4 +61,4 @@ for i in "${SDK[@]}"; do
 done
 
 exec env PATH="${PATH}:${XDG_DATA_HOME}/node_modules/bin" \
-  zypak-wrapper /app/share/codium/bin/codium --extensions-dir=${XDG_DATA_HOME}/codium/extensions "$@" ${WARNING_FILE}
+  /app/share/codium/bin/codium --extensions-dir=${XDG_DATA_HOME}/codium/extensions "$@" ${WARNING_FILE}
