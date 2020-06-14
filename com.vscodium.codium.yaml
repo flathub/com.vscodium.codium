@@ -24,6 +24,13 @@ finish-args:
   - --filesystem=xdg-config/kdeglobals:ro
   - --talk-name=com.canonical.AppMenu.Registrar
   - --talk-name=com.canonical.AppMenu.Registrar.*
+  - --system-talk-name=org.freedesktop.login1
+add-extensions:
+  com.vscodium.codium.tool:
+    directory: tools
+    subdirectories: true
+    add-ld-path: lib
+    no-autodownload: true
 cleanup:
   - /include
   - /lib/pkgconfig
@@ -55,6 +62,7 @@ modules:
       - install -Dm644 usr/share/applications/codium-url-handler.desktop /app/share/applications/com.vscodium.codium-url-handler.desktop
       - rm -r codium.deb control.tar.gz data.tar.xz debian-binary usr
       - install -Dm644 flatpak-warning.txt -t /app/share/codium
+      - mkdir /app/tools
     sources:
       - type: file
         path: codium.sh
