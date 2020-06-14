@@ -54,6 +54,12 @@ modules:
       - ARCH_TRIPLE=$(gcc --print-multiarch) && ln -s /usr/lib/${ARCH_TRIPLE}/libtinfo.so/app/lib/libtinfo.so.5
       - ar x codium.deb
       - tar xf data.tar.xz
+        # HACK: Use directory for IPC sockets that is shared between Flatpak instances
+        # Replace XDG_RUNTIME_DIR by XDG_RUNTIME_DIR/app/FLATPAK_ID
+      - find usr/share/codium -type f -print0 | xargs -0 sed -i
+        "s/\bjoin([^)]*xdg_\?runtime_\?dir[^,)]*/\0,'app',process.env.FLATPAK_ID/gI"
+        # and disable integrity check
+      - sed -e 's/"checksums":/"_checksums":/' -i usr/share/codium/resources/app/product.json
       - mv usr/share/codium /app/share
       - sed -e "s|/usr/|/app/|g" -e "s/^Icon=.*/Icon=com.vscodium.codium/" -i usr/share/applications/*.desktop
       - install -Dm644 usr/share/applications/codium.desktop /app/share/applications/com.vscodium.codium.desktop
