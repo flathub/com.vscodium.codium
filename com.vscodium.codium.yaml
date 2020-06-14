@@ -35,13 +35,13 @@ modules:
     buildsystem: simple
     build-commands:
       - install -D codium.sh /app/bin/codium
-      - install -Dm644 codium_64.png /app/share/icons/hicolor/64x64/apps/com.vscodium.codium.png
-      - install -Dm644 codium_128.png /app/share/icons/hicolor/128x128/apps/com.vscodium.codium.png
-      - install -Dm644 codium_256.png /app/share/icons/hicolor/256x256/apps/com.vscodium.codium.png
-      - install -Dm644 codium_512.png /app/share/icons/hicolor/512x512/apps/com.vscodium.codium.png
       - install -Dm644 codium.svg /app/share/icons/hicolor/scalable/apps/com.vscodium.codium.svg
+      - |
+        for size in 16 32 48 64 128 256 512; do
+          rsvg-convert --width ${size} --keep-aspect-ratio --format png --output codium_${size}.png codium.svg || exit 1
+          install -Dm644 codium_${size}.png /app/share/icons/hicolor/${size}x${size}/apps/com.vscodium.codium.png || exit 1
+        done
       - install -Dm644 com.vscodium.codium.metainfo.xml -t /app/share/metainfo
-      - install -Dm644 com.vscodium.codium.desktop -t /app/share/applications
       - install -Dm644 npmrc -t /app/etc
       - cp /usr/bin/ar /app/bin
       - ARCH_TRIPLE=$(gcc --print-multiarch) && cp /usr/lib/${ARCH_TRIPLE}/libbfd-*.so
@@ -50,6 +50,9 @@ modules:
       - ar x codium.deb
       - tar xf data.tar.xz
       - mv usr/share/codium /app/share
+      - sed -e "s|/usr/|/app/|g" -e "s/^Icon=.*/Icon=com.vscodium.codium/" -i usr/share/applications/*.desktop
+      - install -Dm644 usr/share/applications/codium.desktop /app/share/applications/com.vscodium.codium.desktop
+      - install -Dm644 usr/share/applications/codium-url-handler.desktop /app/share/applications/com.vscodium.codium-url-handler.desktop
       - rm -r codium.deb control.tar.gz data.tar.xz debian-binary usr
       - install -Dm644 flatpak-warning.txt -t /app/share/codium
     sources:
@@ -69,13 +72,3 @@ modules:
         path: npmrc
       - type: file
         path: com.vscodium.codium.metainfo.xml
-      - type: file
-        path: com.vscodium.codium.desktop
-      - type: file
-        path: icons/codium_64.png
-      - type: file
-        path: icons/codium_128.png
-      - type: file
-        path: icons/codium_256.png
-      - type: file
-        path: icons/codium_512.png
