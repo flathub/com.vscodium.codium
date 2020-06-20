@@ -62,6 +62,7 @@ modules:
       - sed -e 's/"checksums":/"_checksums":/' -i usr/share/codium/resources/app/product.json
       - mv usr/share/codium /app/share
       - sed -e "s|/usr/|/app/|g" -e "s/^Icon=.*/Icon=com.vscodium.codium/" -i usr/share/applications/*.desktop
+      - sed -e "s|share/codium/codium|bin/codium|g" -i usr/share/applications/*.desktop
       - install -Dm644 usr/share/applications/codium.desktop /app/share/applications/com.vscodium.codium.desktop
       - install -Dm644 usr/share/applications/codium-url-handler.desktop /app/share/applications/com.vscodium.codium-url-handler.desktop
       - rm -r codium.deb control.tar.gz data.tar.xz debian-binary usr
