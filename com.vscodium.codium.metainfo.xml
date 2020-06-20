@@ -21,6 +21,7 @@
   <launchable type="desktop-id">com.vscodium.codium.desktop</launchable>
   <content_rating type="oars-1.0" />
   <releases>
+    <release version="1.46.1" date="2020-06-20"/>
     <release version="1.46.0" date="2020-06-14"/>
     <release version="1.45.1" date="2020-05-16"/>
     <release version="1.45.0" date="2020-05-09"/>
