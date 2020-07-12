@@ -10,7 +10,7 @@ function msg() {
 }
 
 if [ ! -f ${FIRST_RUN} ]; then
-  WARNING_FILE="/app/share/codium/flatpak-warning.txt"
+  WARNING_FILE="/app/share/codium/README.md"
   touch ${FIRST_RUN}
 fi
 
