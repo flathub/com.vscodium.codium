@@ -72,20 +72,20 @@ modules:
       - type: file
         path: codium.sh
       - type: file
-        url: https://github.com/VSCodium/vscodium/releases/download/1.46.1/codium_1.46.1-1592564058_amd64.deb
-        sha256: dbadff0b92cdc37365208157a32064db9e067f403f5ff3d42cf16646df0a7b05
+        url: https://github.com/VSCodium/vscodium/releases/download/1.47.0/codium_1.47.0-1594378545_amd64.deb
+        sha256: 1d0895a3cb7a546c5864e67f95bdce1e42659210dfdf6381cae70db25c39362b
         dest-filename: codium.deb
         only-arches:
           - x86_64
       - type: file
-        url: https://github.com/VSCodium/vscodium/releases/download/1.46.1/codium_1.46.1-1592564137_arm64.deb
-        sha256: ef6a4de07e22aca54fa9ac3ece3100b7adacdc784b63281eff4e3a5a9e189a1a
+        url: https://github.com/VSCodium/vscodium/releases/download/1.47.0/codium_1.47.0-1594378768_arm64.deb
+        sha256: 7a5e507715d09f4dc504764756dd4807c295414f9dc3e285f9a02de4dadcd9dc
         dest-filename: codium.deb
         only-arches:
           - aarch64
       - type: file
-        url: https://github.com/VSCodium/vscodium/releases/download/1.46.1/codium_1.46.1-1592564097_armhf.deb
-        sha256: 41934494d016fe12c1f4d62126d64f3db118563be3d8005bd7f64a1e796af632
+        url: https://github.com/VSCodium/vscodium/releases/download/1.47.0/codium_1.47.0-1594378578_armhf.deb
+        sha256: 32743986bcef17ec9f8aca7ccdaf3dc605c1f0327b89e652b5d9276fd765296b
         dest-filename: codium.deb
         only-arches:
           - arm
