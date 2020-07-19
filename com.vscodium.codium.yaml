@@ -79,7 +79,7 @@ modules:
           - x86_64
       - type: file
         url: https://github.com/VSCodium/vscodium/releases/download/1.47.2/codium_1.47.2-1594982991_arm64.deb
-        sha256: daf5855241616f0e70f9839691318725c3aa292ea30f10b120a35ec856dd6cc2
+        sha256: b09ffc7721f9fb853bf71872be1265e848672f0225f8085129c195996f264791
         dest-filename: codium.deb
         only-arches:
           - aarch64
