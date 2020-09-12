@@ -1,6 +1,6 @@
 # Flatpak VSCodium
 
-> Warning: You are running an Unofficial Flatpak version of VSCodium !!!
+> This is an Unofficial Flatpak version of VSCodium
 
 ## Issues
 Please open issues under: https://github.com/flathub/com.vscodium.codium/issues
@@ -67,3 +67,8 @@ $ codium /path/to/
 # or
 $ FLATPAK_ENABLE_SDK_EXT=dotnet,golang codium /path/to/
 ```
+
+## Related Documentation
+
+- https://github.com/VSCodium/vscodium/blob/master/DOCS.md
+- https://code.visualstudio.com/docs#vscode
