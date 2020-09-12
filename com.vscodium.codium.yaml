@@ -1,6 +1,6 @@
 app-id: com.vscodium.codium
 runtime: org.freedesktop.Sdk
-runtime-version: '19.08'
+runtime-version: '20.08'
 sdk: org.freedesktop.Sdk
 command: codium
 separate-locales: false
@@ -83,12 +83,6 @@ modules:
         dest-filename: codium.deb
         only-arches:
           - aarch64
-      - type: file
-        url: https://github.com/VSCodium/vscodium/releases/download/1.49.0/codium_1.49.0-1599765806_armhf.deb
-        sha256: be0bcab51fc4c26f5ea4e4170a08103e0089777db0ab1ffcc1be418d404eaea5
-        dest-filename: codium.deb
-        only-arches:
-          - arm
       - type: file
         url: https://raw.githubusercontent.com/VSCodium/vscodium/master/src/src/vs/workbench/contrib/update/browser/media/code-icon.svg
         sha256: 37b6334ce671f4a5542a1aa2f2c22d30d855a6024dd2246927833a2891f89d93
