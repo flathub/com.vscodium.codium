@@ -68,6 +68,12 @@ $ codium /path/to/
 $ FLATPAK_ENABLE_SDK_EXT=dotnet,golang codium /path/to/
 ```
 
+
+## Deprecation of arm(32bits) builds
+
+> - `armhf/armv7` builds have their particular branch named __armv7__ and will be deprecated on 2021 due to the `org.freedesktop.Sdk` versions >= [20.08](https://gitlab.com/freedesktop-sdk/freedesktop-sdk/-/tags/freedesktop-sdk-20.08.0) disable armv7 builds. You can follow the discusion [here](https://gitlab.com/freedesktop-sdk/freedesktop-sdk/-/issues/1105).
+> - This particular branch is based on `org.freedesktop.Sdk` == 19.08 that be supported until 2021, you can read more about it [here](https://wiki.gnome.org/GUADEC/2019/Hackingdays/FreedesktopSdk/Notes).
+
 ## Related Documentation
 
 - https://github.com/VSCodium/vscodium/blob/master/DOCS.md
