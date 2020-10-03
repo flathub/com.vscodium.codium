@@ -66,21 +66,21 @@ modules:
       - sed -e "s|share/codium/codium|bin/codium|g" -i usr/share/applications/*.desktop
       - install -Dm644 usr/share/applications/codium.desktop /app/share/applications/com.vscodium.codium.desktop
       - install -Dm644 usr/share/applications/codium-url-handler.desktop /app/share/applications/com.vscodium.codium-url-handler.desktop
-      - rm -r codium.deb control.tar.gz data.tar.xz debian-binary usr
+      - rm -r codium.deb control.tar.xz data.tar.xz debian-binary usr
       - install -Dm644 README.md -t /app/share/codium
       - mkdir /app/tools
     sources:
       - type: file
         path: codium.sh
       - type: file
-        url: https://github.com/VSCodium/vscodium/releases/download/1.49.1/codium_1.49.1-1600426486_amd64.deb
-        sha256: c6daf23acd032c9dbc0974cf2279b150ab888417dad9a1e2449a0885dcb12e66
+        url: https://github.com/VSCodium/vscodium/releases/download/1.49.2/codium_1.49.2-1600994273_amd64.deb
+        sha256: adab4d8c5ba11f2dbab424605789dbdc5995ae2518f8ac20f9a7cc738d726aa1
         dest-filename: codium.deb
         only-arches:
           - x86_64
       - type: file
-        url: https://github.com/VSCodium/vscodium/releases/download/1.49.1/codium_1.49.1-1600426671_arm64.deb
-        sha256: 86216e1ca6196ced9b29606b3c1d6aebdd2a6840f876aca8a3c31833cf9ddfb2
+        url: https://github.com/VSCodium/vscodium/releases/download/1.49.2/codium_1.49.2-1600994417_arm64.deb
+        sha256: a3e4937a9b2497cdffbbd38be83fa4540b1c5f5ace7dacb5bace569038592419
         dest-filename: codium.deb
         only-arches:
           - aarch64
