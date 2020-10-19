@@ -66,7 +66,7 @@ modules:
       - sed -e "s|share/codium/codium|bin/codium|g" -i usr/share/applications/*.desktop
       - install -Dm644 usr/share/applications/codium.desktop /app/share/applications/com.vscodium.codium.desktop
       - install -Dm644 usr/share/applications/codium-url-handler.desktop /app/share/applications/com.vscodium.codium-url-handler.desktop
-      - rm -r codium.deb control.tar.gz data.tar.xz debian-binary usr
+      - rm -r codium.deb control.tar.* data.tar.xz debian-binary usr
       - install -Dm644 README.md -t /app/share/codium
       - mkdir /app/tools
     sources:
