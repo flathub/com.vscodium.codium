@@ -28,6 +28,7 @@ add-extensions:
   com.vscodium.codium.tool:
     directory: tools
     subdirectories: true
+    version: '20.08'
     add-ld-path: lib
     no-autodownload: true
 cleanup:
@@ -73,8 +74,8 @@ modules:
       - type: file
         path: codium.sh
       - type: file
-        url: https://github.com/VSCodium/vscodium/releases/download/1.51.0/codium_1.51.0-1604660193_armhf.deb
-        sha256: f24a20fd781bdf01694971328d15c9cda783cc29a4122198e1bcd5b82af8ae31
+        url: https://github.com/VSCodium/vscodium/releases/download/1.51.1/codium_1.51.1-1605141119_armhf.deb
+        sha256: 9cf6bf8f0c31db354f0750dbf6b844b7d08254121537071837246d350ea753e0
         dest-filename: codium.deb
         only-arches:
           - arm
