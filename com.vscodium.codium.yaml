@@ -74,8 +74,8 @@ modules:
       - type: file
         path: codium.sh
       - type: file
-        url: https://github.com/VSCodium/vscodium/releases/download/1.53.2/codium_1.53.2-1613089719_armhf.deb
-        sha256: aca8e1fa2b1c0405962c696553f009b55a80f5af1a683b0ba5804ca2b791eb8d
+        url: https://github.com/VSCodium/vscodium/releases/download/1.54.2/codium_1.54.2-1615600418_armhf.deb
+        sha256: 8370d4bea2006ee1ab55e43816ec139dcc1790cc89e3e88575b5172cd561df19
         dest-filename: codium.deb
         only-arches:
           - arm
