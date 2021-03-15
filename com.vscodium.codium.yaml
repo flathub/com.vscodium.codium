@@ -41,7 +41,6 @@ modules:
   - name: codium
     buildsystem: simple
     build-commands:
-      - install -D codium.sh /app/bin/codium
       - install -Dm644 codium.svg /app/share/icons/hicolor/scalable/apps/com.vscodium.codium.svg
       - |
         for size in 16 32 48 64 128 256 512; do
@@ -72,8 +71,6 @@ modules:
       - mkdir /app/tools
     sources:
       - type: file
-        path: codium.sh
-      - type: file
         url: https://github.com/VSCodium/vscodium/releases/download/1.54.2/codium_1.54.2-1615600425_amd64.deb
         sha256: dbb9403b3c1f0d36bdf4cd9fc600b7b3e5e0d54ebe91f99f2fec0547909efec4
         dest-filename: codium.deb
@@ -95,3 +92,14 @@ modules:
         path: npmrc
       - type: file
         path: com.vscodium.codium.metainfo.xml
+  - name: wrapper-flatpak-wrapper
+    buildsystem: meson
+    config-opts:
+      - -Deditor_title="VSCodium"
+      - -Dprogram_name=codium
+      - -Deditor_binary=/app/share/codium/bin/codium
+      - -Deditor_args=['--extensions-dir', '$XDG_DATA_HOME/codium/extensions']
+      - -Dfirst_run_template=/app/share/codium/README.md
+    sources:
+      - type: dir
+        path: wrapper
