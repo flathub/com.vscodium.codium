@@ -41,7 +41,6 @@ modules:
   - name: codium
     buildsystem: simple
     build-commands:
-      - install -D codium.sh /app/bin/codium
       - install -Dm644 codium.svg /app/share/icons/hicolor/scalable/apps/com.vscodium.codium.svg
       - |
         for size in 16 32 48 64 128 256 512; do
@@ -89,3 +88,14 @@ modules:
         path: npmrc
       - type: file
         path: com.vscodium.codium.metainfo.xml
+  - name: wrapper-flatpak-wrapper
+    buildsystem: meson
+    config-opts:
+      - -Deditor_title="VSCodium"
+      - -Dprogram_name=codium
+      - -Deditor_binary=/app/share/codium/bin/codium
+      - -Deditor_args=['--extensions-dir', '$XDG_DATA_HOME/codium/extensions']
+      - -Dfirst_run_template=/app/share/codium/README.md
+    sources:
+      - type: dir
+        path: wrapper
