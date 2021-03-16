@@ -91,11 +91,12 @@ modules:
   - name: wrapper-flatpak-wrapper
     buildsystem: meson
     config-opts:
-      - -Deditor_title="VSCodium"
+      - -Deditor_title=VSCodium
       - -Dprogram_name=codium
       - -Deditor_binary=/app/share/codium/bin/codium
       - -Deditor_args=['--extensions-dir', '$XDG_DATA_HOME/codium/extensions']
       - -Dfirst_run_template=/app/share/codium/README.md
+      - -Dflagfile_prefix=flatpak-vscodium
     sources:
       - type: dir
         path: wrapper
