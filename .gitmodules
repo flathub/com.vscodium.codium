@@ -1,3 +1,6 @@
 [submodule "shared-modules"]
 	path = shared-modules
 	url = https://github.com/flathub/shared-modules.git
+[submodule "wrapper"]
+	path = wrapper
+	url = https://github.com/gasinvein/vscode-flatpak-wrapper.git
