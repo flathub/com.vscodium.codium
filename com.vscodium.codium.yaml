@@ -67,7 +67,6 @@ modules:
       - install -Dm644 usr/share/applications/codium.desktop /app/share/applications/com.vscodium.codium.desktop
       - install -Dm644 usr/share/applications/codium-url-handler.desktop /app/share/applications/com.vscodium.codium-url-handler.desktop
       - rm -r codium.deb control.tar.* data.tar.xz debian-binary usr
-      - install -Dm644 README.md -t /app/share/codium
       - mkdir /app/tools
     sources:
       - type: file
@@ -81,8 +80,6 @@ modules:
         sha256: 4b0b8f198fda18a79bfd293f6ef7ba3db167f35324c97cbafda881840be8a981
         dest-filename: codium.svg
       - type: file
-        path: README.md
-      - type: file
         path: npmrc
       - type: file
         path: com.vscodium.codium.metainfo.xml
@@ -93,8 +90,13 @@ modules:
       - -Dprogram_name=codium
       - -Deditor_binary=/app/share/codium/bin/codium
       - -Deditor_args=['--extensions-dir', '$XDG_DATA_HOME/codium/extensions']
-      - -Dfirst_run_template=/app/share/codium/README.md
+      - -Dfirst_run_template=README.md
+      - -Dsdk_update_template=sdk_update.md
       - -Dflagfile_prefix=flatpak-vscodium
     sources:
       - type: dir
         path: wrapper
+      - type: file
+        path: README.md
+      - type: file
+        path: sdk_update.md
