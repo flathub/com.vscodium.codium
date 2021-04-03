@@ -41,7 +41,6 @@ modules:
   - name: codium
     buildsystem: simple
     build-commands:
-      - install -D codium.sh /app/bin/codium
       - install -Dm644 codium.svg /app/share/icons/hicolor/scalable/apps/com.vscodium.codium.svg
       - |
         for size in 16 32 48 64 128 256 512; do
@@ -87,7 +86,7 @@ modules:
           - aarch64
       - type: file
         url: https://raw.githubusercontent.com/VSCodium/vscodium/master/src/src/vs/workbench/contrib/update/browser/media/code-icon.svg
-        sha256: 37b6334ce671f4a5542a1aa2f2c22d30d855a6024dd2246927833a2891f89d93
+        sha256: 4b0b8f198fda18a79bfd293f6ef7ba3db167f35324c97cbafda881840be8a981
         dest-filename: codium.svg
       - type: file
         path: README.md
@@ -95,3 +94,15 @@ modules:
         path: npmrc
       - type: file
         path: com.vscodium.codium.metainfo.xml
+  - name: wrapper-flatpak-wrapper
+    buildsystem: meson
+    config-opts:
+      - -Deditor_title=VSCodium
+      - -Dprogram_name=codium
+      - -Deditor_binary=/app/share/codium/bin/codium
+      - -Deditor_args=['--extensions-dir', '$XDG_DATA_HOME/codium/extensions']
+      - -Dfirst_run_template=/app/share/codium/README.md
+      - -Dflagfile_prefix=flatpak-vscodium
+    sources:
+      - type: dir
+        path: wrapper
