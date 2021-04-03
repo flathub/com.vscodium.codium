@@ -71,8 +71,6 @@ modules:
       - mkdir /app/tools
     sources:
       - type: file
-        path: codium.sh
-      - type: file
         url: https://github.com/VSCodium/vscodium/releases/download/1.55.0/codium_1.55.0-1617289089_amd64.deb
         sha256: d2b6769c2019d50a2abecd92033ce83b81dc981c62484c4fdcfae9b977e00684
         dest-filename: codium.deb
