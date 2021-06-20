@@ -70,8 +70,8 @@ modules:
       - mkdir /app/tools
     sources:
       - type: file
-        url: https://github.com/VSCodium/vscodium/releases/download/1.57.0/codium_1.57.0-1623554075_armhf.deb
-        sha256: e9a9c091de8b4aafbf6266d2a5a2485a69960d1d37c8ca5e03c2c17754114d05
+        url: https://github.com/VSCodium/vscodium/releases/download/1.57.1/codium_1.57.1-1623975202_armhf.deb
+        sha256: 7a6b97b1bc381896904071be666da001a6fd45f4d56ab69f6a4b2494413a6a79
         dest-filename: codium.deb
         only-arches:
           - arm
@@ -89,7 +89,7 @@ modules:
       - -Deditor_title=VSCodium
       - -Dprogram_name=codium
       - -Deditor_binary=/app/share/codium/bin/codium
-      - -Deditor_args=['--no-sandbox', '--extensions-dir', '$XDG_DATA_HOME/codium/extensions']
+      - -Deditor_args=['--extensions-dir', '$XDG_DATA_HOME/codium/extensions']
       - -Dfirst_run_template=README.md
       - -Dsdk_update_template=sdk_update.md
       - -Dflagfile_prefix=flatpak-vscodium
