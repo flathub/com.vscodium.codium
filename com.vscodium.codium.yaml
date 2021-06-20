@@ -82,7 +82,7 @@ modules:
         only-arches:
           - aarch64
       - type: file
-        url: https://raw.githubusercontent.com/VSCodium/vscodium/master/src/src/vs/workbench/contrib/update/browser/media/code-icon.svg
+        url: https://raw.githubusercontent.com/VSCodium/vscodium/master/src/src/vs/workbench/browser/media/code-icon.svg  
         sha256: 4b0b8f198fda18a79bfd293f6ef7ba3db167f35324c97cbafda881840be8a981
         dest-filename: codium.svg
       - type: file
@@ -95,7 +95,7 @@ modules:
       - -Deditor_title=VSCodium
       - -Dprogram_name=codium
       - -Deditor_binary=/app/share/codium/bin/codium
-      - -Deditor_args=['--extensions-dir', '$XDG_DATA_HOME/codium/extensions']
+      - -Deditor_args=['--no-sandbox', '--extensions-dir', '$XDG_DATA_HOME/codium/extensions']
       - -Dfirst_run_template=README.md
       - -Dsdk_update_template=sdk_update.md
       - -Dflagfile_prefix=flatpak-vscodium
