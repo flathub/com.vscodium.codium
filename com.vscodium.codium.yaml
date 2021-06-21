@@ -20,6 +20,7 @@ finish-args:
   - --env=NPM_CONFIG_GLOBALCONFIG=/app/etc/npmrc
   - --env=LD_LIBRARY_PATH=/app/lib
   - --filesystem=xdg-run/gnupg:ro
+  - --filesystem=xdg-run/keyring
   - --filesystem=xdg-config/kdeglobals:ro
   - --talk-name=com.canonical.AppMenu.Registrar
   - --talk-name=com.canonical.AppMenu.Registrar.*
