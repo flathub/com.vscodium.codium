@@ -23,8 +23,13 @@ you can add this to the settings of vscodium:
 
 ```json
   {
-    "terminal.integrated.shell.linux": "/usr/bin/env",
-    "terminal.integrated.shellArgs.linux": ["--", "flatpak-spawn", "--host", "bash"]
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "terminal.integrated.profiles.linux": {
+        "bash": {
+          "path": "/usr/bin/flatpak-spawn",
+          "args": ["--host", "--env=TERM=xterm-256color", "bash"]
+        }
+    },
   }
 ```
 
