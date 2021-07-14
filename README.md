@@ -69,6 +69,16 @@ $ codium /path/to/
 $ FLATPAK_ENABLE_SDK_EXT=dotnet,golang codium /path/to/
 ```
 
+### Enable experimental native Wayland mode
+You can temporarily run VSCodium in experimental native Wayland mode with:  
+
+```
+flatpak run com.vscodium.codium --enable-features=UseOzonePlatform --ozone-platform=wayland
+```  
+
+Native Wayland can improve: HiDPI support, rendering performance, kinetic scrolling, touch support and also avoids needing xwayland. [See VSCode issue](https://github.com/microsoft/vscode/issues/109176). These flags are from Chromium and Electron, which currently consider native Wayland support experimental and opt-in. [See Electron issue](https://github.com/electron/electron/issues/10915).
+
+Note window decorations will currently be missing on GNOME/Mutter. [See this potential fix](https://github.com/electron/electron/pull/29618).
 
 ## Deprecation of arm(32bits) builds
 
