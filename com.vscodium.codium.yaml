@@ -71,8 +71,8 @@ modules:
       - mkdir /app/tools
     sources:
       - type: file
-        url: https://github.com/VSCodium/vscodium/releases/download/1.57.1/codium_1.57.1-1623975202_armhf.deb
-        sha256: 7a6b97b1bc381896904071be666da001a6fd45f4d56ab69f6a4b2494413a6a79
+        url: https://github.com/VSCodium/vscodium/releases/download/1.58.0/codium_1.58.0-1625926956_armhf.deb
+        sha256: b8c63f406ee00346d041bac138a852d03c06c436c861e29deda61fd520fa2c9e
         dest-filename: codium.deb
         only-arches:
           - arm
