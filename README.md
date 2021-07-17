@@ -63,7 +63,7 @@ If you want to run `codium /path/to/file` from the host terminal just add this
 to your shell's rc file
 
 ```bash
-alias codium="flatpak run com.vscodium.codium"
+alias codium="flatpak run com.vscodium.codium --no-sandbox "
 ```
 
 then reload sources, now you could try:
@@ -78,7 +78,7 @@ $ FLATPAK_ENABLE_SDK_EXT=dotnet,golang codium /path/to/
 You can temporarily run VSCodium in experimental native Wayland mode with:  
 
 ```
-flatpak run com.vscodium.codium --enable-features=UseOzonePlatform --ozone-platform=wayland
+flatpak run com.vscodium.codium --no-sandbox --enable-features=UseOzonePlatform --ozone-platform=wayland
 ```  
 
 Native Wayland can improve: HiDPI support, rendering performance, kinetic scrolling, touch support and also avoids needing xwayland. [See VSCode issue](https://github.com/microsoft/vscode/issues/109176). These flags are from Chromium and Electron, which currently consider native Wayland support experimental and opt-in. [See Electron issue](https://github.com/electron/electron/issues/10915).
