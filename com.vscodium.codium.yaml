@@ -58,8 +58,7 @@ modules:
       - tar xf data.tar.xz
         # HACK: Use directory for IPC sockets that is shared between Flatpak instances
         # Replace XDG_RUNTIME_DIR by XDG_RUNTIME_DIR/app/FLATPAK_ID
-      - find usr/share/codium -type f -print0 | xargs -0 sed -i
-        "s/\bjoin([^)]*xdg_\?runtime_\?dir[^,)]*/\0,'app',process.env.FLATPAK_ID/gI"
+      - find usr/share/codium -type f -print0 | xargs -0 sed -i "s/\bjoin([^)]*xdg_\?runtime_\?dir[^,)]*/\0,'app',process.env.FLATPAK_ID/gI"
         # and disable integrity check
       - sed -e 's/"checksums":/"_checksums":/' -i usr/share/codium/resources/app/product.json
       - mv usr/share/codium /app/share
@@ -83,10 +82,11 @@ modules:
           tag-query: .tag_name
           version-query: .tag_name
           timestamp-query: .published_at
-          url-query: '[.assets[] | select(.name|test("codium_.+_amd64.deb$"))][0] | .browser_download_url'
+          url-query: '[.assets[] | select(.name|test("codium_.+_amd64.deb$"))][0]
+            | .browser_download_url'
       - type: file
-        url: https://github.com/VSCodium/vscodium/releases/download/1.60.2/codium_1.60.2-1632381359_arm64.deb
-        sha256: cc2f9ad9f8ebe429f7fa0df2ce85f5304ecce0fb6a0e246623c2a91aab796e99
+        url: https://github.com/VSCodium/vscodium/releases/download/1.60.2/codium_1.60.2-1632356461_arm64.deb
+        sha256: c797111449f0166cf47ecafe194a3f55f5290a3b22abbe0fa800513813dffe58
         dest-filename: codium.deb
         only-arches:
           - aarch64
@@ -96,9 +96,10 @@ modules:
           tag-query: .tag_name
           version-query: .tag_name
           timestamp-query: .published_at
-          url-query: '[.assets[] | select(.name|test("codium_.+_arm64.deb$"))][0] | .browser_download_url'
+          url-query: '[.assets[] | select(.name|test("codium_.+_arm64.deb$"))][0]
+            | .browser_download_url'
       - type: file
-        url: https://raw.githubusercontent.com/VSCodium/vscodium/master/src/src/vs/workbench/browser/media/code-icon.svg  
+        url: https://raw.githubusercontent.com/VSCodium/vscodium/master/src/src/vs/workbench/browser/media/code-icon.svg
         sha256: 4b0b8f198fda18a79bfd293f6ef7ba3db167f35324c97cbafda881840be8a981
         dest-filename: codium.svg
       - type: file
