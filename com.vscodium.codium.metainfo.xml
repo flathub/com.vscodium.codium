@@ -23,6 +23,7 @@
   <launchable type="desktop-id">com.vscodium.codium.desktop</launchable>
   <content_rating type="oars-1.0" />
   <releases>
+    <release version="1.65.0" date="2022-03-04"/>
     <release version="1.64.2" date="2022-02-10"/>
     <release version="1.64.1" date="2022-02-08"/>
     <release version="1.64.0" date="2022-02-03"/>
