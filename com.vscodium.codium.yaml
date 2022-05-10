@@ -78,8 +78,8 @@ modules:
       - mkdir /app/tools
     sources:
       - type: file
-        url: https://github.com/VSCodium/vscodium/releases/download/1.66.2/codium_1.66.2-1649809017_amd64.deb
-        sha256: 0a0dbe9af4f48f9434943abe0290334de6810ad0ea7f3445098cc6a84ba0cdfa
+        url: https://github.com/VSCodium/vscodium/releases/download/1.67.0/codium_1.67.0-1651928812_amd64.deb
+        sha256: 799f8ec4739869cc83322d301d1c7861efda6411c74672626d80bc99a7d9b121
         dest-filename: codium.deb
         only-arches:
           - x86_64
