@@ -47,6 +47,7 @@ cleanup:
   - '*.la'
 modules:
   - shared-modules/libsecret/libsecret.json
+  - shared-modules/libusb/libusb.json
   - name: codium
     buildsystem: simple
     build-commands:
