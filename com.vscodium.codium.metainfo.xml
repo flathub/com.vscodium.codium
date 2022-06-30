@@ -12,7 +12,7 @@
   <summary>VSCodium. Code editing. Redefined.</summary>
   <description>
     <p>VSCodium is a new choice of tool that combines the simplicity of a code editor with what developers need for the core edit-build-debug cycle.</p>
-    <p>This is the The Telemtetry less version of Visual Studio Code, packaged into a Flatpak. This repackaging is not supported by Microsoft.</p>
+    <p>This is the The Telemetry less version of Visual Studio Code, packaged into a Flatpak. This repackaging is not supported by Microsoft.</p>
   </description>
   <screenshots>
     <screenshot type="default">
