@@ -31,13 +31,13 @@ add-extensions:
   com.vscodium.codium.tool:
     directory: tools
     subdirectories: true
-    version: '21.08'
+    version: '22.08'
     add-ld-path: lib
     no-autodownload: true
   com.visualstudio.code.tool:
     directory: tools
     subdirectories: true
-    version: '21.08'
+    version: '22.08'
     add-ld-path: lib
     no-autodownload: true
 cleanup:
