@@ -1,3 +1,5 @@
 {
-    "skip-arches": ["arm"]
+  "skip-arches": [
+    "arm"
+  ]
 }

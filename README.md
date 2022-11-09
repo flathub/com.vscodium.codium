@@ -68,7 +68,7 @@ alias codium="flatpak run com.vscodium.codium "
 
 then reload sources, now you could try:
 
-```bash 
+```bash
 $ codium /path/to/
 # or
 $ FLATPAK_ENABLE_SDK_EXT=dotnet,golang codium /path/to/
