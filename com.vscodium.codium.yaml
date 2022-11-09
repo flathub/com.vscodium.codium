@@ -1,14 +1,12 @@
-app-id: com.vscodium.codium
+id: com.vscodium.codium
+sdk: org.freedesktop.Sdk
 runtime: org.freedesktop.Sdk
 runtime-version: '22.08'
-sdk: org.freedesktop.Sdk
 command: codium
-separate-locales: false
 finish-args:
-  - --require-version=0.10.3
   - --share=ipc
-  - --socket=x11
   - --socket=wayland
+  - --socket=fallback-x11
   - --socket=pulseaudio
   - --socket=ssh-auth
   - --share=network
@@ -19,14 +17,13 @@ finish-args:
   - --allow=devel
   - --talk-name=org.freedesktop.Notifications
   - --talk-name=org.freedesktop.secrets
-  - --talk-name=org.freedesktop.Flatpak
   - --env=NPM_CONFIG_GLOBALCONFIG=/app/etc/npmrc
   - --env=LD_LIBRARY_PATH=/app/lib
   - --filesystem=xdg-run/gnupg:ro
   - --filesystem=xdg-config/kdeglobals:ro
   - --talk-name=com.canonical.AppMenu.Registrar
-  - --talk-name=com.canonical.AppMenu.Registrar.*
   - --system-talk-name=org.freedesktop.login1
+separate-locales: false
 add-extensions:
   com.vscodium.codium.tool:
     directory: tools
@@ -120,7 +117,14 @@ modules:
       - -Deditor_title=VSCodium
       - -Dprogram_name=codium
       - -Deditor_binary=/app/share/codium/bin/codium
-      - -Deditor_args=['--extensions-dir', '$XDG_DATA_HOME/codium/extensions', '--no-sandbox']
+      - >-
+        -Deditor_args=[
+        '--extensions-dir',
+        '$XDG_DATA_HOME/codium/extensions',
+        '--no-sandbox',
+        '--ozone-platform-hint=auto',
+        '--enable-features=WaylandWindowDecorations'
+        ]
       - -Dfirst_run_template=README.md
       - -Dsdk_update_template=sdk_update.md
       - -Dflagfile_prefix=flatpak-vscodium
