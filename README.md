@@ -7,6 +7,14 @@ Please open issues under: https://github.com/flathub/com.vscodium.codium/issues
 
 ## FAQ
 
+Note that vscodium is granted *full access to your home directory*.
+You can use `flatpak override` to locally adjust this if you prefer to sandbox vscodium file system access:
+```
+flatpak override --user com.vscodium.codium --nofilesystem=home
+# now manually grant accesss to the folder(s) you want to work in
+flatpak override --user com.vscodium.codium --filesystem=~/src
+```
+
 This version is running inside a _container_ and is therefore __not able__
 to access SDKs on your host system!
 
@@ -14,6 +22,12 @@ to access SDKs on your host system!
 
 ```bash
   $ flatpak-spawn --host <COMMAND>
+```
+
+Note that this runs the COMMAND without any further host-side confirmation.
+If you want to prevent such full host access from inside the sandbox, you can use `flatpak override` as follows:
+```
+flatpak override --user com.vscodium.codium --no-talk-name=org.freedesktop.Flatpak
 ```
 
 ### Host Shell
