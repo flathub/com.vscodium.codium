@@ -2,6 +2,8 @@ id: com.vscodium.codium
 sdk: org.freedesktop.Sdk
 runtime: org.freedesktop.Sdk
 runtime-version: '22.08'
+base: org.electronjs.Electron2.BaseApp
+base-version: '22.08'
 command: codium
 finish-args:
   - --share=ipc
@@ -25,6 +27,10 @@ finish-args:
   - --talk-name=com.canonical.AppMenu.Registrar
   - --system-talk-name=org.freedesktop.login1
 separate-locales: false
+sdk-extensions:
+  - org.freedesktop.Sdk.Extension.node16
+build-options:
+  append-path: /usr/lib/sdk/node16/bin
 add-extensions:
   com.vscodium.codium.tool:
     directory: tools
@@ -112,19 +118,37 @@ modules:
         path: npmrc
       - type: file
         path: com.vscodium.codium.metainfo.xml
+  - name: zypak
+    sources:
+      - type: git
+        url: https://github.com/refi64/zypak.git
+        tag: v2022.04
+        commit: 55a60d110301e8dd37b631503c3524ab7baaf7aa
+        x-checker-data:
+          type: git
   - name: wrapper-flatpak-wrapper
     buildsystem: meson
     config-opts:
-      - -Deditor_title=VSCodium
-      - -Dprogram_name=codium
-      - -Deditor_binary=/app/share/codium/bin/codium
+      - -Deditor_binary=/app/share/codium/codium
       - >-
         -Deditor_args=[
-        '--extensions-dir',
-        '$XDG_DATA_HOME/codium/extensions',
-        '--no-sandbox',
+        '/app/share/codium/resources/app/out/cli.js',
+        '--ms-enable-electron-run-as-node',
+        '--extensions-dir', '$XDG_DATA_HOME/codium/extensions',
+        '--disable-crash-reporter',
         '--ozone-platform-hint=auto',
         '--enable-features=WaylandWindowDecorations'
+        ]
+      - -Dprogram_name=codium
+      - -Deditor_title=VSCodium
+      - -Dzypak=enabled
+      - >-
+        -Denvs=[
+        "ELECTRON_RUN_AS_NODE=1"
+        ]
+      - >-
+        -Denvs_inner=[
+        "ZYPAK_SPAWN_LATEST_ON_REEXEC=0",
         ]
       - -Dfirst_run_template=README.md
       - -Dsdk_update_template=sdk_update.md
