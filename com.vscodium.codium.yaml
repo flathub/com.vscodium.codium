@@ -4,6 +4,7 @@ runtime: org.freedesktop.Sdk
 runtime-version: '22.08'
 base: org.electronjs.Electron2.BaseApp
 base-version: '22.08'
+command: codium
 finish-args:
   - --share=ipc
   - --socket=wayland
@@ -26,7 +27,6 @@ finish-args:
   - --talk-name=com.canonical.AppMenu.Registrar
   - --system-talk-name=org.freedesktop.login1
 separate-locales: false
-command: codium
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.node16
 build-options:
@@ -148,9 +148,7 @@ modules:
         ]
       - >-
         -Denvs_inner=[
-        "FLATPAK_IDE_LOG_LEVEL=1",
         "ZYPAK_SPAWN_LATEST_ON_REEXEC=0",
-        "ZYPAK_DEBUG=1"
         ]
       - -Dfirst_run_template=README.md
       - -Dsdk_update_template=sdk_update.md
