@@ -11,8 +11,8 @@
   <url type="help">https://github.com/VSCodium/vscodium/blob/master/DOCS.md</url>
   <summary>Code editing. Redefined. Telemetry less.</summary>
   <description>
-    <p>VSCodium is a new choice of tool that combines the simplicity of a code editor with what developers need for the core edit-build-debug cycle.</p>
-    <p>This is the The Telemetry less version of Visual Studio Code, packaged into a Flatpak. This repackaging is not supported by Microsoft.</p>
+    <p>VSCodium combines the simplicity of a code editor with what developers need for the core edit-build-debug cycle.</p>
+    <p>This is the telemetry-less version of Visual Studio Code, packaged into a Flatpak. This repackaging is not supported by Microsoft.</p>
   </description>
   <screenshots>
     <screenshot type="default">
