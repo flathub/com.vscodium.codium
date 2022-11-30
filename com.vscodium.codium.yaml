@@ -8,7 +8,7 @@ command: codium
 finish-args:
   - --share=ipc
   - --socket=wayland
-  - --socket=fallback-x11
+  - --socket=x11
   - --socket=pulseaudio
   - --socket=ssh-auth
   - --share=network
@@ -134,10 +134,7 @@ modules:
         -Deditor_args=[
         '/app/share/codium/resources/app/out/cli.js',
         '--ms-enable-electron-run-as-node',
-        '--extensions-dir', '$XDG_DATA_HOME/codium/extensions',
-        '--disable-crash-reporter',
-        '--ozone-platform-hint=auto',
-        '--enable-features=WaylandWindowDecorations'
+        '--extensions-dir', '$XDG_DATA_HOME/codium/extensions'
         ]
       - -Dprogram_name=codium
       - -Deditor_title=VSCodium
