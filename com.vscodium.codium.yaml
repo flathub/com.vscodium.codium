@@ -20,7 +20,6 @@ finish-args:
   - --talk-name=org.freedesktop.Notifications
   - --talk-name=org.freedesktop.secrets
   - --talk-name=org.freedesktop.Flatpak
-  - --env=NPM_CONFIG_GLOBALCONFIG=/app/etc/npmrc
   - --env=LD_LIBRARY_PATH=/app/lib
   - --filesystem=xdg-run/gnupg:ro
   - --filesystem=xdg-config/kdeglobals:ro
@@ -62,7 +61,6 @@ modules:
           install -Dm644 codium_${size}.png /app/share/icons/hicolor/${size}x${size}/apps/com.vscodium.codium.png || exit 1
         done
       - install -Dm644 com.vscodium.codium.metainfo.xml -t /app/share/metainfo
-      - install -Dm644 npmrc -t /app/etc
       - cp /usr/bin/ar /app/bin
       - ARCH_TRIPLE=$(gcc --print-multiarch) && cp /usr/lib/${ARCH_TRIPLE}/libbfd-*.so
         /app/lib
@@ -114,8 +112,6 @@ modules:
         url: https://raw.githubusercontent.com/VSCodium/vscodium/e70f1391b22e48b5b29e3512d97e801f4bdf83e5/src/stable/src/vs/workbench/browser/media/code-icon.svg
         sha256: 4b0b8f198fda18a79bfd293f6ef7ba3db167f35324c97cbafda881840be8a981
         dest-filename: codium.svg
-      - type: file
-        path: npmrc
       - type: file
         path: com.vscodium.codium.metainfo.xml
   - name: zypak
