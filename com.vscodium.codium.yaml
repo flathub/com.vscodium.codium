@@ -109,8 +109,8 @@ modules:
           url-query: '[.assets[] | select(.name|test("codium_.+_arm64.deb$"))][0]
             | .browser_download_url'
       - type: file
-        url: https://raw.githubusercontent.com/VSCodium/vscodium/e70f1391b22e48b5b29e3512d97e801f4bdf83e5/src/stable/src/vs/workbench/browser/media/code-icon.svg
-        sha256: 4b0b8f198fda18a79bfd293f6ef7ba3db167f35324c97cbafda881840be8a981
+        url: https://raw.githubusercontent.com/VSCodium/vscodium/5e26c4a9c475ebf59052c2da916b80d471af739f/icons/stable/codium_cnl.svg
+        sha256: 9817036bd2f5add672e707da311a301033ad122d6c2c505c776cb48d35b94472
         dest-filename: codium.svg
       - type: file
         path: com.vscodium.codium.metainfo.xml
