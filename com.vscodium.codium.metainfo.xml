@@ -24,6 +24,7 @@
   <content_rating type="oars-1.0" />
   <releases>
     <release version="1.77.1.23095" date="2023-04-05"/>
+    <release version="1.77.0.23095" date="2023-04-05"/>
     <release version="1.77.0.23093" date="2023-04-03"/>
     <release version="1.76.2.23074" date="2023-03-15"/>
     <release version="1.76.1.23069" date="2023-03-10"/>
