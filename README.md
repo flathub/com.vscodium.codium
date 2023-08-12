@@ -29,6 +29,9 @@ If you want to prevent such full host access from inside the sandbox, you can us
 ```
 flatpak override --user com.vscodium.codium --no-talk-name=org.freedesktop.Flatpak
 ```
+### Where is my X extension? AKA modify product.json
+
+Since are serveral ways to achieve this the better is to use [vsix-manager](https://open-vsx.org/extension/zokugun/vsix-manager)
 
 ### Host Shell
 
