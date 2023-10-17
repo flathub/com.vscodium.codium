@@ -1,14 +1,12 @@
 id: com.vscodium.codium
 sdk: org.freedesktop.Sdk
 runtime: org.freedesktop.Sdk
-runtime-version: '22.08'
-base: org.electronjs.Electron2.BaseApp
-base-version: '22.08'
+runtime-version: '23.08'
 command: codium
 finish-args:
   - --share=ipc
-  - --socket=wayland
   - --socket=x11
+  - --socket=wayland
   - --socket=pulseaudio
   - --socket=ssh-auth
   - --share=network
@@ -26,21 +24,11 @@ finish-args:
   - --talk-name=com.canonical.AppMenu.Registrar
   - --system-talk-name=org.freedesktop.login1
 separate-locales: false
-sdk-extensions:
-  - org.freedesktop.Sdk.Extension.node16
-build-options:
-  append-path: /usr/lib/sdk/node16/bin
 add-extensions:
-  com.vscodium.codium.tool:
-    directory: tools
-    subdirectories: true
-    version: '22.08'
-    add-ld-path: lib
-    no-autodownload: true
   com.visualstudio.code.tool:
     directory: tools
     subdirectories: true
-    version: '22.08'
+    version: '23.08'
     add-ld-path: lib
     no-autodownload: true
 cleanup:
@@ -130,8 +118,7 @@ modules:
         -Deditor_args=[
         '/app/share/codium/resources/app/out/cli.js',
         '--ms-enable-electron-run-as-node',
-        '--extensions-dir', '$XDG_DATA_HOME/codium/extensions',
-        '--ozone-platform-hint=auto',
+        '--extensions-dir', '$XDG_DATA_HOME/codium/extensions'
         ]
       - -Dprogram_name=codium
       - -Deditor_title=VSCodium
