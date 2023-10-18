@@ -106,10 +106,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/refi64/zypak.git
-        tag: v2022.04
-        commit: 55a60d110301e8dd37b631503c3524ab7baaf7aa
-        x-checker-data:
-          type: git
+        branch: main
+        commit: ded79a2f8a509adc21834b95a9892073d4a91fdc
   - name: wrapper-flatpak-wrapper
     buildsystem: meson
     config-opts:
@@ -123,6 +121,7 @@ modules:
       - -Dprogram_name=codium
       - -Deditor_title=VSCodium
       - -Dzypak=enabled
+      - -Dzypak_args=[ 'host', '-' ]
       - >-
         -Denvs=[
         "ELECTRON_RUN_AS_NODE=1"
@@ -135,8 +134,10 @@ modules:
       - -Dsdk_update_template=sdk_update.md
       - -Dflagfile_prefix=flatpak-vscodium
     sources:
-      - type: dir
-        path: wrapper
+      - type: git
+        url: https://github.com/flathub/ide-flatpak-wrapper.git
+        branch: zypak
+        commit: 188d2145b3460173558147ebefa288eb2a7d56f1
       - type: file
         path: README.md
       - type: file
