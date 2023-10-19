@@ -19,6 +19,7 @@ finish-args:
   - --talk-name=org.freedesktop.secrets
   - --talk-name=org.freedesktop.Flatpak
   - --env=LD_LIBRARY_PATH=/app/lib
+  - --env=XCURSOR_PATH=/run/host/user-share/icons:/run/host/share/icons
   - --filesystem=xdg-run/gnupg:ro
   - --filesystem=xdg-config/kdeglobals:ro
   - --talk-name=com.canonical.AppMenu.Registrar
