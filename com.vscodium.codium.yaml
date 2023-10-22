@@ -18,7 +18,6 @@ finish-args:
   - --allow=devel
   - --talk-name=org.freedesktop.secrets
   - --talk-name=org.freedesktop.Flatpak
-  - --env=LD_LIBRARY_PATH=/app/lib
   - --env=XCURSOR_PATH=/run/host/user-share/icons:/run/host/share/icons
   - --filesystem=xdg-run/gnupg:ro
   - --filesystem=xdg-config/kdeglobals:ro
@@ -50,10 +49,6 @@ modules:
           install -Dm644 codium_${size}.png /app/share/icons/hicolor/${size}x${size}/apps/com.vscodium.codium.png || exit 1
         done
       - install -Dm644 com.vscodium.codium.metainfo.xml -t /app/share/metainfo
-      - cp /usr/bin/ar /app/bin
-      - ARCH_TRIPLE=$(gcc --print-multiarch) && cp /usr/lib/${ARCH_TRIPLE}/libbfd-*.so
-        /app/lib
-      - ARCH_TRIPLE=$(gcc --print-multiarch) && ln -s /usr/lib/${ARCH_TRIPLE}/libtinfo.so/app/lib/libtinfo.so.5
       - ar x codium.deb
       - tar xf data.tar.xz
         # HACK: Use directory for IPC sockets that is shared between Flatpak instances
@@ -62,10 +57,16 @@ modules:
         # and disable integrity check
       - sed -e 's/"checksums":/"_checksums":/' -i usr/share/codium/resources/app/product.json
       - mv usr/share/codium /app/share
-      - sed -e "s|/usr/|/app/|g" -e "s/^Icon=.*/Icon=com.vscodium.codium/" -i usr/share/applications/*.desktop
-      - sed -e "s|share/codium/codium|bin/codium|g" -i usr/share/applications/*.desktop
+        # use sed because because desktop-file-edit can't modify different group keys
+      - sed -e "s/^Icon=.*/Icon=com.vscodium.codium/" -i usr/share/applications/*.desktop
+      - sed -e "s|/usr/share/codium/||g" -i usr/share/applications/*.desktop
+        # use install instead of desktop-file-install because can't rename the output file
       - install -Dm644 usr/share/applications/codium.desktop /app/share/applications/com.vscodium.codium.desktop
       - install -Dm644 usr/share/applications/codium-url-handler.desktop /app/share/applications/com.vscodium.codium-url-handler.desktop
+        # Sugested by desktop-file-validate
+      - desktop-file-edit --add-category="Utility" /app/share/applications/com.vscodium.codium.desktop
+        # Disable hints because desktop-file-validate warn about the previously suggested hint =)
+      - desktop-file-validate --no-hints /app/share/applications/com.vscodium.codium.desktop /app/share/applications/com.vscodium.codium-url-handler.desktop
       - rm -r codium.deb control.tar.* data.tar.xz debian-binary usr
       - mkdir /app/tools
     sources:
