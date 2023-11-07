@@ -66,13 +66,14 @@ modules:
         # Sugested by desktop-file-validate
       - desktop-file-edit --add-category="Utility" /app/share/applications/com.vscodium.codium.desktop
         # Disable hints because desktop-file-validate warn about the previously suggested hint =)
-      - desktop-file-validate --no-hints /app/share/applications/com.vscodium.codium.desktop /app/share/applications/com.vscodium.codium-url-handler.desktop
+      - desktop-file-validate --no-hints /app/share/applications/com.vscodium.codium.desktop
+        /app/share/applications/com.vscodium.codium-url-handler.desktop
       - rm -r codium.deb control.tar.* data.tar.xz debian-binary usr
       - mkdir /app/tools
     sources:
       - type: file
-        url: https://github.com/VSCodium/vscodium/releases/download/1.83.1.23285/codium_1.83.1.23285_amd64.deb
-        sha256: 7a97815d2f0baa69381821399cdebc410f8fc1e6b13abc4b0678fd6edcbf4c80
+        url: https://github.com/VSCodium/vscodium/releases/download/1.84.1.23311/codium_1.84.1.23311_amd64.deb
+        sha256: c09c643b93930f7da8891348240ea2fe9e85c0c0dd5d7d2ce892dc58b8a8c6f1
         dest-filename: codium.deb
         only-arches:
           - x86_64
@@ -85,8 +86,8 @@ modules:
           url-query: '[.assets[] | select(.name|test("codium_.+_amd64.deb$"))][0]
             | .browser_download_url'
       - type: file
-        url: https://github.com/VSCodium/vscodium/releases/download/1.83.1.23285/codium_1.83.1.23285_arm64.deb
-        sha256: 25ba827c651c6ff79b38f7427bd6f0aa2baac70b22d66306da8e5972811840d0
+        url: https://github.com/VSCodium/vscodium/releases/download/1.84.1.23311/codium_1.84.1.23311_arm64.deb
+        sha256: 71a9e8e527e4c4b6bc9c5aa501d4892db7c51324eee080a6f72d5c0fad7ad930
         dest-filename: codium.deb
         only-arches:
           - aarch64
