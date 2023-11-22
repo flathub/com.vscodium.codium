@@ -104,5 +104,5 @@ supported until 2021, you can read more about it
 
 ## Related Documentation
 
-- https://github.com/VSCodium/vscodium/blob/master/DOCS.md
+- https://github.com/VSCodium/vscodium/blob/master/docs/index.md
 - https://code.visualstudio.com/docs#vscode
