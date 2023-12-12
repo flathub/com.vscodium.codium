@@ -12,8 +12,6 @@ finish-args:
   - --share=network
   - --device=all
   - --filesystem=host
-  - --filesystem=xdg-config/gtk-3.0:ro
-  - --filesystem=xdg-config/gtk-4.0:ro
   - --persist=.vscode-oss
   - --allow=devel
   - --talk-name=org.freedesktop.secrets
