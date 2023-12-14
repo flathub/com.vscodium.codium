@@ -44,8 +44,8 @@ modules:
     sources:
       - type: archive
         strip-components: 1
-        url: https://github.com/git-lfs/git-lfs/releases/download/v3.4.0/git-lfs-linux-amd64-v3.4.0.tar.gz
-        sha256: 60b7e9b9b4bca04405af58a2cd5dff3e68a5607c5bc39ee88a5256dd7a07f58c
+        url: https://github.com/git-lfs/git-lfs/releases/download/v3.4.1/git-lfs-linux-amd64-v3.4.1.tar.gz
+        sha256: 1772dc260961db27958088740b7e9ecebf945abad8c2d504d412448f53faf147
         only-arches: [x86_64]
         x-checker-data:
           type: json
@@ -55,8 +55,8 @@ modules:
           version-query: .tag_name
       - type: archive
         strip-components: 1
-        url: https://github.com/git-lfs/git-lfs/releases/download/v3.4.0/git-lfs-linux-arm64-v3.4.0.tar.gz
-        sha256: aee90114f8f2eb5a11c1a6e9f1703a2bfcb4dc1fc4ba12a3a574c3a86952a5d0
+        url: https://github.com/git-lfs/git-lfs/releases/download/v3.4.1/git-lfs-linux-arm64-v3.4.1.tar.gz
+        sha256: f93c5070223d95eb44fea0ee2f2db26656793d5f3417366f77dd20b9518c46ce
         only-arches: [aarch64]
         x-checker-data:
           type: json
@@ -97,8 +97,8 @@ modules:
       - mkdir /app/tools
     sources:
       - type: file
-        url: https://github.com/VSCodium/vscodium/releases/download/1.85.0.23343/codium_1.85.0.23343_amd64.deb
-        sha256: 2a88b7394567da7a71d44b3e0450cb469483f3235b28f0b52e20618f58cfc7b8
+        url: https://github.com/VSCodium/vscodium/releases/download/1.85.1.23348/codium_1.85.1.23348_amd64.deb
+        sha256: 28cdc4df80f8cfdb69532cae8b1b19515ce24290217c1fa97b1946ccf3e1f25a
         dest-filename: codium.deb
         only-arches:
           - x86_64
@@ -111,8 +111,8 @@ modules:
           url-query: '[.assets[] | select(.name|test("codium_.+_amd64.deb$"))][0]
             | .browser_download_url'
       - type: file
-        url: https://github.com/VSCodium/vscodium/releases/download/1.85.0.23343/codium_1.85.0.23343_arm64.deb
-        sha256: e25ceb18e86c40108f0a65ce5ac26ae10ad1e1fd285671da6715ee8075896a27
+        url: https://github.com/VSCodium/vscodium/releases/download/1.85.1.23348/codium_1.85.1.23348_arm64.deb
+        sha256: 2dc9e8f85c60e07c72f7663f896b6c68517599e869fd96e99b9f5d85ef13b2ad
         dest-filename: codium.deb
         only-arches:
           - aarch64
