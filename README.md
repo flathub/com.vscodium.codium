@@ -20,9 +20,13 @@ to access SDKs on your host system!
 
 ### To execute commands on the host system, run inside the sandbox:
 
-```bash
-  $ flatpak-spawn --host <COMMAND>
-```
+  `$ flatpak-spawn --host <COMMAND>`
+
+  or
+
+  `$ host-spawn <COMMAND>`
+
+  - Most users seem to report a better experience with `host-spawn`
 
 Note that this runs the COMMAND without any further host-side confirmation.
 If you want to prevent such full host access from inside the sandbox, you can use `flatpak override` as follows:
@@ -38,18 +42,36 @@ Since are serveral ways to achieve this the better is to use [vsix-manager](http
 To make the Integrated Terminal automatically use the host system's shell,
 you can add this to the settings of vscodium:
 
+
+`flatpak-spawn`
+
 ```json
   {
     "terminal.integrated.defaultProfile.linux": "bash",
     "terminal.integrated.profiles.linux": {
         "bash": {
           "path": "/usr/bin/flatpak-spawn",
-          "args": ["--host", "--env=TERM=xterm-256color", "bash"]
+          "args": ["--host", "--env=TERM=xterm-256color", "bash"],
+          "icon": "terminal-bash",
+          "overrideName": true
         }
     },
   }
 ```
+`host-spawn`
 
+```json
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "bash": {
+      "path": "/app/bin/host-spawn",
+      "args": ["bash"],
+      "icon": "terminal-bash",
+      "overrideName": true
+    },
+```
+
+- You can change **bash** to any terminal you are using: zsh, fish, sh.
+- `overrideName` allows for the 'name' (or whatever you set it to) of the shell you're using to appear (e.g. normally zsh, fish, sh).
 ### SDKs
 
 This flatpak provides a standard development environment (gcc, python, etc).
@@ -80,7 +102,7 @@ If you want to run `codium /path/to/file` from the host terminal just add this
 to your shell's rc file
 
 ```bash
-alias codium="flatpak run com.vscodium.codium "
+$ alias codium="flatpak run com.vscodium.codium "
 ```
 
 then reload sources, now you could try:
