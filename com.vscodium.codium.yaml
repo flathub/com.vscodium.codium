@@ -38,33 +38,6 @@ cleanup:
 modules:
   - shared-modules/libsecret/libsecret.json
   - shared-modules/libusb/libusb.json
-  - name: git-lfs
-    buildsystem: simple
-    build-commands:
-      - PREFIX=${FLATPAK_DEST} ./install.sh
-    sources:
-      - type: archive
-        strip-components: 1
-        url: https://github.com/git-lfs/git-lfs/releases/download/v3.4.1/git-lfs-linux-amd64-v3.4.1.tar.gz
-        sha256: 1772dc260961db27958088740b7e9ecebf945abad8c2d504d412448f53faf147
-        only-arches: [x86_64]
-        x-checker-data:
-          type: json
-          url: https://api.github.com/repos/git-lfs/git-lfs/releases/latest
-          url-query: .assets[] | select(.name=="git-lfs-linux-amd64-" + $version +
-            ".tar.gz") | .browser_download_url
-          version-query: .tag_name
-      - type: archive
-        strip-components: 1
-        url: https://github.com/git-lfs/git-lfs/releases/download/v3.4.1/git-lfs-linux-arm64-v3.4.1.tar.gz
-        sha256: f93c5070223d95eb44fea0ee2f2db26656793d5f3417366f77dd20b9518c46ce
-        only-arches: [aarch64]
-        x-checker-data:
-          type: json
-          url: https://api.github.com/repos/git-lfs/git-lfs/releases/latest
-          url-query: .assets[] | select(.name=="git-lfs-linux-arm64-" + $version +
-            ".tar.gz") | .browser_download_url
-          version-query: .tag_name
   - name: codium
     buildsystem: simple
     build-commands:
