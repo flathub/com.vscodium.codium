@@ -110,6 +110,21 @@ modules:
         url: https://github.com/refi64/zypak.git
         branch: main
         commit: ded79a2f8a509adc21834b95a9892073d4a91fdc
+  - name: host-spawn
+    buildsystem: simple
+    build-commands:
+      - install -Dm755 host-spawn /app/bin/host-spawn
+    sources:
+      - type: file
+        url: https://github.com/1player/host-spawn/releases/download/1.5.0/host-spawn-x86_64
+        sha256: dbf67e7e111c4fe1edb0c642cbb4193064ca5b384aeb1054fc2befba6ed88b83
+        dest-filename: host-spawn
+        only-arches: [x86_64]
+      - type: file
+        url: https://github.com/1player/host-spawn/releases/download/1.5.0/host-spawn-aarch64
+        sha256: c42c12be6cdd83e374b847bec836659fb45231215797777c9ee1c9c0ae9e3783
+        dest-filename: host-spawn
+        only-arches: [aarch64] 
   - name: wrapper-flatpak-wrapper
     buildsystem: meson
     config-opts:
