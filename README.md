@@ -40,7 +40,7 @@ Since are serveral ways to achieve this the better is to use [vsix-manager](http
 ### Host Shell
 
 To make the Integrated Terminal automatically use the host system's shell,
-you can add this to the settings of vscodium:
+you can add one of the following configurations for flatpak-spawn or host-spawn to the settings of vscodium:
 
 
 `flatpak-spawn`
@@ -49,25 +49,30 @@ you can add this to the settings of vscodium:
   {
     "terminal.integrated.defaultProfile.linux": "bash",
     "terminal.integrated.profiles.linux": {
-        "bash": {
-          "path": "/usr/bin/flatpak-spawn",
-          "args": ["--host", "--env=TERM=xterm-256color", "bash"],
-          "icon": "terminal-bash",
-          "overrideName": true
-        }
+      "bash": {
+        "path": "/usr/bin/flatpak-spawn",
+        "args": ["--host", "--env=TERM=xterm-256color", "bash"],
+        "icon": "terminal-bash",
+        "overrideName": true
+      }
     },
   }
 ```
+
 `host-spawn`
 
 ```json
+  {
     "terminal.integrated.defaultProfile.linux": "bash",
-    "bash": {
-      "path": "/app/bin/host-spawn",
-      "args": ["bash"],
-      "icon": "terminal-bash",
-      "overrideName": true
+    "terminal.integrated.profiles.linux": {
+      "bash": {
+        "path": "/app/bin/host-spawn",
+        "args": ["bash"],
+        "icon": "terminal-bash",
+        "overrideName": true
+      }
     },
+  }
 ```
 
 - You can change **bash** to any terminal you are using: zsh, fish, sh.
