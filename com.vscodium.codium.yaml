@@ -20,7 +20,7 @@ finish-args:
   - --env=XCURSOR_PATH=/run/host/user-share/icons:/run/host/share/icons
   - --filesystem=xdg-run/gnupg:ro
   - --filesystem=xdg-config/kdeglobals:ro
-  - --filesystem=~/.gitconfig:create
+  - --filesystem=~/.gitconfig
   - --talk-name=com.canonical.AppMenu.Registrar
   - --system-talk-name=org.freedesktop.login1
 separate-locales: false
