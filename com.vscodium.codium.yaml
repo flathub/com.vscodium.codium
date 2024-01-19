@@ -71,8 +71,8 @@ modules:
       - mkdir /app/tools
     sources:
       - type: file
-        url: https://github.com/VSCodium/vscodium/releases/download/1.85.1.23348/codium_1.85.1.23348_amd64.deb
-        sha256: 28cdc4df80f8cfdb69532cae8b1b19515ce24290217c1fa97b1946ccf3e1f25a
+        url: https://github.com/VSCodium/vscodium/releases/download/1.85.2.24019/codium_1.85.2.24019_amd64.deb
+        sha256: 608192d9abab899d3ed787590f86da7dc18151d1618a3455ff25e580503d58cb
         dest-filename: codium.deb
         only-arches:
           - x86_64
@@ -85,8 +85,8 @@ modules:
           url-query: '[.assets[] | select(.name|test("codium_.+_amd64.deb$"))][0]
             | .browser_download_url'
       - type: file
-        url: https://github.com/VSCodium/vscodium/releases/download/1.85.1.23348/codium_1.85.1.23348_arm64.deb
-        sha256: 2dc9e8f85c60e07c72f7663f896b6c68517599e869fd96e99b9f5d85ef13b2ad
+        url: https://github.com/VSCodium/vscodium/releases/download/1.85.2.24019/codium_1.85.2.24019_arm64.deb
+        sha256: 860ce849c3c99828e5675a7e0e679a47eaa349e0b5bb7122fe4769104d5f78e7
         dest-filename: codium.deb
         only-arches:
           - aarch64
@@ -124,7 +124,7 @@ modules:
         url: https://github.com/1player/host-spawn/releases/download/1.5.0/host-spawn-aarch64
         sha256: c42c12be6cdd83e374b847bec836659fb45231215797777c9ee1c9c0ae9e3783
         dest-filename: host-spawn
-        only-arches: [aarch64] 
+        only-arches: [aarch64]
   - name: wrapper-flatpak-wrapper
     buildsystem: meson
     config-opts:
