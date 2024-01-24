@@ -17,8 +17,28 @@
   </description>
   <screenshots>
     <screenshot type="default">
-      <image>https://vscodium.com/img/vscodium.png</image>
-      <caption>Editing C in Codium</caption>
+      <image>https://raw.githubusercontent.com/flathub/com.vscodium.codium/05823bfd9f47e5563a74e47c87c7c37dd4fd03d9/screenshoots/open_file.png</image>
+      <caption>Opening a Python file</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/flathub/com.vscodium.codium/05823bfd9f47e5563a74e47c87c7c37dd4fd03d9/screenshoots/rust_example.png</image>
+      <caption>Viewing a Rust example file</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/flathub/com.vscodium.codium/05823bfd9f47e5563a74e47c87c7c37dd4fd03d9/screenshoots/welcome.png</image>
+      <caption>Welcome page</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/flathub/com.vscodium.codium/05823bfd9f47e5563a74e47c87c7c37dd4fd03d9/screenshoots/welcome_02.png</image>
+      <caption>Configuration Wizard</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/flathub/com.vscodium.codium/05823bfd9f47e5563a74e47c87c7c37dd4fd03d9/screenshoots/editing_python.png</image>
+      <caption>Editing Python file with new titlebar</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/flathub/com.vscodium.codium/05823bfd9f47e5563a74e47c87c7c37dd4fd03d9/screenshoots/editing_rust.png</image>
+      <caption>Editing Rust with new titlebar</caption>
     </screenshot>
   </screenshots>
   <launchable type="desktop-id">com.vscodium.codium.desktop</launchable>
