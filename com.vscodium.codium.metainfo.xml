@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Copyright 2020 NoonSleeper -->
 <component type="desktop-application">
   <id>com.vscodium.codium</id>
   <metadata_license>CC0-1.0</metadata_license>
@@ -8,37 +7,34 @@
   <developer_name>Peter Squicciarini</developer_name>
   <url type="homepage">https://vscodium.com/</url>
   <url type="bugtracker">https://github.com/flathub/com.vscodium.codium/issues</url>
-  <url type="help">https://github.com/VSCodium/vscodium/blob/master/DOCS.md</url>
+  <url type="help">https://github.com/flathub/com.vscodium.codium#readme</url>
   <summary>Telemetry-less code editing</summary>
   <description>
     <p>VSCodium combines the simplicity of a code editor with what developers need for the core edit-build-debug cycle.</p>
     <p>This is the telemetry-less version of Visual Studio Code, packaged into a Flatpak.</p>
     <p>This repackaging is not supported by Microsoft.</p>
+    <p>Note: To use certain features in this flatpak version, please see https://github.com/flathub/com.vscodium.codium#readme</p>
   </description>
   <screenshots>
     <screenshot type="default">
-      <image>https://raw.githubusercontent.com/flathub/com.vscodium.codium/05823bfd9f47e5563a74e47c87c7c37dd4fd03d9/screenshoots/open_file.png</image>
-      <caption>Opening a Python file</caption>
+      <image>https://raw.githubusercontent.com/flathub/com.vscodium.codium/7c2673ec91718b989e60d35b925997c8c9026a79/screenshots/00_reading_markdown.png</image>
+      <caption>Reading a Markdown file</caption>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/flathub/com.vscodium.codium/05823bfd9f47e5563a74e47c87c7c37dd4fd03d9/screenshoots/rust_example.png</image>
-      <caption>Viewing a Rust example file</caption>
+      <image>https://raw.githubusercontent.com/flathub/com.vscodium.codium/7c2673ec91718b989e60d35b925997c8c9026a79/screenshots/01_reading_python_example.png</image>
+      <caption>Reading a Python example file</caption>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/flathub/com.vscodium.codium/05823bfd9f47e5563a74e47c87c7c37dd4fd03d9/screenshoots/welcome.png</image>
-      <caption>Welcome page</caption>
+      <image>https://raw.githubusercontent.com/flathub/com.vscodium.codium/7c2673ec91718b989e60d35b925997c8c9026a79/screenshots/03_editing_rust_file.png</image>
+      <caption>Editing a Rust file</caption>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/flathub/com.vscodium.codium/05823bfd9f47e5563a74e47c87c7c37dd4fd03d9/screenshoots/welcome_02.png</image>
-      <caption>Configuration Wizard</caption>
+      <image>https://raw.githubusercontent.com/flathub/com.vscodium.codium/7c2673ec91718b989e60d35b925997c8c9026a79/screenshots/04_reading_python_file.png</image>
+      <caption>Reading a Python File</caption>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/flathub/com.vscodium.codium/05823bfd9f47e5563a74e47c87c7c37dd4fd03d9/screenshoots/editing_python.png</image>
-      <caption>Editing Python file with new titlebar</caption>
-    </screenshot>
-    <screenshot>
-      <image>https://raw.githubusercontent.com/flathub/com.vscodium.codium/05823bfd9f47e5563a74e47c87c7c37dd4fd03d9/screenshoots/editing_rust.png</image>
-      <caption>Editing Rust with new titlebar</caption>
+      <image>https://raw.githubusercontent.com/flathub/com.vscodium.codium/7c2673ec91718b989e60d35b925997c8c9026a79/screenshots/05_searching_for_a_file.png</image>
+      <caption>Serching for a file</caption>
     </screenshot>
   </screenshots>
   <launchable type="desktop-id">com.vscodium.codium.desktop</launchable>
