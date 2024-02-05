@@ -133,7 +133,7 @@ modules:
         -Deditor_args=[
         '/app/share/codium/resources/app/out/cli.js',
         '--ms-enable-electron-run-as-node',
-        '--extensions-dir', '$XDG_DATA_HOME/codium/extensions'
+        '--extensions-dir', '$XDG_DATA_HOME/codium/extensions',
 
         '--enable-features=UseOzonePlatform,WaylandWindowDecorations',
         '--ozone-platform-hint=auto'
