@@ -134,6 +134,9 @@ modules:
         '/app/share/codium/resources/app/out/cli.js',
         '--ms-enable-electron-run-as-node',
         '--extensions-dir', '$XDG_DATA_HOME/codium/extensions'
+
+        '--enable-features=UseOzonePlatform,WaylandWindowDecorations',
+        '--ozone-platform-hint=auto'
         ]
       - -Dprogram_name=codium
       - -Deditor_title=VSCodium
