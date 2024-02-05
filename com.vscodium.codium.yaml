@@ -133,7 +133,8 @@ modules:
         -Deditor_args=[
         '/app/share/codium/resources/app/out/cli.js',
         '--ms-enable-electron-run-as-node',
-        '--extensions-dir', '$XDG_DATA_HOME/codium/extensions'
+        '--extensions-dir', '$XDG_DATA_HOME/codium/extensions',
+        '--password-store="basic"'
         ]
       - -Dprogram_name=codium
       - -Deditor_title=VSCodium
