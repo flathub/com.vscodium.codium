@@ -7,6 +7,7 @@ finish-args:
   - --share=ipc
   - --socket=wayland
   - --socket=fallback-x11
+  - --nosocket=x11
   - --socket=pulseaudio
   - --socket=ssh-auth
   - --share=network
@@ -134,9 +135,8 @@ modules:
         '/app/share/codium/resources/app/out/cli.js',
         '--ms-enable-electron-run-as-node',
         '--extensions-dir', '$XDG_DATA_HOME/codium/extensions',
-
-        '--enable-features=UseOzonePlatform,WaylandWindowDecorations',
-        '--ozone-platform-hint=auto'
+        '--ozone-platform-hint=auto',
+        '--enable-features=WaylandWindowDecorations',
         ]
       - -Dprogram_name=codium
       - -Deditor_title=VSCodium

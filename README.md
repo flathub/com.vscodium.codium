@@ -7,6 +7,21 @@ Please open issues under: https://github.com/flathub/com.vscodium.codium/issues
 
 ## FAQ
 
+### Wayland vs X11
+If you have problems to start this flatpak under X11 please run one of these two
+commands and try again
+
+```bash
+# Only disable wayland to force fallback on xwayland
+flatpak override --user --nosocket=wayland com.vscodium.codium
+# or
+# Disable wayland and able X11
+flatpak override --user --socket=x11 --nosocket=wayland com.vscodium.codium
+```
+
+Is also recommended to run `flatpak permission-reset com.vscodium.codium`
+
+### About the access to the host filesystem
 Note that vscodium is granted *full access to your home directory*.
 You can use `flatpak override` to locally adjust this if you prefer to sandbox vscodium file system access:
 ```
