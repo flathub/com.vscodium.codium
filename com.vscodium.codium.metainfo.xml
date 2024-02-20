@@ -13,7 +13,7 @@
     <p>VSCodium combines the simplicity of a code editor with what developers need for the core edit-build-debug cycle.</p>
     <p>This is the telemetry-less version of Visual Studio Code, packaged into a Flatpak.</p>
     <p>This repackaging is not supported by Microsoft.</p>
-    <p>Note: To use certain features in this flatpak version, please see https://github.com/flathub/com.vscodium.codium#readme</p>
+    <p>Note: To use certain features in this flatpak version, please see Readme file.</p>
   </description>
   <screenshots>
     <screenshot type="default">
