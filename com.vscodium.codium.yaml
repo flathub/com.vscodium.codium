@@ -7,7 +7,6 @@ finish-args:
   - --share=ipc
   - --socket=wayland
   - --socket=fallback-x11
-  - --nosocket=x11
   - --socket=pulseaudio
   - --socket=ssh-auth
   - --share=network
