@@ -40,6 +40,17 @@
   <launchable type="desktop-id">com.vscodium.codium.desktop</launchable>
   <content_rating type="oars-1.1" />
   <releases>
+    <release version="1.86.2.24053" date="2024-02-22" urgency="low">
+        <description>
+            <p>update vscode to 1.86.2</p>
+            <p>This version still supports Centos-7 and Ubuntu-18 for its REH version and Client (IDE) version.</p>
+            <p>But it shouldn't run on macOS 10.13 or 10.14.</p>
+            <p>What's Changed</p>
+            <p>build(deps): bump peter-evans/repository-dispatch from 2 to 3 by @dependabot in #1794</p>
+            <p>feat: preparing for 1.86 by @daiyam in #1802</p>
+        </description>
+        <url>https://github.com/VSCodium/vscodium/releases/tag/1.86.2.24053</url>
+    </release>
     <release version="1.85.2.24019" date="2024-01-19" urgency="high">
         <description>
             <p>Backport fixes for CVE-2024-0519</p>
