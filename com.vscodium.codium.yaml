@@ -132,9 +132,7 @@ modules:
       - >-
         -Deditor_args=[
         '/app/share/codium/resources/app/out/cli.js',
-        '--extensions-dir', '$XDG_DATA_HOME/codium/extensions',
-        '--ozone-platform-hint=auto',
-        '--enable-features=WaylandWindowDecorations',
+        '--extensions-dir', '$XDG_DATA_HOME/codium/extensions'
         ]
       - -Dprogram_name=codium
       - -Deditor_title=VSCodium
