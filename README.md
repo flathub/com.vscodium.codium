@@ -15,7 +15,7 @@ commands and try again
 # Only disable wayland to force fallback on xwayland
 flatpak override --user --nosocket=wayland com.vscodium.codium
 # or
-# Disable wayland and able X11
+# Disable wayland and enable X11
 flatpak override --user --socket=x11 --nosocket=wayland com.vscodium.codium
 ```
 
