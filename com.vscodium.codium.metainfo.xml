@@ -40,6 +40,16 @@
   <launchable type="desktop-id">com.vscodium.codium.desktop</launchable>
   <content_rating type="oars-1.1" />
   <releases>
+    <release version="1.86.2.24054" date="2024-02-22" urgency="low">
+        <description>
+            <p>update vscode to 1.86.2</p>
+            <p>What's Changed</p>
+            <p>📝 Add flatpak common problems fixes to troubleshooting.md by @noonsleeper in #1811</p>
+            <p>New Contributors</p>
+            <p>@noonsleeper made their first contribution in #1811</p>
+        </description>
+        <url>https://github.com/VSCodium/vscodium/releases/tag/1.86.2.24054</url>
+    </release>
     <release version="1.86.2.24053" date="2024-02-22" urgency="low">
         <description>
             <p>update vscode to 1.86.2</p>
