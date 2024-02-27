@@ -41,12 +41,7 @@ modules:
   - name: codium
     buildsystem: simple
     build-commands:
-      - install -Dm644 codium.svg /app/share/icons/hicolor/scalable/apps/com.vscodium.codium.svg
-      - |
-        for size in 16 32 48 64 128 256 512; do
-          rsvg-convert --width ${size} --keep-aspect-ratio --format png --output codium_${size}.png codium.svg || exit 1
-          install -Dm644 codium_${size}.png /app/share/icons/hicolor/${size}x${size}/apps/com.vscodium.codium.png || exit 1
-        done
+      - install -Dm644 code.svg /app/share/icons/hicolor/scalable/apps/com.vscodium.codium.svg
       - install -Dm644 com.vscodium.codium.metainfo.xml -t /app/share/metainfo
       - ar x codium.deb
       - tar xf data.tar.xz
@@ -99,9 +94,7 @@ modules:
           url-query: '[.assets[] | select(.name|test("codium_.+_arm64.deb$"))][0]
             | .browser_download_url'
       - type: file
-        url: https://raw.githubusercontent.com/VSCodium/vscodium/5e26c4a9c475ebf59052c2da916b80d471af739f/icons/stable/codium_cnl.svg
-        sha256: 9817036bd2f5add672e707da311a301033ad122d6c2c505c776cb48d35b94472
-        dest-filename: codium.svg
+        path: assets/icon/code.svg
       - type: file
         path: com.vscodium.codium.metainfo.xml
   - name: zypak
