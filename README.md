@@ -1,7 +1,5 @@
 # Flatpak VSCodium
 
-> This is an Unofficial Flatpak version of VSCodium
-
 ## Issues
 Please open issues under: https://github.com/flathub/com.vscodium.codium/issues
 
