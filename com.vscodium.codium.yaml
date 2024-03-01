@@ -41,8 +41,8 @@ modules:
   - name: codium
     buildsystem: simple
     build-commands:
-      - install -Dm644 code.svg /app/share/icons/hicolor/scalable/apps/com.vscodium.codium.svg
-      - install -Dm644 com.vscodium.codium.metainfo.xml -t /app/share/metainfo
+      - install -Dm644 code.svg /app/share/icons/hicolor/scalable/apps/$FLATPAK_ID.svg
+      - install -Dm644 $FLATPAK_ID.metainfo.xml -t /app/share/metainfo
       - ar x codium.deb
       - tar xf data.tar.xz
         # HACK: Use directory for IPC sockets that is shared between Flatpak instances
@@ -55,13 +55,11 @@ modules:
       - sed -e "s/^Icon=.*/Icon=com.vscodium.codium/" -i usr/share/applications/*.desktop
       - sed -e "s|/usr/share/codium/||g" -i usr/share/applications/*.desktop
         # use install instead of desktop-file-install because can't rename the output file
-      - install -Dm644 usr/share/applications/codium.desktop /app/share/applications/com.vscodium.codium.desktop
-      - install -Dm644 usr/share/applications/codium-url-handler.desktop /app/share/applications/com.vscodium.codium-url-handler.desktop
+      - install -Dm644 usr/share/applications/codium.desktop /app/share/applications/$FLATPAK_ID.desktop
+      - install -Dm644 usr/share/applications/codium-url-handler.desktop /app/share/applications/$FLATPAK_ID-url-handler.desktop
+      - install -Dm644 usr/share/mime/packages/codium-workspace.xml /app/share/mime/packages/$FLATPAK_ID-workspace.xml
         # Sugested by desktop-file-validate
-      - desktop-file-edit --add-category="Utility" /app/share/applications/com.vscodium.codium.desktop
-        # Disable hints because desktop-file-validate warn about the previously suggested hint =)
-      - desktop-file-validate --no-hints /app/share/applications/com.vscodium.codium.desktop
-        /app/share/applications/com.vscodium.codium-url-handler.desktop
+      - desktop-file-edit --add-category="Utility" /app/share/applications/$FLATPAK_ID.desktop
       - rm -r codium.deb control.tar.* data.tar.xz debian-binary usr
       - mkdir /app/tools
     sources:
