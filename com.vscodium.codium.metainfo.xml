@@ -15,7 +15,7 @@
     <p>This repackaging is not supported by Microsoft.</p>
     <p>Note: To use certain features in this flatpak version, please see Readme file.</p>
   </description>
-   <branding>
+  <branding>
     <color type="primary" scheme_preference="light">#e0ecfb</color>
     <color type="primary" scheme_preference="dark">#144d92</color>
   </branding>
