@@ -15,6 +15,10 @@
     <p>This repackaging is not supported by Microsoft.</p>
     <p>Note: To use certain features in this flatpak version, please see Readme file.</p>
   </description>
+   <branding>
+    <color type="primary" scheme_preference="light">#e0ecfb</color>
+    <color type="primary" scheme_preference="dark">#144d92</color>
+  </branding>
   <screenshots>
     <screenshot type="default">
       <image>https://raw.githubusercontent.com/flathub/com.vscodium.codium/7c2673ec91718b989e60d35b925997c8c9026a79/screenshots/00_reading_markdown.png</image>
