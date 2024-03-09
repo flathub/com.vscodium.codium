@@ -2,6 +2,8 @@ id: com.vscodium.codium
 sdk: org.freedesktop.Sdk
 runtime: org.freedesktop.Sdk
 runtime-version: '23.08'
+base: org.electronjs.Electron2.BaseApp
+base-version: '23.08'
 command: codium
 finish-args:
   - --share=ipc
@@ -36,7 +38,6 @@ cleanup:
   - /share/gtk-doc
   - '*.la'
 modules:
-  - shared-modules/libsecret/libsecret.json
   - shared-modules/libusb/libusb.json
   - name: codium
     buildsystem: simple
@@ -95,12 +96,6 @@ modules:
         path: assets/icon/code.svg
       - type: file
         path: com.vscodium.codium.metainfo.xml
-  - name: zypak
-    sources:
-      - type: git
-        url: https://github.com/refi64/zypak.git
-        branch: main
-        commit: ded79a2f8a509adc21834b95a9892073d4a91fdc
   - name: host-spawn
     buildsystem: simple
     build-commands:
