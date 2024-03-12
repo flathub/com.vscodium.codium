@@ -44,6 +44,15 @@
   <launchable type="desktop-id">com.vscodium.codium.desktop</launchable>
   <content_rating type="oars-1.1" />
   <releases>
+    <release version="1.87.2.24072" date="2024-03-12" urgency="low">
+        <description>
+          <p>What's Changed</p>
+          <ul>
+            <li>update vscode to 1.87.2</li>
+          </ul>
+        </description>
+        <url>https://github.com/VSCodium/vscodium/releases/tag/1.87.2.24072</url>
+    </release>
     <release version="1.87.1.24068" date="2024-03-08" urgency="low">
         <description>
           <p>What's Changed</p>
