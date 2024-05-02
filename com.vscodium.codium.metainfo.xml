@@ -44,6 +44,16 @@
   <launchable type="desktop-id">com.vscodium.codium.desktop</launchable>
   <content_rating type="oars-1.1" />
   <releases>
+    <release version="1.88.1.24102" date="2024-04-11" urgency="low">
+        <description>
+          <p>What's Changed</p>
+          <ul>
+            <li>update vscode to 1.88.1</li>
+            <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.88.0.24096...1.88.1.24102</li>
+          </ul>
+        </description>
+        <url>https://github.com/VSCodium/vscodium/releases/tag/1.88.1.24102</url>
+    </release>
     <release version="1.88.0.24096" date="2024-04-05" urgency="low">
         <description>
           <p>What's Changed</p>
