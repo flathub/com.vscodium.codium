@@ -50,7 +50,7 @@
           <ul>
             <li>update vscode to 1.88.0</li>
             <li>feat(1.88): update patches by @daiyam in #1839</li>
-            <li>Full Changelog: <a href="https://github.com/VSCodium/vscodium/compare/1.87.2.24072...1.88.0.24096">1.87.2.24072...1.88.0.24096</a></li>
+            <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.87.2.24072...1.88.0.24096</li>
           </ul>
         </description>
         <url>https://github.com/VSCodium/vscodium/releases/tag/1.88.0.24096</url>
