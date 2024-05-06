@@ -65,8 +65,8 @@ modules:
       - mkdir /app/tools
     sources:
       - type: file
-        url: https://github.com/VSCodium/vscodium/releases/download/1.88.1.24104/codium_1.88.1.24104_amd64.deb
-        sha256: fb0c9c8d883b00e94a9f94d0ea1631d9ab5a841e2e8b280a2395787de9deab0d
+        url: https://github.com/VSCodium/vscodium/releases/download/1.89.0.24126/codium_1.89.0.24126_amd64.deb
+        sha256: f78146dceb6f971eb705c60274b060a2ab7a34a8adfd6ca94c731a09a39817eb
         dest-filename: codium.deb
         only-arches:
           - x86_64
@@ -102,15 +102,29 @@ modules:
       - install -Dm755 host-spawn /app/bin/host-spawn
     sources:
       - type: file
-        url: https://github.com/1player/host-spawn/releases/download/1.5.0/host-spawn-x86_64
-        sha256: dbf67e7e111c4fe1edb0c642cbb4193064ca5b384aeb1054fc2befba6ed88b83
+        url: https://github.com/1player/host-spawn/releases/download/v1.6.0/host-spawn-x86_64
+        sha256: 75159f0d3924a0bd6d230c6414d19ad44609b5a16671db6624681c910f9bb4ff
         dest-filename: host-spawn
         only-arches: [x86_64]
+        x-checker-data:
+          type: json
+          url: https://api.github.com/repos/1player/host-spawn/releases/latest
+          tag-query: .tag_name
+          version-query: .tag_name
+          timestamp-query: .published_at
+          url-query: '[.assets[] | select(.name|test(".+x86_64$"))][0] | .browser_download_url'
       - type: file
-        url: https://github.com/1player/host-spawn/releases/download/1.5.0/host-spawn-aarch64
-        sha256: c42c12be6cdd83e374b847bec836659fb45231215797777c9ee1c9c0ae9e3783
+        url: https://github.com/1player/host-spawn/releases/download/v1.6.0/host-spawn-aarch64
+        sha256: 00f9617c139b9447e6c453a27602ca87f28cdac3aa62b04dcb38d215b2758165
         dest-filename: host-spawn
         only-arches: [aarch64]
+        x-checker-data:
+          type: json
+          url: https://api.github.com/repos/1player/host-spawn/releases/latest
+          tag-query: .tag_name
+          version-query: .tag_name
+          timestamp-query: .published_at
+          url-query: '[.assets[] | select(.name|test(".+aarch64$"))][0] | .browser_download_url'
   - name: wrapper-flatpak-wrapper
     buildsystem: meson
     config-opts:
