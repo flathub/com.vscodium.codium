@@ -20,15 +20,21 @@ flatpak override --user --socket=x11 --nosocket=wayland com.vscodium.codium
 Is also recommended to run `flatpak permission-reset com.vscodium.codium`
 
 ### About the access to the host filesystem
-Note that vscodium is granted *full access to your home directory*.
-You can use `flatpak override` to locally adjust this if you prefer to sandbox vscodium file system access:
+Note that VSCodium is granted *full access to your host directories*
+[(but at certain grade is still sandboxed)](https://docs.flatpak.org/en/latest/sandbox-permissions.html#filesystem-access).
+
+You can use `flatpak override` to locally adjust this if you prefer a more
+hardened sandbox for VSCodium file system access:
+```bash
+flatpak override --user com.vscodium.codium --nofilesystem=host
 ```
-flatpak override --user com.vscodium.codium --nofilesystem=home
-# now manually grant accesss to the folder(s) you want to work in
+
+Now manually grant accesss to the folder(s) you want to work in
+```bash
 flatpak override --user com.vscodium.codium --filesystem=~/src
 ```
 
-This version is running inside a _container_ and is therefore __not able__
+> Remember: this version is running inside a _container_ and is therefore __not able__
 to access SDKs on your host system!
 
 ### To execute commands on the host system, run inside the sandbox:
