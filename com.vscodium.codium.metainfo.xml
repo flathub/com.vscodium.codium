@@ -44,6 +44,20 @@
   <launchable type="desktop-id">com.vscodium.codium.desktop</launchable>
   <content_rating type="oars-1.1" />
   <releases>
+    <release version="1.89.0.24127" date="2024-05-06" urgency="low">
+        <description>
+          <p>What's Changed</p>
+          <ul>
+            <li>Remove deprecated "unity-launch" flag from Linux desktop files by @xalt7x in #1866</li>
+            <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.89.0.24126...1.89.0.24127</li>
+          </ul>
+          <p>New Contributors</p>
+          <ul>
+            <li>@xalt7x made their first contribution in #1866</li>
+          </ul>
+        </description>
+        <url>https://github.com/VSCodium/vscodium/releases/tag/1.89.0.24127</url>
+    </release>
     <release version="1.89.0.24126" date="2024-05-05" urgency="low">
         <description>
           <p>What's Changed</p>
