@@ -152,7 +152,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/noonsleeper/ide-flatpak-wrapper.git
-        commit: 3c0635635e4d056a6d18d79c10f66db67de98a93
+        commit: 7281f4ac7c2193935d236d67a88d407e09449b1c
       - type: file
         path: README.md
       - type: file
