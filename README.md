@@ -23,7 +23,7 @@ Is also recommended to run `flatpak permission-reset com.vscodium.codium`
 Note that vscodium is granted *full access to your home directory*.
 You can use `flatpak override` to locally adjust this if you prefer to sandbox vscodium file system access:
 ```
-flatpak override --user com.vscodium.codium --nofilesystem=home
+flatpak override --user com.vscodium.codium --nofilesystem=host
 # now manually grant accesss to the folder(s) you want to work in
 flatpak override --user com.vscodium.codium --filesystem=~/src
 ```
