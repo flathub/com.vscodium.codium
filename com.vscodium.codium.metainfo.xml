@@ -44,6 +44,18 @@
   <launchable type="desktop-id">com.vscodium.codium.desktop</launchable>
   <content_rating type="oars-1.1" />
   <releases>
+    <release version="1.90.0.24158" date="2024-06-06" urgency="low">
+        <description>
+          <p>What's Changed</p>
+          <ul>
+            <li>feat(1.90): update patches by @daiyam in #1864</li>
+            <li>fix: disable signature verification by @daiyam in #1915</li>
+            <li>build(linux): make it build by @daiyam in #1916</li>
+            <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.89.1.24130...1.90.0.24158</li>
+          </ul>
+        </description>
+        <url>https://github.com/VSCodium/vscodium/releases/tag/1.90.0.24158</url>
+    </release>
     <release version="1.89.1.24130" date="2024-05-09" urgency="low">
         <description>
           <p>What's Changed</p>
