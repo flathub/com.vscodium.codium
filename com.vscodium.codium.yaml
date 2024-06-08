@@ -151,8 +151,8 @@ modules:
       - -Dflagfile_prefix=flatpak-vscodium
     sources:
       - type: git
-        url: https://github.com/noonsleeper/ide-flatpak-wrapper.git
-        commit: 138f9a3233ba0f50d1424f7e252d2f5d957b16c6
+        url: https://github.com/flathub-infra/ide-flatpak-wrapper.git
+        commit: 7b72347aad88e21a49d6d5299fcd94cedd16624a
       - type: file
         path: README.md
       - type: file
