@@ -44,6 +44,18 @@
   <launchable type="desktop-id">com.vscodium.codium.desktop</launchable>
   <content_rating type="oars-1.1" />
   <releases>
+    <release version="1.90.1.24165" date="2024-06-13" urgency="low">
+        <description>
+          <p>What's Changed</p>
+          <ul>
+            <li>Changes needed to enable PPC64LE UI build by @lex-ibm in #1923</li>
+            <li>Add experimental riscv64 builds by @kxxt in #1922</li>
+            <li>Add Github Enterprise support by @lex-ibm in #1926</li>
+            <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.90.0.24158...1.90.1.24165</li>
+          </ul>
+        </description>
+        <url>https://github.com/VSCodium/vscodium/releases/tag/1.90.1.24165</url>
+    </release>
     <release version="1.90.0.24158" date="2024-06-06" urgency="low">
         <description>
           <p>What's Changed</p>
