@@ -1,0 +1,9 @@
+@@ -291,7 +291,7 @@
+   },
+   "commit": "9f4ee35641a60d86b7ba9e567ed46b712b80ae37",
+   "date": "2024-06-13T18:53:22.307Z",
+-  "checksums": {
++  "_checksums": {
+     "vs/base/parts/sandbox/electron-sandbox/preload.js": "jZCbVJ6+c8ESGC3Wmn388vr6jdvKBFKhi8/ymYTU+oI",
+     "vs/workbench/workbench.desktop.main.js": "kbJQpZw3ZgpiZuf6Yy+2xcRIzwGNVIj0uFzHw+93nEk",
+     "vs/workbench/workbench.desktop.main.css": "Tai4gt2stS/9ndHOJeQ9vJMUDKRoobo94bP4IiHJ4Kc",

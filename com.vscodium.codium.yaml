@@ -50,7 +50,7 @@ modules:
         # Replace XDG_RUNTIME_DIR by XDG_RUNTIME_DIR/app/FLATPAK_ID
       - find usr/share/codium -type f -print0 | xargs -0 sed -i "s/\bjoin([^)]*xdg_\?runtime_\?dir[^,)]*/\0,'app',process.env.FLATPAK_ID/gI"
         # and disable integrity check
-      - sed -e 's/"checksums":/"_checksums":/' -i usr/share/codium/resources/app/product.json
+      - patch --fuzz=3 usr/share/codium/resources/app/product.json -i product.json.patch
       - mv usr/share/codium /app/share
         # use sed because because desktop-file-edit can't modify different group keys
       - sed -e "s/^Icon=.*/Icon=com.vscodium.codium/" -i usr/share/applications/*.desktop
@@ -96,6 +96,8 @@ modules:
         path: assets/icon/code.svg
       - type: file
         path: com.vscodium.codium.metainfo.xml
+      - type: file
+        path: patches/product.json.patch
   - name: host-spawn
     buildsystem: simple
     build-commands:
