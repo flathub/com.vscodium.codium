@@ -52,9 +52,9 @@ modules:
         # and disable integrity check
       - patch --fuzz=3 usr/share/codium/resources/app/product.json -i product.json.patch
       - mv usr/share/codium /app/share
-        # use sed because because desktop-file-edit can't modify different group keys
-      - sed -e "s/^Icon=.*/Icon=com.vscodium.codium/" -i usr/share/applications/*.desktop
-      - sed -e "s|/usr/share/codium/||g" -i usr/share/applications/*.desktop
+        # use patches because desktop-file-edit can't modify different group keys
+      - patch -u usr/share/applications/codium.desktop -i codium.desktop.patch
+      - patch -u usr/share/applications/codium-url-handler.desktop -i codium-url-handler.desktop.patch
         # use install instead of desktop-file-install because can't rename the output file
       - install -Dm644 usr/share/applications/codium.desktop /app/share/applications/$FLATPAK_ID.desktop
       - install -Dm644 usr/share/applications/codium-url-handler.desktop /app/share/applications/$FLATPAK_ID-url-handler.desktop
@@ -98,6 +98,10 @@ modules:
         path: com.vscodium.codium.metainfo.xml
       - type: file
         path: patches/product.json.patch
+      - type: file
+        path: patches/codium.desktop.patch
+      - type: file
+        path: patches/codium-url-handler.desktop.patch
   - name: host-spawn
     buildsystem: simple
     build-commands:
