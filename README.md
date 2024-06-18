@@ -5,19 +5,14 @@ Please open issues under: https://github.com/flathub/com.vscodium.codium/issues
 
 ## FAQ
 
-### Wayland vs X11
-If you have problems to start this flatpak under X11 please run one of these two
-commands and try again
+### Running X11 applications from Wayland session
+In order to run X11 applications from a Wayland session of VSCodium, close VSCodium and run this command:
 
 ```bash
-# Only disable wayland to force fallback on xwayland
-flatpak override --user --nosocket=wayland com.vscodium.codium
-# or
-# Disable wayland and enable X11
-flatpak override --user --socket=x11 --nosocket=wayland com.vscodium.codium
+flatpak override --user --nosocket=fallback-x11 --socket=x11 com.vscodium.codium
 ```
 
-Is also recommended to run `flatpak permission-reset com.vscodium.codium`
+Note: Wayland applications are unaffected by this change and run normally.
 
 ### About the access to the host filesystem
 Note that VSCodium is granted *full access to your host directories*
