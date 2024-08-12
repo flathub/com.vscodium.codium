@@ -44,6 +44,19 @@
   <launchable type="desktop-id">com.vscodium.codium.desktop</launchable>
   <content_rating type="oars-1.1" />
   <releases>
+      <release version="1.92.1.24225" date="2024-08-12" urgency="low">
+        <description>
+          <p>What's Changed</p>
+          <ul>
+            <li>update vscode to 1.92.1</li>
+            <li>build(riscv): Check electron version and bump to 29.4.0.riscv3 by @kxxt in #1965</li>
+            <li>feat: prepare for 1.92 by @daiyam in #1970</li>
+            <li>feat: prepare 1.92 by @daiyam in #1986</li>
+            <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.91.1.24193...1.92.1.24225</li>
+          </ul>
+        </description>
+        <url>https://github.com/VSCodium/vscodium/releases/tag/1.92.1.24225</url>
+    </release>
     <release version="1.91.1.24193" date="2024-07-11" urgency="low">
         <description>
           <p>What's Changed</p>
