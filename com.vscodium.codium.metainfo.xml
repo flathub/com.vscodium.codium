@@ -44,6 +44,18 @@
   <launchable type="desktop-id">com.vscodium.codium.desktop</launchable>
   <content_rating type="oars-1.1" />
   <releases>
+      <release version="1.93.0.24253" date="2024-09-09" urgency="low">
+        <description>
+          <p>What's Changed</p>
+          <ul>
+            <li>update vscode to 1.93.0</li>
+            <li>feat: 1.93 by @daiyam in #2022</li>
+            <li>fix(1.93): update linux build by @daiyam in #2023</li>
+            <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.92.2.24228...1.93.0.24253</li>
+          </ul>
+        </description>
+        <url>https://github.com/VSCodium/vscodium/releases/tag/1.93.0.24253</url>
+    </release>
       <release version="1.92.2.24228" date="2024-08-15" urgency="low">
         <description>
           <p>What's Changed</p>
