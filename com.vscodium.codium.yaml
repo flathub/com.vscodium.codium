@@ -1,9 +1,9 @@
 id: com.vscodium.codium
 sdk: org.freedesktop.Sdk
 runtime: org.freedesktop.Sdk
-runtime-version: '23.08'
+runtime-version: '24.08'
 base: org.electronjs.Electron2.BaseApp
-base-version: '23.08'
+base-version: '24.08'
 command: codium
 finish-args:
   - --share=ipc
@@ -29,7 +29,7 @@ add-extensions:
   com.visualstudio.code.tool:
     directory: tools
     subdirectories: true
-    version: '23.08'
+    version: '24.08'
     add-ld-path: lib
     no-autodownload: true
 cleanup:
