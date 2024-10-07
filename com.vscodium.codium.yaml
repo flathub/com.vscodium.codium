@@ -79,8 +79,8 @@ modules:
           url-query: '[.assets[] | select(.name|test("codium_.+_amd64.deb$"))][0]
             | .browser_download_url'
       - type: file
-        url: https://github.com/VSCodium/vscodium/releases/download/1.93.1.24256/codium_1.93.1.24256_arm64.deb
-        sha256: 9256f409552c653fd3ffd41d91747c26a1460f464d6e5227f289a39d8b0a6b3e
+        url: https://github.com/VSCodium/vscodium/releases/download/1.94.0.24281/codium_1.94.0.24281_arm64.deb
+        sha256: c6e4a2796ce0c725fd1915cd1c2e55d2ea57459f69051c5a22964de05d202996
         dest-filename: codium.deb
         only-arches:
           - aarch64
