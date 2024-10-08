@@ -48,7 +48,7 @@ modules:
       - tar xf data.tar.xz
         # HACK: Use directory for IPC sockets that is shared between Flatpak instances
         # Replace XDG_RUNTIME_DIR by XDG_RUNTIME_DIR/app/FLATPAK_ID
-      - find usr/share/codium -type f -print0 | xargs -0 sed -i "s/\bjoin([^)]*xdg_\?runtime_\?dir[^,)]*/\0,'app',process.env.FLATPAK_ID/gI"
+      - patch --fuzz=3 usr/share/codium/resources/app/extensions/git/dist/main.js -i main.js.patch
         # fix kde wayland window icons
       - patch --fuzz=3 usr/share/codium/resources/app/package.json -i package.json.patch
       - mv usr/share/codium /app/share
@@ -96,6 +96,8 @@ modules:
         path: assets/icon/code.svg
       - type: file
         path: com.vscodium.codium.metainfo.xml
+      - type: file
+        path: patches/main.js.patch
       - type: file
         path: patches/package.json.patch
       - type: file
