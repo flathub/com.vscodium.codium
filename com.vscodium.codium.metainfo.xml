@@ -10,7 +10,8 @@
   <url type="help">https://github.com/flathub/com.vscodium.codium#readme</url>
   <summary>Telemetry-less code editing</summary>
   <description>
-    <p>VSCodium combines the simplicity of a code editor with what developers need for the core edit-build-debug cycle.</p>
+    <p>VSCodium combines the simplicity of a code editor with what developers need for the core
+      edit-build-debug cycle.</p>
     <p>This is the telemetry-less version of Visual Studio Code, packaged into a Flatpak.</p>
     <p>This repackaging is not supported by Microsoft.</p>
     <p>Note: To use certain features in this flatpak version, please see Readme file.</p>
@@ -21,386 +22,424 @@
   </branding>
   <screenshots>
     <screenshot type="default">
-      <image>https://raw.githubusercontent.com/flathub/com.vscodium.codium/7c2673ec91718b989e60d35b925997c8c9026a79/screenshots/00_reading_markdown.png</image>
+      <image>
+        https://raw.githubusercontent.com/flathub/com.vscodium.codium/7c2673ec91718b989e60d35b925997c8c9026a79/screenshots/00_reading_markdown.png</image>
       <caption>Reading a Markdown file</caption>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/flathub/com.vscodium.codium/7c2673ec91718b989e60d35b925997c8c9026a79/screenshots/01_reading_python_example.png</image>
+      <image>
+        https://raw.githubusercontent.com/flathub/com.vscodium.codium/7c2673ec91718b989e60d35b925997c8c9026a79/screenshots/01_reading_python_example.png</image>
       <caption>Reading a Python example file</caption>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/flathub/com.vscodium.codium/7c2673ec91718b989e60d35b925997c8c9026a79/screenshots/03_editing_rust_file.png</image>
+      <image>
+        https://raw.githubusercontent.com/flathub/com.vscodium.codium/7c2673ec91718b989e60d35b925997c8c9026a79/screenshots/03_editing_rust_file.png</image>
       <caption>Editing a Rust file</caption>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/flathub/com.vscodium.codium/7c2673ec91718b989e60d35b925997c8c9026a79/screenshots/04_reading_python_file.png</image>
+      <image>
+        https://raw.githubusercontent.com/flathub/com.vscodium.codium/7c2673ec91718b989e60d35b925997c8c9026a79/screenshots/04_reading_python_file.png</image>
       <caption>Reading a Python File</caption>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/flathub/com.vscodium.codium/7c2673ec91718b989e60d35b925997c8c9026a79/screenshots/05_searching_for_a_file.png</image>
+      <image>
+        https://raw.githubusercontent.com/flathub/com.vscodium.codium/7c2673ec91718b989e60d35b925997c8c9026a79/screenshots/05_searching_for_a_file.png</image>
       <caption>Serching for a file</caption>
     </screenshot>
   </screenshots>
   <launchable type="desktop-id">com.vscodium.codium.desktop</launchable>
   <content_rating type="oars-1.1" />
   <releases>
-      <release version="1.93.1.24256" date="2024-09-12" urgency="low">
-        <description>
-          <p>What's Changed</p>
-          <ul>
-            <li>update vscode to 1.93.1</li>
-            <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.93.0.24253...1.93.1.24256</li>
-          </ul>
-        </description>
-        <url>https://github.com/VSCodium/vscodium/releases/tag/1.93.1.24256</url>
+    <release version="1.94.0.24281" date="2024-10-07" urgency="low">
+      <description>
+        <p>What's Changed</p>
+        <ul>
+          <li>update vscode to 1.94.0</li>
+          <li>fix: check both arm64 and aarch64 by @Suyun114 in #2041</li>
+          <li>feat(1.94): update patches and build process by @daiyam in #2047</li>
+          <li>Full Changelog:
+            https://github.com/VSCodium/vscodium/compare/1.93.1.24256...1.94.0.24281</li>
+        </ul>
+        <p>New Contributors</p>
+        <ul>
+          <li>@Suyun114 made their first contribution in #2041</li>
+        </ul>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.94.0.24281</url>
     </release>
-      <release version="1.93.0.24253" date="2024-09-09" urgency="low">
-        <description>
-          <p>What's Changed</p>
-          <ul>
-            <li>update vscode to 1.93.0</li>
-            <li>feat: 1.93 by @daiyam in #2022</li>
-            <li>fix(1.93): update linux build by @daiyam in #2023</li>
-            <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.92.2.24228...1.93.0.24253</li>
-          </ul>
-        </description>
-        <url>https://github.com/VSCodium/vscodium/releases/tag/1.93.0.24253</url>
+    <release version="1.93.1.24256" date="2024-09-12" urgency="low">
+      <description>
+        <p>What's Changed</p>
+        <ul>
+          <li>update vscode to 1.93.1</li>
+          <li>Full Changelog:
+            https://github.com/VSCodium/vscodium/compare/1.93.0.24253...1.93.1.24256</li>
+        </ul>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.93.1.24256</url>
     </release>
-      <release version="1.92.2.24228" date="2024-08-15" urgency="low">
-        <description>
-          <p>What's Changed</p>
-          <ul>
-            <li>update vscode to 1.92.2</li>
-            <li>Bump winget-releaser to latest by @vedantmgoyal9 in #1990</li>
-            <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.92.1.24225...1.92.2.24228</li>
-          </ul>
-        </description>
-        <url>https://github.com/VSCodium/vscodium/releases/tag/1.92.2.24228</url>
+    <release version="1.93.0.24253" date="2024-09-09" urgency="low">
+      <description>
+        <p>What's Changed</p>
+        <ul>
+          <li>update vscode to 1.93.0</li>
+          <li>feat: 1.93 by @daiyam in #2022</li>
+          <li>fix(1.93): update linux build by @daiyam in #2023</li>
+          <li>Full Changelog:
+            https://github.com/VSCodium/vscodium/compare/1.92.2.24228...1.93.0.24253</li>
+        </ul>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.93.0.24253</url>
     </release>
-      <release version="1.92.1.24225" date="2024-08-12" urgency="low">
-        <description>
-          <p>What's Changed</p>
-          <ul>
-            <li>update vscode to 1.92.1</li>
-            <li>build(riscv): Check electron version and bump to 29.4.0.riscv3 by @kxxt in #1965</li>
-            <li>feat: prepare for 1.92 by @daiyam in #1970</li>
-            <li>feat: prepare 1.92 by @daiyam in #1986</li>
-            <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.91.1.24193...1.92.1.24225</li>
-          </ul>
-        </description>
-        <url>https://github.com/VSCodium/vscodium/releases/tag/1.92.1.24225</url>
+    <release version="1.92.2.24228" date="2024-08-15" urgency="low">
+      <description>
+        <p>What's Changed</p>
+        <ul>
+          <li>update vscode to 1.92.2</li>
+          <li>Bump winget-releaser to latest by @vedantmgoyal9 in #1990</li>
+          <li>Full Changelog:
+            https://github.com/VSCodium/vscodium/compare/1.92.1.24225...1.92.2.24228</li>
+        </ul>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.92.2.24228</url>
+    </release>
+    <release version="1.92.1.24225" date="2024-08-12" urgency="low">
+      <description>
+        <p>What's Changed</p>
+        <ul>
+          <li>update vscode to 1.92.1</li>
+          <li>build(riscv): Check electron version and bump to 29.4.0.riscv3 by @kxxt in #1965</li>
+          <li>feat: prepare for 1.92 by @daiyam in #1970</li>
+          <li>feat: prepare 1.92 by @daiyam in #1986</li>
+          <li>Full Changelog:
+            https://github.com/VSCodium/vscodium/compare/1.91.1.24193...1.92.1.24225</li>
+        </ul>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.92.1.24225</url>
     </release>
     <release version="1.91.1.24193" date="2024-07-11" urgency="low">
-        <description>
-          <p>What's Changed</p>
-          <ul>
-            <li>update vscode to 1.91.1</li>
-            <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.91.0.24190...1.91.1.24193</li>
-          </ul>
-        </description>
-        <url>https://github.com/VSCodium/vscodium/releases/tag/1.91.1.24193</url>
+      <description>
+        <p>What's Changed</p>
+        <ul>
+          <li>update vscode to 1.91.1</li>
+          <li>Full Changelog:
+            https://github.com/VSCodium/vscodium/compare/1.91.0.24190...1.91.1.24193</li>
+        </ul>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.91.1.24193</url>
     </release>
     <release version="1.91.0.24190" date="2024-07-08" urgency="low">
-        <description>
-          <p>What's Changed</p>
-          <ul>
-            <li>update vscode to 1.91.0</li>
-            <li>feat: update to 1.91.0 by @daiyam in #1950</li>
-            <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.90.2.24171...1.91.0.24190</li>
-          </ul>
-        </description>
-        <url>https://github.com/VSCodium/vscodium/releases/tag/1.91.0.24190</url>
+      <description>
+        <p>What's Changed</p>
+        <ul>
+          <li>update vscode to 1.91.0</li>
+          <li>feat: update to 1.91.0 by @daiyam in #1950</li>
+          <li>Full Changelog:
+            https://github.com/VSCodium/vscodium/compare/1.90.2.24171...1.91.0.24190</li>
+        </ul>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.91.0.24190</url>
     </release>
     <release version="1.90.2.24171" date="2024-06-19" urgency="low">
-        <description>
-          <p>What's Changed</p>
-          <ul>
-            <li>update vscode to 1.90.2</li>
-            <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.90.1.24165...1.90.2.24171</li>
-          </ul>
-        </description>
-        <url>https://github.com/VSCodium/vscodium/releases/tag/1.90.2.24171</url>
+      <description>
+        <p>What's Changed</p>
+        <ul>
+          <li>update vscode to 1.90.2</li>
+          <li>Full Changelog:
+            https://github.com/VSCodium/vscodium/compare/1.90.1.24165...1.90.2.24171</li>
+        </ul>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.90.2.24171</url>
     </release>
     <release version="1.90.1.24165" date="2024-06-13" urgency="low">
-        <description>
-          <p>What's Changed</p>
-          <ul>
-            <li>Changes needed to enable PPC64LE UI build by @lex-ibm in #1923</li>
-            <li>Add experimental riscv64 builds by @kxxt in #1922</li>
-            <li>Add Github Enterprise support by @lex-ibm in #1926</li>
-            <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.90.0.24158...1.90.1.24165</li>
-          </ul>
-        </description>
-        <url>https://github.com/VSCodium/vscodium/releases/tag/1.90.1.24165</url>
+      <description>
+        <p>What's Changed</p>
+        <ul>
+          <li>Changes needed to enable PPC64LE UI build by @lex-ibm in #1923</li>
+          <li>Add experimental riscv64 builds by @kxxt in #1922</li>
+          <li>Add Github Enterprise support by @lex-ibm in #1926</li>
+          <li>Full Changelog:
+            https://github.com/VSCodium/vscodium/compare/1.90.0.24158...1.90.1.24165</li>
+        </ul>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.90.1.24165</url>
     </release>
     <release version="1.90.0.24158" date="2024-06-06" urgency="low">
-        <description>
-          <p>What's Changed</p>
-          <ul>
-            <li>feat(1.90): update patches by @daiyam in #1864</li>
-            <li>fix: disable signature verification by @daiyam in #1915</li>
-            <li>build(linux): make it build by @daiyam in #1916</li>
-            <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.89.1.24130...1.90.0.24158</li>
-          </ul>
-        </description>
-        <url>https://github.com/VSCodium/vscodium/releases/tag/1.90.0.24158</url>
+      <description>
+        <p>What's Changed</p>
+        <ul>
+          <li>feat(1.90): update patches by @daiyam in #1864</li>
+          <li>fix: disable signature verification by @daiyam in #1915</li>
+          <li>build(linux): make it build by @daiyam in #1916</li>
+          <li>Full Changelog:
+            https://github.com/VSCodium/vscodium/compare/1.89.1.24130...1.90.0.24158</li>
+        </ul>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.90.0.24158</url>
     </release>
     <release version="1.89.1.24130" date="2024-05-09" urgency="low">
-        <description>
-          <p>What's Changed</p>
-          <ul>
-            <li>update vscode to 1.89.1</li>
-            <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.89.0.24127...1.89.1.24130</li>
-          </ul>
-        </description>
-        <url>https://github.com/VSCodium/vscodium/releases/tag/1.89.1.24130</url>
+      <description>
+        <p>What's Changed</p>
+        <ul>
+          <li>update vscode to 1.89.1</li>
+          <li>Full Changelog:
+            https://github.com/VSCodium/vscodium/compare/1.89.0.24127...1.89.1.24130</li>
+        </ul>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.89.1.24130</url>
     </release>
     <release version="1.89.0.24127" date="2024-05-06" urgency="low">
-        <description>
-          <p>What's Changed</p>
-          <ul>
-            <li>Remove deprecated "unity-launch" flag from Linux desktop files by @xalt7x in #1866</li>
-            <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.89.0.24126...1.89.0.24127</li>
-          </ul>
-          <p>New Contributors</p>
-          <ul>
-            <li>@xalt7x made their first contribution in #1866</li>
-          </ul>
-        </description>
-        <url>https://github.com/VSCodium/vscodium/releases/tag/1.89.0.24127</url>
+      <description>
+        <p>What's Changed</p>
+        <ul>
+          <li>Remove deprecated "unity-launch" flag from Linux desktop files by @xalt7x in #1866</li>
+          <li>Full Changelog:
+            https://github.com/VSCodium/vscodium/compare/1.89.0.24126...1.89.0.24127</li>
+        </ul>
+        <p>New Contributors</p>
+        <ul>
+          <li>@xalt7x made their first contribution in #1866</li>
+        </ul>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.89.0.24127</url>
     </release>
     <release version="1.89.0.24126" date="2024-05-05" urgency="low">
-        <description>
-          <p>What's Changed</p>
-          <ul>
-            <li>Use sysroot for PPC64LE by @lex-ibm in #1857</li>
-            <li>feat(1.89): update patches by @daiyam in #1863</li>
-            <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.88.1.24104...1.89.0.24126</li>
-          </ul>
-        </description>
-        <url>https://github.com/VSCodium/vscodium/releases/tag/1.89.0.24126</url>
+      <description>
+        <p>What's Changed</p>
+        <ul>
+          <li>Use sysroot for PPC64LE by @lex-ibm in #1857</li>
+          <li>feat(1.89): update patches by @daiyam in #1863</li>
+          <li>Full Changelog:
+            https://github.com/VSCodium/vscodium/compare/1.88.1.24104...1.89.0.24126</li>
+        </ul>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.89.0.24126</url>
     </release>
     <release version="1.88.1.24104" date="2024-04-12" urgency="low">
-        <description>
-          <p>What's Changed</p>
-          <ul>
-            <li>feat: add linux riscv64 reh build and fix some ppc64 stuff BTW by @kxxt in #1851</li>
-            <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.88.1.24102...1.88.1.24104</li>
-          </ul>
-          <p>New Contributors</p>
-          <ul>
-            <li>@kxxt made their first contribution in #1851</li>
-          </ul>
-        </description>
-        <url>https://github.com/VSCodium/vscodium/releases/tag/1.88.1.24104</url>
+      <description>
+        <p>What's Changed</p>
+        <ul>
+          <li>feat: add linux riscv64 reh build and fix some ppc64 stuff BTW by @kxxt in #1851</li>
+          <li>Full Changelog:
+            https://github.com/VSCodium/vscodium/compare/1.88.1.24102...1.88.1.24104</li>
+        </ul>
+        <p>New Contributors</p>
+        <ul>
+          <li>@kxxt made their first contribution in #1851</li>
+        </ul>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.88.1.24104</url>
     </release>
     <release version="1.88.1.24102" date="2024-04-11" urgency="low">
-        <description>
-          <p>What's Changed</p>
-          <ul>
-            <li>update vscode to 1.88.1</li>
-            <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.88.0.24096...1.88.1.24102</li>
-          </ul>
-        </description>
-        <url>https://github.com/VSCodium/vscodium/releases/tag/1.88.1.24102</url>
+      <description>
+        <p>What's Changed</p>
+        <ul>
+          <li>update vscode to 1.88.1</li>
+          <li>Full Changelog:
+            https://github.com/VSCodium/vscodium/compare/1.88.0.24096...1.88.1.24102</li>
+        </ul>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.88.1.24102</url>
     </release>
     <release version="1.88.0.24096" date="2024-04-05" urgency="low">
-        <description>
-          <p>What's Changed</p>
-          <ul>
-            <li>update vscode to 1.88.0</li>
-            <li>feat(1.88): update patches by @daiyam in #1839</li>
-            <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.87.2.24072...1.88.0.24096</li>
-          </ul>
-        </description>
-        <url>https://github.com/VSCodium/vscodium/releases/tag/1.88.0.24096</url>
+      <description>
+        <p>What's Changed</p>
+        <ul>
+          <li>update vscode to 1.88.0</li>
+          <li>feat(1.88): update patches by @daiyam in #1839</li>
+          <li>Full Changelog:
+            https://github.com/VSCodium/vscodium/compare/1.87.2.24072...1.88.0.24096</li>
+        </ul>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.88.0.24096</url>
     </release>
     <release version="1.87.2.24072" date="2024-03-12" urgency="low">
-        <description>
-          <p>What's Changed</p>
-          <ul>
-            <li>update vscode to 1.87.2</li>
-          </ul>
-        </description>
-        <url>https://github.com/VSCodium/vscodium/releases/tag/1.87.2.24072</url>
+      <description>
+        <p>What's Changed</p>
+        <ul>
+          <li>update vscode to 1.87.2</li>
+        </ul>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.87.2.24072</url>
     </release>
     <release version="1.87.1.24068" date="2024-03-08" urgency="low">
-        <description>
-          <p>What's Changed</p>
-          <ul>
-            <li>update vscode to 1.87.1</li>
-            <li>[i18n] Windows Installer - Fix minor "contect" typo by @rnayabed in #1824</li>
-            <li>🍱 Add scalable icon for linux by @noonsleeper in #1818</li>
-          </ul>
-          <p>New Contributors</p>
-          <ul>
-            <li>@rnayabed made their first contribution in #1824</li>
-          </ul>
-        </description>
-        <url>https://github.com/VSCodium/vscodium/releases/tag/1.87.1.24068</url>
+      <description>
+        <p>What's Changed</p>
+        <ul>
+          <li>update vscode to 1.87.1</li>
+          <li>[i18n] Windows Installer - Fix minor "contect" typo by @rnayabed in #1824</li>
+          <li>🍱 Add scalable icon for linux by @noonsleeper in #1818</li>
+        </ul>
+        <p>New Contributors</p>
+        <ul>
+          <li>@rnayabed made their first contribution in #1824</li>
+        </ul>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.87.1.24068</url>
     </release>
     <release version="1.87.0.24060" date="2024-02-29" urgency="low">
-        <description>
-            <p>update vscode to 1.87.0</p>
-        </description>
-        <url>https://github.com/VSCodium/vscodium/releases/tag/1.87.0.24060</url>
+      <description>
+        <p>update vscode to 1.87.0</p>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.87.0.24060</url>
     </release>
     <release version="1.86.2.24057" date="2024-02-25" urgency="low">
-        <description>
-            <p>Fix: manual compilation (used by AUR)</p>
-            <p>Full Changelog: 1.86.2.24054...1.86.2.24057</p>
-        </description>
-        <url>https://github.com/VSCodium/vscodium/releases/tag/1.86.2.24057</url>
+      <description>
+        <p>Fix: manual compilation (used by AUR)</p>
+        <p>Full Changelog: 1.86.2.24054...1.86.2.24057</p>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.86.2.24057</url>
     </release>
     <release version="1.86.2.24054" date="2024-02-22" urgency="low">
-        <description>
-            <p>update vscode to 1.86.2</p>
-            <p>What's Changed</p>
-            <p>📝 Add flatpak common problems fixes to troubleshooting.md by @noonsleeper in #1811</p>
-            <p>New Contributors</p>
-            <p>@noonsleeper made their first contribution in #1811</p>
-        </description>
-        <url>https://github.com/VSCodium/vscodium/releases/tag/1.86.2.24054</url>
+      <description>
+        <p>update vscode to 1.86.2</p>
+        <p>What's Changed</p>
+        <p>📝 Add flatpak common problems fixes to troubleshooting.md by @noonsleeper in #1811</p>
+        <p>New Contributors</p>
+        <p>@noonsleeper made their first contribution in #1811</p>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.86.2.24054</url>
     </release>
     <release version="1.86.2.24053" date="2024-02-22" urgency="low">
-        <description>
-            <p>update vscode to 1.86.2</p>
-            <p>This version still supports Centos-7 and Ubuntu-18 for its REH version and Client (IDE) version.</p>
-            <p>But it shouldn't run on macOS 10.13 or 10.14.</p>
-            <p>What's Changed</p>
-            <p>build(deps): bump peter-evans/repository-dispatch from 2 to 3 by @dependabot in #1794</p>
-            <p>feat: preparing for 1.86 by @daiyam in #1802</p>
-        </description>
-        <url>https://github.com/VSCodium/vscodium/releases/tag/1.86.2.24053</url>
+      <description>
+        <p>update vscode to 1.86.2</p>
+        <p>This version still supports Centos-7 and Ubuntu-18 for its REH version and Client (IDE)
+          version.</p>
+        <p>But it shouldn't run on macOS 10.13 or 10.14.</p>
+        <p>What's Changed</p>
+        <p>build(deps): bump peter-evans/repository-dispatch from 2 to 3 by @dependabot in #1794</p>
+        <p>feat: preparing for 1.86 by @daiyam in #1802</p>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.86.2.24053</url>
     </release>
     <release version="1.85.2.24019" date="2024-01-19" urgency="high">
-        <description>
-            <p>Backport fixes for CVE-2024-0519</p>
-        </description>
-        <url>https://github.com/VSCodium/vscodium/releases/tag/1.85.2.24019</url>
+      <description>
+        <p>Backport fixes for CVE-2024-0519</p>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.85.2.24019</url>
     </release>
-    <release version="1.85.1.23348" date="2023-12-14"/>
-    <release version="1.85.0.23343" date="2023-12-09"/>
-    <release version="1.84.2.23319" date="2023-11-15"/>
-    <release version="1.84.2.23317" date="2023-11-13"/>
-    <release version="1.84.2.23314" date="2023-11-10"/>
-    <release version="1.84.1.23311" date="2023-11-07"/>
-    <release version="1.84.0.23306" date="2023-11-02"/>
-    <release version="1.83.1.23285" date="2023-10-12"/>
-    <release version="1.83.0.23283" date="2023-10-10"/>
-    <release version="1.83.0.23277" date="2023-10-04"/>
-    <release version="1.82.3.23277" date="2023-10-04"/>
-    <release version="1.82.2.23257" date="2023-09-14"/>
-    <release version="1.82.1.23255" date="2023-09-13"/>
-    <release version="1.82.0.23250" date="2023-09-07"/>
-    <release version="1.81.1.23222" date="2023-08-10"/>
-    <release version="1.81.0.23216" date="2023-08-04"/>
-    <release version="1.80.2.23209" date="2023-07-28"/>
-    <release version="1.80.1.23208" date="2023-07-27"/>
-    <release version="1.80.1.23194" date="2023-07-13"/>
-    <release version="1.80.0.23188" date="2023-07-07"/>
-    <release version="1.79.2.23166" date="2023-06-15"/>
-    <release version="1.79.1.23164" date="2023-06-13"/>
-    <release version="1.79.0.23159" date="2023-06-08"/>
-    <release version="1.78.2.23132" date="2023-05-12"/>
-    <release version="1.78.1.23131" date="2023-05-11"/>
-    <release version="1.78.1.23130" date="2023-05-10"/>
-    <release version="1.77.3.23102" date="2023-04-12"/>
-    <release version="1.77.2.23101" date="2023-04-11"/>
-    <release version="1.77.1.23095" date="2023-04-05"/>
-    <release version="1.77.0.23095" date="2023-04-05"/>
-    <release version="1.77.0.23093" date="2023-04-03"/>
-    <release version="1.76.2.23074" date="2023-03-15"/>
-    <release version="1.76.1.23069" date="2023-03-10"/>
-    <release version="1.76.0.23062" date="2023-03-03"/>
-    <release version="1.75.1.23040" date="2023-02-09"/>
-    <release version="1.75.0.23033" date="2023-02-02"/>
-    <release version="1.74.3.23010" date="2023-01-10"/>
-    <release version="1.74.2.23007" date="2023-01-07"/>
-    <release version="1.74.2.22355" date="2022-12-21"/>
-    <release version="1.74.1.22349" date="2022-12-15"/>
-    <release version="1.74.0.22342" date="2022-12-08"/>
-    <release version="1.73.1.22314" date="2022-11-10"/>
-    <release version="1.73.0.22306" date="2022-11-02"/>
-    <release version="1.72.2.22289" date="2022-10-16"/>
-    <release version="1.72.2.22286" date="2022-10-13"/>
-    <release version="1.72.1.22284" date="2022-10-11"/>
-    <release version="1.72.0.22279" date="2022-10-06"/>
-    <release version="1.71.2.22258" date="2022-09-15"/>
-    <release version="1.71.1.22256" date="2022-09-13"/>
-    <release version="1.70.2.22230" date="2022-08-17"/>
-    <release version="1.70.1.22229" date="2022-08-17"/>
-    <release version="1.70.1.22228" date="2022-08-16"/>
-    <release version="1.70.1" date="2022-08-10"/>
-    <release version="1.70.0" date="2022-08-04"/>
-    <release version="1.69.2" date="2022-07-18"/>
-    <release version="1.69.1" date="2022-07-12"/>
-    <release version="1.69.0" date="2022-07-07"/>
-    <release version="1.68.1" date="2022-06-15"/>
-    <release version="1.68.0" date="2022-06-09"/>
-    <release version="1.67.2" date="2022-05-18"/>
-    <release version="1.67.1" date="2022-05-10"/>
-    <release version="1.67.0" date="2022-05-07"/>
-    <release version="1.66.2" date="2022-04-12"/>
-    <release version="1.66.1" date="2022-04-07"/>
-    <release version="1.66.0" date="2022-03-31"/>
-    <release version="1.65.2" date="2022-03-10"/>
-    <release version="1.65.1" date="2022-03-08"/>
-    <release version="1.65.0" date="2022-03-04"/>
-    <release version="1.64.2" date="2022-02-10"/>
-    <release version="1.64.1" date="2022-02-08"/>
-    <release version="1.64.0" date="2022-02-03"/>
-    <release version="1.63.2" date="2021-12-16"/>
-    <release version="1.63.1" date="2021-12-14"/>
-    <release version="1.63.0" date="2021-12-08"/>
-    <release version="1.62.3" date="2021-11-18"/>
-    <release version="1.62.2" date="2021-11-11"/>
-    <release version="1.62.1" date="2021-11-09"/>
-    <release version="1.62.0" date="2021-11-06"/>
-    <release version="1.61.2" date="2021-10-19"/>
-    <release version="1.61.1" date="2021-10-14"/>
-    <release version="1.61.0" date="2021-10-08"/>
-    <release version="1.60.2" date="2021-09-23"/>
-    <release version="1.60.1" date="2021-09-14"/>
-    <release version="1.60.0" date="2021-09-06"/>
-    <release version="1.59.1" date="2021-08-20"/>
-    <release version="1.59.0" date="2021-08-06"/>
-    <release version="1.58.2" date="2021-07-15"/>
-    <release version="1.58.1" date="2021-07-13"/>
-    <release version="1.58.0" date="2021-07-10"/>
-    <release version="1.57.1" date="2021-06-17"/>
-    <release version="1.57.0" date="2021-06-13"/>
-    <release version="1.56.2" date="2021-05-13"/>
-    <release version="1.56.1" date="2021-05-11"/>
-    <release version="1.56.0" date="2021-05-09"/>
-    <release version="1.55.2" date="2021-04-13"/>
-    <release version="1.55.1" date="2021-04-08"/>
-    <release version="1.55.0" date="2021-04-01"/>
-    <release version="1.54.3" date="2021-03-15"/>
-    <release version="1.54.2" date="2021-03-12"/>
-    <release version="1.53.2" date="2021-02-11"/>
-    <release version="1.52.1" date="2020-12-16"/>
-    <release version="1.52.0" date="2020-12-11"/>
-    <release version="1.51.1" date="2020-11-11"/>
-    <release version="1.51.0" date="2020-11-06"/>
-    <release version="1.50.1" date="2020-10-15"/>
-    <release version="1.50.0" date="2020-10-08"/>
-    <release version="1.49.3" date="2020-10-02"/>
-    <release version="1.49.2" date="2020-09-24"/>
-    <release version="1.49.1" date="2020-09-18"/>
-    <release version="1.49.0" date="2020-09-10"/>
-    <release version="1.48.2" date="2020-08-26"/>
-    <release version="1.48.1" date="2020-08-21"/>
-    <release version="1.48.0" date="2020-08-13"/>
-    <release version="1.47.3" date="2020-07-28"/>
-    <release version="1.47.2" date="2020-07-17"/>
-    <release version="1.47.1" date="2020-07-15"/>
-    <release version="1.47.0" date="2020-07-09"/>
-    <release version="1.46.1" date="2020-06-20"/>
-    <release version="1.46.0" date="2020-06-14"/>
-    <release version="1.45.1" date="2020-05-16"/>
-    <release version="1.45.0" date="2020-05-09"/>
-    <release version="1.44.2" date="2020-04-25"/>
-    <release version="1.43.2" date="2020-03-31"/>
+    <release version="1.85.1.23348" date="2023-12-14" />
+    <release version="1.85.0.23343" date="2023-12-09" />
+    <release version="1.84.2.23319" date="2023-11-15" />
+    <release version="1.84.2.23317" date="2023-11-13" />
+    <release version="1.84.2.23314" date="2023-11-10" />
+    <release version="1.84.1.23311" date="2023-11-07" />
+    <release version="1.84.0.23306" date="2023-11-02" />
+    <release version="1.83.1.23285" date="2023-10-12" />
+    <release version="1.83.0.23283" date="2023-10-10" />
+    <release version="1.83.0.23277" date="2023-10-04" />
+    <release version="1.82.3.23277" date="2023-10-04" />
+    <release version="1.82.2.23257" date="2023-09-14" />
+    <release version="1.82.1.23255" date="2023-09-13" />
+    <release version="1.82.0.23250" date="2023-09-07" />
+    <release version="1.81.1.23222" date="2023-08-10" />
+    <release version="1.81.0.23216" date="2023-08-04" />
+    <release version="1.80.2.23209" date="2023-07-28" />
+    <release version="1.80.1.23208" date="2023-07-27" />
+    <release version="1.80.1.23194" date="2023-07-13" />
+    <release version="1.80.0.23188" date="2023-07-07" />
+    <release version="1.79.2.23166" date="2023-06-15" />
+    <release version="1.79.1.23164" date="2023-06-13" />
+    <release version="1.79.0.23159" date="2023-06-08" />
+    <release version="1.78.2.23132" date="2023-05-12" />
+    <release version="1.78.1.23131" date="2023-05-11" />
+    <release version="1.78.1.23130" date="2023-05-10" />
+    <release version="1.77.3.23102" date="2023-04-12" />
+    <release version="1.77.2.23101" date="2023-04-11" />
+    <release version="1.77.1.23095" date="2023-04-05" />
+    <release version="1.77.0.23095" date="2023-04-05" />
+    <release version="1.77.0.23093" date="2023-04-03" />
+    <release version="1.76.2.23074" date="2023-03-15" />
+    <release version="1.76.1.23069" date="2023-03-10" />
+    <release version="1.76.0.23062" date="2023-03-03" />
+    <release version="1.75.1.23040" date="2023-02-09" />
+    <release version="1.75.0.23033" date="2023-02-02" />
+    <release version="1.74.3.23010" date="2023-01-10" />
+    <release version="1.74.2.23007" date="2023-01-07" />
+    <release version="1.74.2.22355" date="2022-12-21" />
+    <release version="1.74.1.22349" date="2022-12-15" />
+    <release version="1.74.0.22342" date="2022-12-08" />
+    <release version="1.73.1.22314" date="2022-11-10" />
+    <release version="1.73.0.22306" date="2022-11-02" />
+    <release version="1.72.2.22289" date="2022-10-16" />
+    <release version="1.72.2.22286" date="2022-10-13" />
+    <release version="1.72.1.22284" date="2022-10-11" />
+    <release version="1.72.0.22279" date="2022-10-06" />
+    <release version="1.71.2.22258" date="2022-09-15" />
+    <release version="1.71.1.22256" date="2022-09-13" />
+    <release version="1.70.2.22230" date="2022-08-17" />
+    <release version="1.70.1.22229" date="2022-08-17" />
+    <release version="1.70.1.22228" date="2022-08-16" />
+    <release version="1.70.1" date="2022-08-10" />
+    <release version="1.70.0" date="2022-08-04" />
+    <release version="1.69.2" date="2022-07-18" />
+    <release version="1.69.1" date="2022-07-12" />
+    <release version="1.69.0" date="2022-07-07" />
+    <release version="1.68.1" date="2022-06-15" />
+    <release version="1.68.0" date="2022-06-09" />
+    <release version="1.67.2" date="2022-05-18" />
+    <release version="1.67.1" date="2022-05-10" />
+    <release version="1.67.0" date="2022-05-07" />
+    <release version="1.66.2" date="2022-04-12" />
+    <release version="1.66.1" date="2022-04-07" />
+    <release version="1.66.0" date="2022-03-31" />
+    <release version="1.65.2" date="2022-03-10" />
+    <release version="1.65.1" date="2022-03-08" />
+    <release version="1.65.0" date="2022-03-04" />
+    <release version="1.64.2" date="2022-02-10" />
+    <release version="1.64.1" date="2022-02-08" />
+    <release version="1.64.0" date="2022-02-03" />
+    <release version="1.63.2" date="2021-12-16" />
+    <release version="1.63.1" date="2021-12-14" />
+    <release version="1.63.0" date="2021-12-08" />
+    <release version="1.62.3" date="2021-11-18" />
+    <release version="1.62.2" date="2021-11-11" />
+    <release version="1.62.1" date="2021-11-09" />
+    <release version="1.62.0" date="2021-11-06" />
+    <release version="1.61.2" date="2021-10-19" />
+    <release version="1.61.1" date="2021-10-14" />
+    <release version="1.61.0" date="2021-10-08" />
+    <release version="1.60.2" date="2021-09-23" />
+    <release version="1.60.1" date="2021-09-14" />
+    <release version="1.60.0" date="2021-09-06" />
+    <release version="1.59.1" date="2021-08-20" />
+    <release version="1.59.0" date="2021-08-06" />
+    <release version="1.58.2" date="2021-07-15" />
+    <release version="1.58.1" date="2021-07-13" />
+    <release version="1.58.0" date="2021-07-10" />
+    <release version="1.57.1" date="2021-06-17" />
+    <release version="1.57.0" date="2021-06-13" />
+    <release version="1.56.2" date="2021-05-13" />
+    <release version="1.56.1" date="2021-05-11" />
+    <release version="1.56.0" date="2021-05-09" />
+    <release version="1.55.2" date="2021-04-13" />
+    <release version="1.55.1" date="2021-04-08" />
+    <release version="1.55.0" date="2021-04-01" />
+    <release version="1.54.3" date="2021-03-15" />
+    <release version="1.54.2" date="2021-03-12" />
+    <release version="1.53.2" date="2021-02-11" />
+    <release version="1.52.1" date="2020-12-16" />
+    <release version="1.52.0" date="2020-12-11" />
+    <release version="1.51.1" date="2020-11-11" />
+    <release version="1.51.0" date="2020-11-06" />
+    <release version="1.50.1" date="2020-10-15" />
+    <release version="1.50.0" date="2020-10-08" />
+    <release version="1.49.3" date="2020-10-02" />
+    <release version="1.49.2" date="2020-09-24" />
+    <release version="1.49.1" date="2020-09-18" />
+    <release version="1.49.0" date="2020-09-10" />
+    <release version="1.48.2" date="2020-08-26" />
+    <release version="1.48.1" date="2020-08-21" />
+    <release version="1.48.0" date="2020-08-13" />
+    <release version="1.47.3" date="2020-07-28" />
+    <release version="1.47.2" date="2020-07-17" />
+    <release version="1.47.1" date="2020-07-15" />
+    <release version="1.47.0" date="2020-07-09" />
+    <release version="1.46.1" date="2020-06-20" />
+    <release version="1.46.0" date="2020-06-14" />
+    <release version="1.45.1" date="2020-05-16" />
+    <release version="1.45.0" date="2020-05-09" />
+    <release version="1.44.2" date="2020-04-25" />
+    <release version="1.43.2" date="2020-03-31" />
   </releases>
 </component>

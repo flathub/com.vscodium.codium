@@ -48,7 +48,7 @@ modules:
       - tar xf data.tar.xz
         # HACK: Use directory for IPC sockets that is shared between Flatpak instances
         # Replace XDG_RUNTIME_DIR by XDG_RUNTIME_DIR/app/FLATPAK_ID
-      - find usr/share/codium -type f -print0 | xargs -0 sed -i "s/\bjoin([^)]*xdg_\?runtime_\?dir[^,)]*/\0,'app',process.env.FLATPAK_ID/gI"
+      - patch --fuzz=3 usr/share/codium/resources/app/extensions/git/dist/main.js -i main.js.patch
         # fix kde wayland window icons
       - patch --fuzz=3 usr/share/codium/resources/app/package.json -i package.json.patch
       - mv usr/share/codium /app/share
@@ -65,8 +65,8 @@ modules:
       - mkdir /app/tools
     sources:
       - type: file
-        url: https://github.com/VSCodium/vscodium/releases/download/1.93.1.24256/codium_1.93.1.24256_amd64.deb
-        sha256: 477da5d0ac439f8acb836c90b276c02c2f5d275aa57397c414c9dce82036dee7
+        url: https://github.com/VSCodium/vscodium/releases/download/1.94.0.24281/codium_1.94.0.24281_amd64.deb
+        sha256: 4ab4af2cde899ac7fc52d7f0372abeacc7fa6808d093312bcec1ec8e7fff6d99
         dest-filename: codium.deb
         only-arches:
           - x86_64
@@ -79,8 +79,8 @@ modules:
           url-query: '[.assets[] | select(.name|test("codium_.+_amd64.deb$"))][0]
             | .browser_download_url'
       - type: file
-        url: https://github.com/VSCodium/vscodium/releases/download/1.93.1.24256/codium_1.93.1.24256_arm64.deb
-        sha256: 9256f409552c653fd3ffd41d91747c26a1460f464d6e5227f289a39d8b0a6b3e
+        url: https://github.com/VSCodium/vscodium/releases/download/1.94.0.24281/codium_1.94.0.24281_arm64.deb
+        sha256: c6e4a2796ce0c725fd1915cd1c2e55d2ea57459f69051c5a22964de05d202996
         dest-filename: codium.deb
         only-arches:
           - aarch64
@@ -96,6 +96,8 @@ modules:
         path: assets/icon/code.svg
       - type: file
         path: com.vscodium.codium.metainfo.xml
+      - type: file
+        path: patches/main.js.patch
       - type: file
         path: patches/package.json.patch
       - type: file
