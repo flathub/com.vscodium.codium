@@ -50,6 +50,19 @@
   <launchable type="desktop-id">com.vscodium.codium.desktop</launchable>
   <content_rating type="oars-1.1" />
   <releases>
+    <release version="1.94.0.24282" date="2024-10-08" urgency="low">
+      <description>
+        <p>What's Changed</p>
+        <ul>
+          <li>update vscode to 1.94.0</li>
+          <li>build: correctly build pr to generate assets by @daiyam in #2051</li>
+          <li>fix: remove unnecessary hook for reh by @daiyam in #2050</li>
+          <li>Full Changelog:
+            https://github.com/VSCodium/vscodium/compare/1.94.0.24281...1.94.0.24282</li>
+        </ul>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.94.0.24282</url>
+    </release>
     <release version="1.94.0.24281" date="2024-10-07" urgency="low">
       <description>
         <p>What's Changed</p>
