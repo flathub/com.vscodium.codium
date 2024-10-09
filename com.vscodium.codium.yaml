@@ -48,7 +48,8 @@ modules:
       - tar xf data.tar.xz
         # HACK: Use directory for IPC sockets that is shared between Flatpak instances
         # Replace XDG_RUNTIME_DIR by XDG_RUNTIME_DIR/app/FLATPAK_ID
-      - patch --fuzz=3 usr/share/codium/resources/app/extensions/git/dist/main.js -i main.js.patch
+      - patch --fuzz=3 usr/share/codium/resources/app/extensions/git/dist/main.js
+        -i main.js.patch
         # fix kde wayland window icons
       - patch --fuzz=3 usr/share/codium/resources/app/package.json -i package.json.patch
       - mv usr/share/codium /app/share
@@ -65,8 +66,8 @@ modules:
       - mkdir /app/tools
     sources:
       - type: file
-        url: https://github.com/VSCodium/vscodium/releases/download/1.94.0.24281/codium_1.94.0.24281_amd64.deb
-        sha256: 4ab4af2cde899ac7fc52d7f0372abeacc7fa6808d093312bcec1ec8e7fff6d99
+        url: https://github.com/VSCodium/vscodium/releases/download/1.94.0.24282/codium_1.94.0.24282_amd64.deb
+        sha256: d3a70eaaea89a0c7783630051f08b057015696deedea761cc6fc40a502f94c13
         dest-filename: codium.deb
         only-arches:
           - x86_64
@@ -79,8 +80,8 @@ modules:
           url-query: '[.assets[] | select(.name|test("codium_.+_amd64.deb$"))][0]
             | .browser_download_url'
       - type: file
-        url: https://github.com/VSCodium/vscodium/releases/download/1.94.0.24281/codium_1.94.0.24281_arm64.deb
-        sha256: c6e4a2796ce0c725fd1915cd1c2e55d2ea57459f69051c5a22964de05d202996
+        url: https://github.com/VSCodium/vscodium/releases/download/1.94.0.24282/codium_1.94.0.24282_arm64.deb
+        sha256: 682b257c6a70fa29d11359f5e90809c6a9d789257d953594b048232b446138b1
         dest-filename: codium.deb
         only-arches:
           - aarch64
