@@ -50,6 +50,23 @@
   <launchable type="desktop-id">com.vscodium.codium.desktop</launchable>
   <content_rating type="oars-1.1" />
   <releases>
+    <release version="1.94.1.24283" date="2024-10-09" urgency="low">
+      <description>
+        <p>What's Changed</p>
+        <ul>
+          <li>update vscode to 1.94.1</li>
+          <li>add basedpyright to alternative extensions list by @DetachHead in #1833</li>
+          <li>feat(1.94.1): manually set correct commit id by @daiyam in #2054</li>
+          <li>Full Changelog:
+            https://github.com/VSCodium/vscodium/compare/1.94.0.24282...1.94.1.24283</li>
+        </ul>
+        <p>New Contributors</p>
+        <ul>
+          <li>@DetachHead made their first contribution in #1833</li>
+        </ul>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.94.1.24283</url>
+    </release>
     <release version="1.94.0.24282" date="2024-10-08" urgency="low">
       <description>
         <p>What's Changed</p>
