@@ -166,3 +166,18 @@ modules:
         path: README.md
       - type: file
         path: sdk_update.md
+  - name: miniconda
+    buildsystem: simple
+    build-commands:
+      - exec Miniconda3.sh -b -p ${FLATPAK_DEST} -f
+    sources:
+      - type: file
+        url: https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+        sha256: 33442cd3813df33dcbb4a932b938ee95398be98344dff4c30f7e757cd2110e4f
+        dest-filename: Miniconda3.sh
+        only-arches: [x86_64]
+      - type: file
+        url: https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-aarch64.sh
+        sha256: bdace1e233cda30ce37105de627e646ae8e04b036373eacfcd7fa8e35949f1b7
+        dest-filename: Miniconda3.sh
+        only-arches: [aarch64]
