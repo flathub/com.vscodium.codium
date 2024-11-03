@@ -1,9 +1,9 @@
 id: com.vscodium.codium
 sdk: org.freedesktop.Sdk
 runtime: org.freedesktop.Sdk
-runtime-version: '24.08'
+runtime-version: "24.08"
 base: org.electronjs.Electron2.BaseApp
-base-version: '24.08'
+base-version: "24.08"
 command: codium
 finish-args:
   - --share=ipc
@@ -29,14 +29,14 @@ add-extensions:
   com.visualstudio.code.tool:
     directory: tools
     subdirectories: true
-    version: '24.08'
+    version: "24.08"
     add-ld-path: lib
     no-autodownload: true
 cleanup:
   - /include
   - /lib/pkgconfig
   - /share/gtk-doc
-  - '*.la'
+  - "*.la"
 modules:
   - shared-modules/libusb/libusb.json
   - name: codium
@@ -73,7 +73,8 @@ modules:
           tag-query: .tag_name
           version-query: .tag_name
           timestamp-query: .published_at
-          url-query: '[.assets[] | select(.name|test("codium_.+_amd64.deb$"))][0]
+          url-query:
+            '[.assets[] | select(.name|test("codium_.+_amd64.deb$"))][0]
             | .browser_download_url'
       - type: file
         url: https://github.com/VSCodium/vscodium/releases/download/1.95.1.24307/codium_1.95.1.24307_arm64.deb
@@ -87,7 +88,8 @@ modules:
           tag-query: .tag_name
           version-query: .tag_name
           timestamp-query: .published_at
-          url-query: '[.assets[] | select(.name|test("codium_.+_arm64.deb$"))][0]
+          url-query:
+            '[.assets[] | select(.name|test("codium_.+_arm64.deb$"))][0]
             | .browser_download_url'
       - type: file
         path: assets/icon/code.svg
