@@ -50,6 +50,27 @@
   <launchable type="desktop-id">com.vscodium.codium.desktop</launchable>
   <content_rating type="oars-1.1" />
   <releases>
+    <release version="1.95.1.24307" date="2024-10-12" urgency="low">
+      <description>
+        <p>What's Changed</p>
+        <ul>
+          <li>update vscode to 1.95.1</li>
+          <li>feat(1.95): update patches by @daiyam in #2055</li>
+          <li>feat: signing windows .exe by @daiyam in #2058</li>
+          <li>fix(riscv64): bump nodejs to 20.16.0 by @kxxt in #2061</li>
+          <li>feat(1.95): update patches by @daiyam in #2066</li>
+          <li>build(windows): add signing with SignPath by @daiyam in #2069</li>
+          <li>feat(linux): update XDG_RUNTIME_DIR for flatpak by @daiyam in #2071</li>
+          <li>fix(linux): move patch so it's enabled during compile job by @daiyam in #2073</li>
+          <li>fix: tree-sitter is optional by @daiyam in #2076</li>
+          <li>fix: build ppc64(bis) by @daiyam in #2077</li>
+          <li>build(windows): pre-compile on linux by @daiyam in #2080</li>
+          <li>Full Changelog:
+            https://github.com/VSCodium/vscodium/compare/1.94.2.24286...1.95.1.24307</li>
+        </ul>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.95.1.24307</url>
+    </release>
     <release version="1.94.2.24286" date="2024-10-12" urgency="low">
       <description>
         <p>What's Changed</p>
