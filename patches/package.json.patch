@@ -1,8 +1,9 @@
-@@ -231,5 +231,5 @@
+@@ -239,5 +239,5 @@
      "windows-foreground-love": "0.5.0"
    },
-   "release": "24165",
--  "desktopName": "codium-url-handler.desktop"
-+  "desktopName": "com.vscodium.codium-url-handler.desktop"
- }
+   "release": "24307",
+-  "desktopName": "codium.desktop"
+-}
 \ No newline at end of file
++  "desktopName": "com.vscodium.codium-url-handler.desktop"
++}
