@@ -1,9 +1,9 @@
 id: com.vscodium.codium
 sdk: org.freedesktop.Sdk
 runtime: org.freedesktop.Sdk
-runtime-version: "24.08"
+runtime-version: '24.08'
 base: org.electronjs.Electron2.BaseApp
-base-version: "24.08"
+base-version: '24.08'
 command: codium
 finish-args:
   - --share=ipc
@@ -29,14 +29,14 @@ add-extensions:
   com.visualstudio.code.tool:
     directory: tools
     subdirectories: true
-    version: "24.08"
+    version: '24.08'
     add-ld-path: lib
     no-autodownload: true
 cleanup:
   - /include
   - /lib/pkgconfig
   - /share/gtk-doc
-  - "*.la"
+  - '*.la'
 modules:
   - shared-modules/libusb/libusb.json
   - name: codium
@@ -62,8 +62,8 @@ modules:
       - mkdir /app/tools
     sources:
       - type: file
-        url: https://github.com/VSCodium/vscodium/releases/download/1.95.1.24307/codium_1.95.1.24307_amd64.deb
-        sha256: 0d45b1bd2e63bfb98036d37aec36f05a7a2e147a1f9239d0ab2c91af842c9f73
+        url: https://github.com/VSCodium/vscodium/releases/download/1.95.2.24313/codium_1.95.2.24313_amd64.deb
+        sha256: 4b928209297407b4e78c8fcb9e2e72fb04a91f096f0f4fdf5e908cbc9ca1ba03
         dest-filename: codium.deb
         only-arches:
           - x86_64
@@ -73,12 +73,11 @@ modules:
           tag-query: .tag_name
           version-query: .tag_name
           timestamp-query: .published_at
-          url-query:
-            '[.assets[] | select(.name|test("codium_.+_amd64.deb$"))][0]
+          url-query: '[.assets[] | select(.name|test("codium_.+_amd64.deb$"))][0]
             | .browser_download_url'
       - type: file
-        url: https://github.com/VSCodium/vscodium/releases/download/1.95.1.24307/codium_1.95.1.24307_arm64.deb
-        sha256: 6b565b2b7261db2d749648e03f6c43743a5f32d57ae69f93e688d57509261851
+        url: https://github.com/VSCodium/vscodium/releases/download/1.95.2.24313/codium_1.95.2.24313_arm64.deb
+        sha256: 9954a9b9e719f3ebf77738dc7ef6495507bb4902f60d4e17b496759d7aad7323
         dest-filename: codium.deb
         only-arches:
           - aarch64
@@ -88,8 +87,7 @@ modules:
           tag-query: .tag_name
           version-query: .tag_name
           timestamp-query: .published_at
-          url-query:
-            '[.assets[] | select(.name|test("codium_.+_arm64.deb$"))][0]
+          url-query: '[.assets[] | select(.name|test("codium_.+_arm64.deb$"))][0]
             | .browser_download_url'
       - type: file
         path: assets/icon/code.svg
