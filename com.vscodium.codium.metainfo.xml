@@ -50,6 +50,31 @@
   <launchable type="desktop-id">com.vscodium.codium.desktop</launchable>
   <content_rating type="oars-1.1" />
   <releases>
+    <release version="" date="2024-12-08" urgency="low">
+      <description>
+        <p>What's Changed</p>
+        <ul>
+          <li>update vscode to 1.95.2</li>
+          <li>build: split big arch patch (wip) by @daiyam in #2085</li>
+          <li>Add Render Glitch Workwaround to DOCS.MD by @266-750Balloons in #1699</li>
+          <li>feat: loong64 support for reh server by @darkyzhou in #2087</li>
+          <li>fix: Crashpad disabled regardless of enable-crash-reporter argv #1832 by @AgFlore in
+            #1838</li>
+          <li>fix: mismatch with arch enum and move misplaced code by @daiyam in #2092</li>
+          <li>fix appimage build by setting ARCH env by @KnowZero in #2095</li>
+          <li>Full Changelog:
+            https://github.com/VSCodium/vscodium/compare/1.95.1.24307...1.95.2.24313</li>
+        </ul>
+        <p>New Contributors</p>
+        <ul>
+          <li>@266-750Balloons made their first contribution in #1699</li>
+          <li>@darkyzhou made their first contribution in #2087</li>
+          <li>@AgFlore made their first contribution in #1838</li>
+          <li>@KnowZero made their first contribution in #2095</li>
+        </ul>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.95.2.24313</url>
+    </release>
     <release version="1.95.1.24307" date="2024-10-12" urgency="low">
       <description>
         <p>What's Changed</p>
