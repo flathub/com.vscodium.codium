@@ -4,7 +4,7 @@
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>MIT</project_license>
   <name>VSCodium</name>
-  <developer_name>Peter Squicciarini</developer_name>
+  <developer_name>The VSCodium team</developer_name>
   <url type="homepage">https://vscodium.com/</url>
   <url type="bugtracker">https://github.com/flathub/com.vscodium.codium/issues</url>
   <url type="help">https://github.com/flathub/com.vscodium.codium#readme</url>
@@ -50,7 +50,25 @@
   <launchable type="desktop-id">com.vscodium.codium.desktop</launchable>
   <content_rating type="oars-1.1" />
   <releases>
-    <release version="1.95.2.24313" date="2024-12-08" urgency="low">
+    <release version="1.95.3.24321" date="2024-11-16" urgency="low">
+      <description>
+        <p>What's Changed</p>
+        <ul>
+          <li>update vscode to 1.95.3</li>
+          <li>fix(linux): update electron to fix menu bug by @daiyam in #2117</li>
+          <li>feat: add s390x support for REH by @andreasgrapentin in #2099</li>
+          <li>ci: generate better release notes by @daiyam in #2103</li>
+          <li>docs: remove infringing urls by @daiyam in #2113</li>
+          <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.95.2.24313...1.95.3.24321</li>
+        </ul>
+        <p>New Contributors</p>
+        <ul>
+          <li>@andreasgrapentin made their first contribution in #2099</li>
+        </ul>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.95.2.24313</url>
+    </release>
+    <release version="1.95.2.24313" date="2024-11-08" urgency="low">
       <description>
         <p>What's Changed</p>
         <ul>
@@ -75,7 +93,7 @@
       </description>
       <url>https://github.com/VSCodium/vscodium/releases/tag/1.95.2.24313</url>
     </release>
-    <release version="1.95.1.24307" date="2024-10-12" urgency="low">
+    <release version="1.95.1.24307" date="2024-11-02" urgency="low">
       <description>
         <p>What's Changed</p>
         <ul>
