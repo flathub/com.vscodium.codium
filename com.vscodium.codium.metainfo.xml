@@ -50,6 +50,25 @@
   <launchable type="desktop-id">com.vscodium.codium.desktop</launchable>
   <content_rating type="oars-1.1" />
   <releases>
+    <release version="1.96.0.24347" date="2024-12-12" urgency="low">
+      <description>
+        <p>What's Changed</p>
+        <ul>
+          <li>update vscode to 1.96.0</li>
+          <li>feat(1.96): update patches by @daiyam in #2083</li>
+          <li>feat: remove mangling in extensions by @daiyam in #2090</li>
+          <li>feat: loong64 support for client by @darkyzhou in #2121</li>
+          <li>Replace ripgrep binary for riscv64 by @kxxt in #2128</li>
+          <li>fix(macos): update urls when using emulated app by @daiyam in #2122</li>
+          <li>feat(1.96): update patches and build process by @daiyam in #2131</li>
+          <li>Add PPC64LE UI Support by @lex-ibm in #2132</li>
+          <li>fix: update electron by @daiyam in #2136</li>
+          <li>ci(macos): use available runner by @daiyam in #2138</li>
+          <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.95.3.24321...1.96.0.24347</li>
+        </ul>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.96.0.24347</url>
+    </release>
     <release version="1.95.3.24321" date="2024-11-16" urgency="low">
       <description>
         <p>What's Changed</p>
