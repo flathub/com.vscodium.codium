@@ -50,6 +50,17 @@
   <launchable type="desktop-id">com.vscodium.codium.desktop</launchable>
   <content_rating type="oars-1.1" />
   <releases>
+    <release version="1.96.0.24352" date="2024-12-17" urgency="low">
+      <description>
+        <p>What's Changed</p>
+        <ul>
+          <li>update vscode to 1.96.0</li>
+          <li>fix(reh): move to nodejs-v20 by @daiyam in #2167</li>
+          <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.96.0.24347...1.96.0.24352</li>
+        </ul>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.96.0.24352</url>
+    </release>
     <release version="1.96.0.24347" date="2024-12-12" urgency="low">
       <description>
         <p>What's Changed</p>
