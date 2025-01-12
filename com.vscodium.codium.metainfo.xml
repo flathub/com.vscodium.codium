@@ -44,7 +44,7 @@
     <screenshot>
       <image>
         https://raw.githubusercontent.com/flathub/com.vscodium.codium/7c2673ec91718b989e60d35b925997c8c9026a79/screenshots/05_searching_for_a_file.png</image>
-      <caption>Serching for a file</caption>
+      <caption>Searching for a file</caption>
     </screenshot>
   </screenshots>
   <launchable type="desktop-id">com.vscodium.codium.desktop</launchable>
