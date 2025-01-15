@@ -57,8 +57,8 @@ modules:
       - /share/man
     sources:
       - type: archive
-        url: https://download.gnome.org/sources/libsecret/0.21/libsecret-0.21.4.tar.xz
-        sha256: 163d08d783be6d4ab9a979ceb5a4fecbc1d9660d3c34168c581301cd53912b20
+        url: https://download.gnome.org/sources/libsecret/0.21/libsecret-0.21.5.tar.xz
+        sha256: 08f45c44760ab4c2d6febd6e0eeb421663b29a72be52c48c61c507b0ef6a7920
         x-checker-data:
           type: gnome
           name: libsecret
@@ -86,8 +86,8 @@ modules:
       - mkdir /app/tools
     sources:
       - type: file
-        url: https://github.com/VSCodium/vscodium/releases/download/1.96.2.24355/codium_1.96.2.24355_amd64.deb
-        sha256: 5cc4e148b3228a7eaad8082861a243a922e109bcd8c1f471ffe7c6afd1f24f5b
+        url: https://github.com/VSCodium/vscodium/releases/download/1.96.3.25013/codium_1.96.3.25013_amd64.deb
+        sha256: d64ebee0dddd8879112f90c0d18b160ed067d4013f0d95a9c6c611ceb2320a1f
         dest-filename: codium.deb
         only-arches:
           - x86_64
@@ -100,8 +100,8 @@ modules:
           url-query: '[.assets[] | select(.name|test("codium_.+_amd64.deb$"))][0]
             | .browser_download_url'
       - type: file
-        url: https://github.com/VSCodium/vscodium/releases/download/1.96.2.24355/codium_1.96.2.24355_arm64.deb
-        sha256: c4948ed4849182c2148cfe2cf94b61924dd31523fb6ba0ecb4faaa30e1cea724
+        url: https://github.com/VSCodium/vscodium/releases/download/1.96.3.25013/codium_1.96.3.25013_arm64.deb
+        sha256: e29366c9e0936242b51b28fd97255da943d169ba03466a97be36af895b3b3fed
         dest-filename: codium.deb
         only-arches:
           - aarch64
