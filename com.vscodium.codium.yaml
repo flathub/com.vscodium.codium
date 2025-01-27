@@ -114,7 +114,8 @@ modules:
           url-query: '[.assets[] | select(.name|test("codium_.+_arm64.deb$"))][0]
             | .browser_download_url'
       - type: file
-        path: assets/icon/code.svg
+        url: https://raw.githubusercontent.com/VSCodium/vscodium/refs/heads/insider/src/stable/resources/linux/code.svg
+        sha256: e622e6bdb70b0cfec57ad9df8717ea023b87e5e215003119b5a1a4d059fcd347
       - type: file
         path: com.vscodium.codium.metainfo.xml
       - type: file
