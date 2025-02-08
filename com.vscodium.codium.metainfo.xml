@@ -50,6 +50,27 @@
   <launchable type="desktop-id">com.vscodium.codium.desktop</launchable>
   <content_rating type="oars-1.1" />
   <releases>
+    <release version="1.97.0.25037" date="2025-02-06" urgency="low">
+      <description>
+        <p>What's Changed</p>
+        <ul>
+          <li>update vscode to 1.97.0</li>
+          <li>feat(1.97): update patches by @daiyam in #2166</li>
+          <li>fix(reh): move to nodejs-v20 by @daiyam in #2167</li>
+          <li>feat(1.97): update patches by @daiyam in #2184</li>
+          <li>refactor: reorganize files by @daiyam in #2185</li>
+          <li>ci: use verified commit by @daiyam in #2186</li>
+          <li>feat(snap): add audio playback by @daiyam in #2189</li>
+          <li>enhance: update svg to avoid symbol by @daiyam in #2190</li>
+          <li>feat: add patch to use policies by @daiyam in #2209</li>
+          <li>feat(update): directly use versions repo by @daiyam in #2211</li>
+          <li>feat(1.97): add new extension endpoint by @daiyam in #2214</li>
+          <li>feat(alpine): enable reh-web by @daiyam in #2219</li>
+          <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.96.4.25026...1.97.0.25037</li>
+        </ul>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.97.0.25037</url>
+    </release>
     <release version="1.96.4.25026" date="2025-01-26" urgency="low">
       <description>
         <p>What's Changed</p>
