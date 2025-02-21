@@ -50,6 +50,16 @@
   <launchable type="desktop-id">com.vscodium.codium.desktop</launchable>
   <content_rating type="oars-1.1" />
   <releases>
+    <release version="1.97.1.25044" date="2025-02-13" urgency="low">
+      <description>
+        <p>What's Changed</p>
+        <ul>
+          <li>update vscode to 1.97.1</li>
+          <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.97.0.25037...1.97.1.25044</li>
+        </ul>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.97.1.25044</url>
+    </release>
     <release version="1.97.0.25037" date="2025-02-06" urgency="low">
       <description>
         <p>What's Changed</p>
