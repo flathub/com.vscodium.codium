@@ -91,27 +91,37 @@ you can add one of the following configurations for flatpak-spawn or host-spawn 
 
 - You can change **bash** to any terminal you are using: zsh, fish, sh.
 - `overrideName` allows for the 'name' (or whatever you set it to) of the shell you're using to appear (e.g. normally zsh, fish, sh).
+
 ### SDKs
 
 This flatpak provides a standard development environment (gcc, python, etc).
 To see what's available:
 
 ```bash
-  $ flatpak run --command=sh com.vscodium.codium
-  $ ls /usr/bin (shared runtime)
-  $ ls /app/bin (bundled with this flatpak)
+$ flatpak run --command=sh com.vscodium.codium
+$ ls /usr/bin (shared runtime)
+$ ls /app/bin (bundled with this flatpak)
 ```
+
 To get support for additional languages, you have to install SDK extensions, e.g.
 
 ```bash
-  $ flatpak install flathub org.freedesktop.Sdk.Extension.dotnet
-  $ flatpak install flathub org.freedesktop.Sdk.Extension.golang
-  $ FLATPAK_ENABLE_SDK_EXT=dotnet,golang flatpak run com.vscodium.codium
+$ flatpak install flathub org.freedesktop.Sdk.Extension.dotnet
+$ flatpak install flathub org.freedesktop.Sdk.Extension.golang
+$ FLATPAK_ENABLE_SDK_EXT=dotnet,golang flatpak run com.vscodium.codium
 ```
-You can use
 
+You can use a GUI tool [like Flatseal](https://flathub.org/apps/com.github.tchx84.Flatseal) or the following commands to check and adjust the overrides:
+```
+$ flatpak override --user --show com.vscodium.codium # shows existing overrides
+$ flatpak override --user --env FLATPAK_ENABLE_SDK_EXT=node22 com.vscodium.codium
+```
+
+Note that VSCodium shows no error when an extension requested via `FLATPAK_ENABLE_SDK_EXT` does not exist. Make sure to install it properly.
+
+Use
 ```bash
-  $ flatpak search <TEXT>
+$ flatpak search org.freedesktop.Sdk.Extension
 ```
 to find others.
 
@@ -137,7 +147,7 @@ $ FLATPAK_ENABLE_SDK_EXT=dotnet,golang codium /path/to/
 To use Git LFS with VSCodium's integrated Git support, you will need the `com.visualstudio.code.tool.git-lfs` addon.
 
 ```bash
-  $ flatpak install flathub com.visualstudio.code.tool.git-lfs
+$ flatpak install flathub com.visualstudio.code.tool.git-lfs
 ```
 
 You might need to reinstall the Git LFS hooks in each repo with `git lfs install`.
