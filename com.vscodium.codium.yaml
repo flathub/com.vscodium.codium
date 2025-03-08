@@ -86,8 +86,8 @@ modules:
       - mkdir /app/tools
     sources:
       - type: file
-        url: https://github.com/VSCodium/vscodium/releases/download/1.97.2.25045/codium_1.97.2.25045_amd64.deb
-        sha256: 30391f36670191f1753d69984942f16924e93312e08e1e33a1f99f2e14476a19
+        url: https://github.com/VSCodium/vscodium/releases/download/1.98.0.25067/codium_1.98.0.25067_amd64.deb
+        sha256: 2d96977f01e811c904b3271bb303bddbe8df132accb308c08020e58168d3bd37
         dest-filename: codium.deb
         only-arches:
           - x86_64
@@ -100,8 +100,8 @@ modules:
           url-query: '[.assets[] | select(.name|test("codium_.+_amd64.deb$"))][0]
             | .browser_download_url'
       - type: file
-        url: https://github.com/VSCodium/vscodium/releases/download/1.97.2.25045/codium_1.97.2.25045_arm64.deb
-        sha256: 6bab73828cd733b0104c48ac3b0e0eb51d928d867fc19868d624a8d89b0ed92b
+        url: https://github.com/VSCodium/vscodium/releases/download/1.98.0.25067/codium_1.98.0.25067_arm64.deb
+        sha256: aa52bff55f54f21f0b7fb5667dfa180f904ed7f07fb4a36ceca1e0cda154c62c
         dest-filename: codium.deb
         only-arches:
           - aarch64
