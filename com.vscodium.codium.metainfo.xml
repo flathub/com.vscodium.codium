@@ -50,6 +50,42 @@
   <launchable type="desktop-id">com.vscodium.codium.desktop</launchable>
   <content_rating type="oars-1.1" />
   <releases>
+    <release version="1.98.1.25078" date="2025-03-19" urgency="low">
+      <description>
+        <p>What's Changed</p>
+        <ul>
+          <li>update vscode to 1.98.2</li>
+          <li>fix: use electron v34.3.2 by @daiyam in #2273</li>
+          <li>Fix error with qemu and ppc64le segfaults on build reh by @lex-ibm in #2264</li>
+          <li>feat: make build more generic by @daiyam in #2268</li>
+          <li>fix: update electron to avoid crash on 16 page size by @daiyam in #2271</li>
+          <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.98.2.25072...1.98.2.25078</li>
+        </ul>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.98.2.25078</url>
+    </release>
+    <release version="1.98.1.25072" date="2025-03-13" urgency="low">
+      <description>
+        <p>What's Changed</p>
+        <ul>
+          <li>update vscode to 1.98.2</li>
+          <li>docs: fix release links by @daiyam in #2257</li>
+          <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.98.1.25070...1.98.2.25072</li>
+        </ul>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.98.1.25070</url>
+    </release>
+    <release version="1.98.1.25070" date="2025-03-11" urgency="low">
+      <description>
+        <p>What's Changed</p>
+        <ul>
+          <li>update vscode to 1.98.1</li>
+          <li>Update Electron version and builder image for Loong64 by @darkyzhou in #2249</li>
+          <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.98.0.25067...1.98.1.25070</li>
+        </ul>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.98.1.25070</url>
+    </release>
     <release version="1.98.0.25067" date="2025-03-08" urgency="low">
       <description>
         <p>What's Changed</p>
