@@ -50,6 +50,27 @@
   <launchable type="desktop-id">com.vscodium.codium.desktop</launchable>
   <content_rating type="oars-1.1" />
   <releases>
+    <release version="1.98.1.25072" date="2025-03-13" urgency="low">
+      <description>
+        <p>What's Changed</p>
+        <ul>
+          <li>update vscode to 1.98.2</li>
+          <li>docs: fix release links by @daiyam in #2257</li>
+          <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.98.1.25070...1.98.2.25072</li>
+        </ul>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.98.1.25070</url>
+    </release>
+    <release version="1.98.1.25070" date="2025-03-11" urgency="low">
+      <description>
+        <p>What's Changed</p>
+        <ul>
+          <li>update vscode to 1.98.1</li>
+          <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.98.0.25067...1.98.1.25070</li>
+        </ul>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.98.1.25070</url>
+    </release>
     <release version="1.98.0.25067" date="2025-03-08" urgency="low">
       <description>
         <p>What's Changed</p>
