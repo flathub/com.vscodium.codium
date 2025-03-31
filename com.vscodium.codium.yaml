@@ -180,7 +180,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/flathub-infra/ide-flatpak-wrapper.git
-        commit: e39b1d775dad273a6ec8d88a52e961511ab6aeba
+        commit: c26e15940a02b40603ea57b0ac76b4944bee5464
       - type: file
         path: README.md
       - type: file
