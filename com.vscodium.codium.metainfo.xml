@@ -66,6 +66,7 @@
         <p>What's Changed</p>
         <ul>
           <li>update vscode to 1.98.1</li>
+          <li>Update Electron version and builder image for Loong64 by @darkyzhou in #2249</li>
           <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.98.0.25067...1.98.1.25070</li>
         </ul>
       </description>
