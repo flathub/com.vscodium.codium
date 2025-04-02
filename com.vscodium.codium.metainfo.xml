@@ -50,7 +50,7 @@
   <launchable type="desktop-id">com.vscodium.codium.desktop</launchable>
   <content_rating type="oars-1.1" />
   <releases>
-    <release version="1.98.1.25078" date="2025-03-19" urgency="low">
+    <release version="1.98.2.25078" date="2025-03-19" urgency="low">
       <description>
         <p>What's Changed</p>
         <ul>
@@ -64,7 +64,7 @@
       </description>
       <url>https://github.com/VSCodium/vscodium/releases/tag/1.98.2.25078</url>
     </release>
-    <release version="1.98.1.25072" date="2025-03-13" urgency="low">
+    <release version="1.98.2.25072" date="2025-03-13" urgency="low">
       <description>
         <p>What's Changed</p>
         <ul>
