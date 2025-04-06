@@ -50,6 +50,37 @@
   <launchable type="desktop-id">com.vscodium.codium.desktop</launchable>
   <content_rating type="oars-1.1" />
   <releases>
+    <release version="1.99.02283" date="2025-04-05" urgency="low">
+      <description>
+        <p>What's Changed</p>
+        <ul>
+          <li>update vscode to 1.99.0</li>
+          <li>fix: remove leading zeros before passing version to extension by @daiyam in #2302</li>
+          <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.99.02277...1.99.02283</li>
+        </ul>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.99.02283</url>
+    </release>
+    <release version="1.99.02277" date="2025-04-04" urgency="low">
+      <description>
+        <p>What's Changed</p>
+        <ul>
+          <li>update vscode to 1.99.0</li>
+          <li>Update README.md with new insider installation for macOS by @AM-I-Human in #2253</li>
+          <li>feat(1.99): update patches by @daiyam in #2283</li>
+          <li>Fix #2277 Enable controlUrl for extensionsGallery in product.json by @quanzhuo in #2278</li>
+          <li>feat: remove yarn dependency by @daiyam in #2297</li>
+          <li>feat: new version number by @daiyam in #2299</li>
+          <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.98.2.25078...1.99.02277</li>
+        </ul>
+        <p>New Contributors</p>
+        <ul>
+          <li>@AM-I-Human made their first contribution in #2253</li>
+          <li>@quanzhuo made their first contribution in #2278</li>
+        </ul>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.99.02277</url>
+    </release>
     <release version="1.98.2.25078" date="2025-03-19" urgency="low">
       <description>
         <p>What's Changed</p>
