@@ -50,7 +50,30 @@
   <launchable type="desktop-id">com.vscodium.codium.desktop</launchable>
   <content_rating type="oars-1.1" />
   <releases>
-      <release version="1.99.02289" date="2025-04-05" urgency="low">
+    <release version="1.99.22418" date="2025-04-10" urgency="low">
+      <description>
+        <p>What's Changed</p>
+        <ul>
+          <li>update vscode to 1.99.2</li>
+          <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.99.12392...1.99.22418</li>
+        </ul>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.99.22418</url>
+    </release>
+    <release version="1.99.12392" date="2025-04-09" urgency="low">
+      <description>
+        <p>What's Changed</p>
+        <ul>
+          <li>update vscode to 1.99.1</li>
+          <li>feat: cli binary by @daiyam in #2313</li>
+          <li>feat: rebrand reh-web resources by @daiyam in #2314</li>
+          <li>fix(reh): publish version for all archs by @daiyam in #2315</li>
+          <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.99.02289...1.99.12392</li>
+        </ul>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.99.12392</url>
+    </release>
+    <release version="1.99.02289" date="2025-04-05" urgency="low">
       <description>
         <p>What's Changed</p>
         <ul>
