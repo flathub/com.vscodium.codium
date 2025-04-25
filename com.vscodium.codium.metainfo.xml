@@ -50,6 +50,20 @@
   <launchable type="desktop-id">com.vscodium.codium.desktop</launchable>
   <content_rating type="oars-1.1" />
   <releases>
+    <release version="1.99.32704" date="2025-04-22" urgency="low">
+      <description>
+        <p>What's Changed</p>
+        <ul>
+          <li>update vscode to 1.99.3</li>
+          <li>feat: disable chat by default by @daiyam in #2327</li>
+          <li>feat(linux): allow update check by @daiyam in #2324</li>
+          <li>fix(extension): only pass VSCode's version by @daiyam in #2334</li>
+          <li>fix: add property to disable extra by @daiyam connection in #2335</li>
+          <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.99.32562...1.99.32704</li>
+        </ul>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.99.32704</url>
+    </release>
     <release version="1.99.32562" date="2025-04-16" urgency="low">
       <description>
         <p>What's Changed</p>
