@@ -50,6 +50,23 @@
   <launchable type="desktop-id">com.vscodium.codium.desktop</launchable>
   <content_rating type="oars-1.1" />
   <releases>
+    <release version="1.99.32846" date="2025-04-28" urgency="low">
+      <description>
+        <p>What's Changed</p>
+        <ul>
+          <li>update vscode to 1.99.3</li>
+          <li>fix(reh): use correct ripgrep.sh path by @darkyzhou in #2348</li>
+          <li>fix: update Electron to v34.3.3 by @ammernico in #2349</li>
+          <li>fix: migrate from el9 to el8 by @daiyam in #2350</li>
+          <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.99.32704...1.99.32846</li>
+        </ul>
+        <p>New Contributors</p>
+        <ul>
+          <li>@ammernico made their first contribution in #2349</li>
+        </ul>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.99.32846</url>
+    </release>
     <release version="1.99.32704" date="2025-04-22" urgency="low">
       <description>
         <p>What's Changed</p>
