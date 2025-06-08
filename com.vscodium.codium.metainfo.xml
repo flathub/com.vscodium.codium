@@ -50,6 +50,17 @@
   <launchable type="desktop-id">com.vscodium.codium.desktop</launchable>
   <content_rating type="oars-1.1" />
   <releases>
+    <release version="1.100.33714" date="2025-06-03" urgency="low">
+      <description>
+        <p>What's Changed</p>
+        <ul>
+          <li>update vscode to 1.100.3</li>
+          <li>fix(riscv): lower glibc version to 2.31 for ripgrep by @kxxt in #2376</li>
+          <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.100.23258...1.100.33714</li>
+        </ul>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.100.33714</url>
+    </release>
     <release version="1.100.23258" date="2025-05-15" urgency="low">
       <description>
         <p>What's Changed</p>
