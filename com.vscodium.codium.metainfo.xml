@@ -50,6 +50,39 @@
   <launchable type="desktop-id">com.vscodium.codium.desktop</launchable>
   <content_rating type="oars-1.1" />
   <releases>
+    <release version="1.101.03933" date="2025-06-12" urgency="low">
+      <description>
+        <p>What's Changed</p>
+        <ul>
+          <li>update vscode to 1.101.0</li>
+          <li>feat(1.100): update patch by @daiyam in #2310</li>
+          <li>feat: rebrand reh-web resources by @daiyam in #2314</li>
+          <li>fix: publish version for all archs by @daiyam in #2315</li>
+          <li>feat: cli binary by @daiyam in #2313</li>
+          <li>fix: use prebuilt openssl by @daiyam in #2316</li>
+          <li>fix(cli): fix windows' update url by @daiyam in #2318</li>
+          <li>fix(cli): use explicit urls by @daiyam in #2319</li>
+          <li>feat(linux): allow update check by @daiyam in #2324</li>
+          <li>fix: specify gcc version in sysroot by @daiyam in #2325</li>
+          <li>feat: disable chat by default by @daiyam in #2327</li>
+          <li>fix(extension): only pass VSCode's version by @daiyam in #2334</li>
+          <li>fix: add property to disable extra connection by @daiyam in #2335</li>
+          <li>fix(1.100): update patches and use node 20.19 by @daiyam in #2345</li>
+          <li>feat: package cli by @daiyam in #2346</li>
+          <li>feat: add release notes to Insiders by @daiyam in #2347</li>
+          <li>fix: don't add extra insider to serverDownloadUrlTemplate by @daiyam in #2354</li>
+          <li>fix: update electron by @daiyam in #2356</li>
+          <li>feat(1.101): use node-v22.14.0 and update patches by @daiyam in #2387</li>
+          <li>snap: Use native wayland client when possible by @3v1n0 in #2386</li>
+          <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.98.2.25078...1.99.02277</li>
+        </ul>
+        <p>New Contributors</p>
+        <ul>
+          <li>@3v1n0 made their first contribution in #2386</li>
+        </ul>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.101.03933</url>
+    </release>
     <release version="1.100.33714" date="2025-06-03" urgency="low">
       <description>
         <p>What's Changed</p>
