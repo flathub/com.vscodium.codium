@@ -4,7 +4,7 @@ runtime: org.freedesktop.Sdk
 runtime-version: '24.08'
 base: org.electronjs.Electron2.BaseApp
 base-version: '24.08'
-command: codium
+command: com.vscodium.codium
 finish-args:
   - --share=ipc
   - --socket=wayland
@@ -73,6 +73,7 @@ modules:
         # fix kde wayland window icons
       - patch --fuzz=3 usr/share/codium/resources/app/package.json -i package.json.patch
       - mv usr/share/codium /app/share
+      - mv /app/share/codium/codium /app/share/codium/$FLATPAK_ID
         # use patches because desktop-file-edit can't modify different group keys
       - patch -u usr/share/applications/codium.desktop -i codium.desktop.patch
       - patch -u usr/share/applications/codium-url-handler.desktop -i codium-url-handler.desktop.patch
@@ -154,13 +155,13 @@ modules:
   - name: wrapper-flatpak-wrapper
     buildsystem: meson
     config-opts:
-      - -Deditor_binary=/app/share/codium/codium
+      - -Deditor_binary=/app/share/codium/com.vscodium.codium
       - >-
         -Deditor_args=[
         '/app/share/codium/resources/app/out/cli.js',
         '--extensions-dir', '$XDG_DATA_HOME/codium/extensions'
         ]
-      - -Dprogram_name=codium
+      - -Dprogram_name=com.vscodium.codium
       - -Deditor_title=VSCodium
       - -Dzypak=enabled
       - -Dzypak_args=[ 'host', '-' ]

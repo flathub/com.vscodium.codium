@@ -4,7 +4,7 @@
  GenericName=Text Editor
 -Exec=/usr/share/codium/codium %F
 -Icon=vscodium
-+Exec=codium %F
++Exec=com.vscodium.codium %F
 +Icon=com.vscodium.codium
  Type=Application
  StartupNotify=false
@@ -15,5 +15,5 @@
  Name[zh_TW]=開新空視窗
 -Exec=/usr/share/codium/codium --new-window %F
 -Icon=vscodium
-+Exec=codium --new-window %F
++Exec=com.vscodium.codium --new-window %F
 +Icon=com.vscodium.codium
