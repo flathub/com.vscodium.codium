@@ -50,6 +50,17 @@
   <launchable type="desktop-id">com.vscodium.codium.desktop</launchable>
   <content_rating type="oars-1.1" />
   <releases>
+    <release version="1.101.14098" date="2025-06-19" urgency="low">
+      <description>
+        <p>What's Changed</p>
+        <ul>
+          <li>update vscode to 1.101.1</li>
+          <li>ppc64le: Bump GCC version to 10 by @lex-ibm in #2397</li>
+          <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.101.03933...1.101.14098</li>
+        </ul>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.101.14098</url>
+    </release>
     <release version="1.101.03933" date="2025-06-12" urgency="low">
       <description>
         <p>What's Changed</p>
