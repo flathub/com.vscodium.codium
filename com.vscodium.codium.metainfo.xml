@@ -50,6 +50,20 @@
   <launchable type="desktop-id">com.vscodium.codium.desktop</launchable>
   <content_rating type="oars-1.1" />
   <releases>
+    <release version="1.102.04606" date="2025-07-10" urgency="low">
+      <description>
+        <p>What's Changed</p>
+        <ul>
+          <li>update vscode to 1.102.0</li>
+          <li>ci(windows): increase timeout to 8h for manual validation by @daiyam in #2406</li>
+          <li>feat: prepare for 1.102 by @daiyam in #2413</li>
+          <li>fix(linux): stop gh install on error by @daiyam in #2414</li>
+          <li>feat(1.102): update patch and api by @daiyam in #2424</li>
+          <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.101.24242...1.102.04606</li>
+        </ul>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.102.04606</url>
+    </release>
     <release version="1.101.24242" date="2025-06-25" urgency="low">
       <description>
         <p>What's Changed</p>
