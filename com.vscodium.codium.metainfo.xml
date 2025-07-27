@@ -6,6 +6,7 @@
   <name>VSCodium</name>
   <developer_name>The VSCodium team</developer_name>
   <url type="homepage">https://vscodium.com/</url>
+  <url type="vcs-browser">https://github.com/VSCodium/vscodium</url>
   <url type="bugtracker">https://github.com/flathub/com.vscodium.codium/issues</url>
   <url type="help">https://github.com/flathub/com.vscodium.codium#readme</url>
   <summary>Telemetry-less code editing</summary>
