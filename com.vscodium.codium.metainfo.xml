@@ -50,6 +50,21 @@
   <launchable type="desktop-id">com.vscodium.codium.desktop</launchable>
   <content_rating type="oars-1.1" />
   <releases>
+    <release version="1.102.14746" date="2025-07-16" urgency="low">
+      <description>
+        <p>What's Changed</p>
+        <ul>
+          <li>update vscode to 1.102.1</li>
+          <li>Update "proprietary debugger extensions" note link in README.md by @Abrifq in #2425</li>
+          <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.102.04606...1.102.14746</li>
+        </ul>
+        <p>New Contributors</p>
+        <ul>
+          <li>@Abrifq made their first contribution in #2425</li>
+        </ul>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.102.14746</url>
+    </release>
     <release version="1.102.04606" date="2025-07-10" urgency="low">
       <description>
         <p>What's Changed</p>
