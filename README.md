@@ -40,7 +40,7 @@ to access SDKs on your host system!
 
   `$ host-spawn <COMMAND>`
 
-  - Most users seem to report a better experience with `host-spawn`
+  - Most users seem to report a better experience with [`host-spawn`](https://github.com/1player/host-spawn).
 
 Note that this runs the COMMAND without any further host-side confirmation.
 If you want to prevent such full host access from inside the sandbox, you can use `flatpak override` as follows:
