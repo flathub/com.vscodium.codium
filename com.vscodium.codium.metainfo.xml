@@ -51,6 +51,18 @@
   <launchable type="desktop-id">com.vscodium.codium.desktop</launchable>
   <content_rating type="oars-1.1" />
   <releases>
+    <release version="1.103.15539" date="2025-08-18" urgency="low">
+      <description>
+        <p>What's Changed</p>
+        <ul>
+          <li>update vscode to 1.103.1</li>
+          <li>fix(linux-reh-x64): rebuild node modules due to glibc2.17 node runtime by @daiyam in #2473</li>
+          <li>build(deps): bump actions/checkout from 4 to 5 by @dependabot[bot] in #2472</li>
+          <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.103.15418...1.103.15539</li>
+        </ul>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.103.15539</url>
+    </release>
     <release version="1.103.15418" date="2025-08-13" urgency="low">
       <description>
         <p>What's Changed</p>
