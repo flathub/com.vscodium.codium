@@ -51,6 +51,17 @@
   <launchable type="desktop-id">com.vscodium.codium.desktop</launchable>
   <content_rating type="oars-1.1" />
   <releases>
+    <release version="1.103.05312" date="2025-08-09" urgency="low">
+      <description>
+        <p>What's Changed</p>
+        <ul>
+          <li>update vscode to 1.103.0</li>
+          <li>feat(1.103): update to 1.103 by @daiyam in #2447</li>
+          <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.102.35058...1.103.05312</li>
+        </ul>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.103.05312</url>
+    </release>
     <release version="1.102.35058" date="2025-07-29" urgency="low">
       <description>
         <p>What's Changed</p>
