@@ -51,6 +51,19 @@
   <launchable type="desktop-id">com.vscodium.codium.desktop</launchable>
   <content_rating type="oars-1.1" />
   <releases>
+    <release version="1.104.06131" date="2025-09-12" urgency="low">
+      <description>
+        <p>What's Changed</p>
+        <ul>
+          <li>update vscode to 1.104.0</li>
+          <li>fix: gallery by @daiyam in #2506</li>
+          <li>Update telemetry docs by @Tiagoquix in #2504</li>
+          <li>feat: set update.mode to none when updates are disabled by @daiyam in #2507</li>
+          <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.104.06114...1.104.06131</li>
+        </ul>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.104.06131</url>
+    </release>
     <release version="1.104.06114" date="2025-09-11" urgency="low">
       <description>
         <p>What's Changed</p>
