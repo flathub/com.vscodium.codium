@@ -51,6 +51,39 @@
   <launchable type="desktop-id">com.vscodium.codium.desktop</launchable>
   <content_rating type="oars-1.1" />
   <releases>
+    <release version="1.104.06114" date="2025-09-11" urgency="low">
+      <description>
+        <p>What's Changed</p>
+        <ul>
+          <li>update vscode to 1.104.0</li>
+          <li>feat(1.103): update patches by @daiyam in #2435</li>
+          <li>feat(1.103): update patches by @daiyam in #2437</li>
+          <li>feat(1.104): update patches by @daiyam in #2448</li>
+          <li>fix(linux-x86): match libstdc ABI between node and @parcel/watcher by @daiyam in #2457</li>
+          <li>fix: objdump by @daiyam in #2458</li>
+          <li>chore: delete win32-app-container-tokens node modules by @daiyam in #2461</li>
+          <li>fix(linux-reh): rebuild libs by @daiyam in #2464</li>
+          <li>fix(linux-reh-x86): use unofficial nodejs to build archive by @daiyam in #2465</li>
+          <li>wip(linux-reh-x64): add cxx11 verification by @daiyam in #2467</li>
+          <li>cleanup(linux-reh-x86): streamline to only necessary changes by @daiyam in #2471</li>
+          <li>feat(1.104): update patches by @daiyam in #2486</li>
+          <li>feat: filters commands by @daiyam in #2487</li>
+          <li>feat: update patches by @daiyam in #2491</li>
+          <li>enhance: improve command filter by @daiyam in #2492</li>
+          <li>build(deps): bump actions/stale from 9 to 10 by @dependabot[bot] in #2494</li>
+          <li>build(deps): bump actions/setup-python from 5 to 6 by @dependabot[bot] in #2495</li>
+          <li>build(deps): bump actions/setup-node from 4 to 5 by @dependabot[bot] in #2496</li>
+          <li>refactor: use patch instead of script by @daiyam in #2502</li>
+          <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.103.25610...1.104.06114</li>
+        </ul>
+        <p>Security Patch</p>
+        <ul>
+          <li>The workbench.action.terminal.newLocal command is now disabled by default, which could
+            have been exploited to do a RCE. #2480</li>
+        </ul>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.104.06114</url>
+    </release>
     <release version="1.103.25610" date="2025-08-21" urgency="low">
       <description>
         <p>What's Changed</p>
@@ -66,7 +99,8 @@
         <p>What's Changed</p>
         <ul>
           <li>update vscode to 1.103.1</li>
-          <li>fix(linux-reh-x64): rebuild node modules due to glibc2.17 node runtime by @daiyam in #2473</li>
+          <li>fix(linux-reh-x64): rebuild node modules due to glibc2.17 node runtime by @daiyam in
+            #2473</li>
           <li>build(deps): bump actions/checkout from 4 to 5 by @dependabot[bot] in #2472</li>
           <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.103.15418...1.103.15539</li>
         </ul>
@@ -339,7 +373,8 @@
           <li>update vscode to 1.99.0</li>
           <li>Update README.md with new insider installation for macOS by @AM-I-Human in #2253</li>
           <li>feat(1.99): update patches by @daiyam in #2283</li>
-          <li>Fix #2277 Enable controlUrl for extensionsGallery in product.json by @quanzhuo in #2278</li>
+          <li>Fix #2277 Enable controlUrl for extensionsGallery in product.json by @quanzhuo in
+            #2278</li>
           <li>feat: remove yarn dependency by @daiyam in #2297</li>
           <li>feat: new version number by @daiyam in #2299</li>
           <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.98.2.25078...1.99.02277</li>
@@ -361,7 +396,8 @@
           <li>Fix error with qemu and ppc64le segfaults on build reh by @lex-ibm in #2264</li>
           <li>feat: make build more generic by @daiyam in #2268</li>
           <li>fix: update electron to avoid crash on 16 page size by @daiyam in #2271</li>
-          <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.98.2.25072...1.98.2.25078</li>
+          <li>Full Changelog:
+            https://github.com/VSCodium/vscodium/compare/1.98.2.25072...1.98.2.25078</li>
         </ul>
       </description>
       <url>https://github.com/VSCodium/vscodium/releases/tag/1.98.2.25078</url>
@@ -372,7 +408,8 @@
         <ul>
           <li>update vscode to 1.98.2</li>
           <li>docs: fix release links by @daiyam in #2257</li>
-          <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.98.1.25070...1.98.2.25072</li>
+          <li>Full Changelog:
+            https://github.com/VSCodium/vscodium/compare/1.98.1.25070...1.98.2.25072</li>
         </ul>
       </description>
       <url>https://github.com/VSCodium/vscodium/releases/tag/1.98.1.25070</url>
@@ -383,7 +420,8 @@
         <ul>
           <li>update vscode to 1.98.1</li>
           <li>Update Electron version and builder image for Loong64 by @darkyzhou in #2249</li>
-          <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.98.0.25067...1.98.1.25070</li>
+          <li>Full Changelog:
+            https://github.com/VSCodium/vscodium/compare/1.98.0.25067...1.98.1.25070</li>
         </ul>
       </description>
       <url>https://github.com/VSCodium/vscodium/releases/tag/1.98.1.25070</url>
@@ -394,9 +432,11 @@
         <ul>
           <li>update vscode to 1.98.0</li>
           <li>feat(1.98): update patches by @daiyam in #2244</li>
-          <li>Add terminal-suggest support for the codium and codium-insiders commands by @manuth in #2233</li>
+          <li>Add terminal-suggest support for the codium and codium-insiders commands by @manuth in
+            #2233</li>
           <li>feat(1.98): update patch and data by @daiyam in #2247</li>
-          <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.97.2.25045...1.98.0.25067</li>
+          <li>Full Changelog:
+            https://github.com/VSCodium/vscodium/compare/1.97.2.25045...1.98.0.25067</li>
         </ul>
         <p>New Contributors</p>
         <ul>
@@ -410,7 +450,8 @@
         <p>What's Changed</p>
         <ul>
           <li>update vscode to 1.97.2</li>
-          <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.97.1.25044...1.97.2.25045</li>
+          <li>Full Changelog:
+            https://github.com/VSCodium/vscodium/compare/1.97.1.25044...1.97.2.25045</li>
         </ul>
       </description>
       <url>https://github.com/VSCodium/vscodium/releases/tag/1.97.2.25045</url>
@@ -420,7 +461,8 @@
         <p>What's Changed</p>
         <ul>
           <li>update vscode to 1.97.1</li>
-          <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.97.0.25037...1.97.1.25044</li>
+          <li>Full Changelog:
+            https://github.com/VSCodium/vscodium/compare/1.97.0.25037...1.97.1.25044</li>
         </ul>
       </description>
       <url>https://github.com/VSCodium/vscodium/releases/tag/1.97.1.25044</url>
@@ -441,7 +483,8 @@
           <li>feat(update): directly use versions repo by @daiyam in #2211</li>
           <li>feat(1.97): add new extension endpoint by @daiyam in #2214</li>
           <li>feat(alpine): enable reh-web by @daiyam in #2219</li>
-          <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.96.4.25026...1.97.0.25037</li>
+          <li>Full Changelog:
+            https://github.com/VSCodium/vscodium/compare/1.96.4.25026...1.97.0.25037</li>
         </ul>
       </description>
       <url>https://github.com/VSCodium/vscodium/releases/tag/1.97.0.25037</url>
@@ -452,7 +495,8 @@
         <ul>
           <li>update vscode to 1.96.4</li>
           <li>feat(update): directly use versions repo by @daiyam in #2216</li>
-          <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.96.4.25017...1.96.4.25026</li>
+          <li>Full Changelog:
+            https://github.com/VSCodium/vscodium/compare/1.96.4.25017...1.96.4.25026</li>
         </ul>
       </description>
       <url>https://github.com/VSCodium/vscodium/releases/tag/1.96.4.25026</url>
@@ -462,7 +506,8 @@
         <p>What's Changed</p>
         <ul>
           <li>update vscode to 1.96.4</li>
-          <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.96.3.25013...1.96.4.25017</li>
+          <li>Full Changelog:
+            https://github.com/VSCodium/vscodium/compare/1.96.3.25013...1.96.4.25017</li>
         </ul>
       </description>
       <url>https://github.com/VSCodium/vscodium/releases/tag/1.96.4.25017</url>
@@ -472,8 +517,10 @@
         <p>What's Changed</p>
         <ul>
           <li>update vscode to 1.96.3</li>
-          <li>ci: use jq for JSON parsing, avoid cut for querying version from tag by @thican in #2168</li>
-          <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.96.2.24355...1.96.3.25013</li>
+          <li>ci: use jq for JSON parsing, avoid cut for querying version from tag by @thican in
+            #2168</li>
+          <li>Full Changelog:
+            https://github.com/VSCodium/vscodium/compare/1.96.2.24355...1.96.3.25013</li>
         </ul>
         <p>New Contributors</p>
         <ul>
@@ -487,7 +534,8 @@
         <p>What's Changed</p>
         <ul>
           <li>update vscode to 1.96.2</li>
-          <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.96.1.24353...1.96.2.24355</li>
+          <li>Full Changelog:
+            https://github.com/VSCodium/vscodium/compare/1.96.1.24353...1.96.2.24355</li>
         </ul>
       </description>
       <url>https://github.com/VSCodium/vscodium/releases/tag/1.96.2.24355</url>
@@ -497,7 +545,8 @@
         <p>What's Changed</p>
         <ul>
           <li>update vscode to 1.96.1</li>
-          <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.96.0.24352...1.96.1.24353</li>
+          <li>Full Changelog:
+            https://github.com/VSCodium/vscodium/compare/1.96.0.24352...1.96.1.24353</li>
         </ul>
       </description>
       <url>https://github.com/VSCodium/vscodium/releases/tag/1.96.1.24353</url>
@@ -508,7 +557,8 @@
         <ul>
           <li>update vscode to 1.96.0</li>
           <li>fix(reh): move to nodejs-v20 by @daiyam in #2167</li>
-          <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.96.0.24347...1.96.0.24352</li>
+          <li>Full Changelog:
+            https://github.com/VSCodium/vscodium/compare/1.96.0.24347...1.96.0.24352</li>
         </ul>
       </description>
       <url>https://github.com/VSCodium/vscodium/releases/tag/1.96.0.24352</url>
@@ -527,7 +577,8 @@
           <li>Add PPC64LE UI Support by @lex-ibm in #2132</li>
           <li>fix: update electron by @daiyam in #2136</li>
           <li>ci(macos): use available runner by @daiyam in #2138</li>
-          <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.95.3.24321...1.96.0.24347</li>
+          <li>Full Changelog:
+            https://github.com/VSCodium/vscodium/compare/1.95.3.24321...1.96.0.24347</li>
         </ul>
       </description>
       <url>https://github.com/VSCodium/vscodium/releases/tag/1.96.0.24347</url>
@@ -541,7 +592,8 @@
           <li>feat: add s390x support for REH by @andreasgrapentin in #2099</li>
           <li>ci: generate better release notes by @daiyam in #2103</li>
           <li>docs: remove infringing urls by @daiyam in #2113</li>
-          <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.95.2.24313...1.95.3.24321</li>
+          <li>Full Changelog:
+            https://github.com/VSCodium/vscodium/compare/1.95.2.24313...1.95.3.24321</li>
         </ul>
         <p>New Contributors</p>
         <ul>
