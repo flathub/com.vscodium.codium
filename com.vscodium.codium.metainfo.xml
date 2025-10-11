@@ -51,6 +51,21 @@
   <launchable type="desktop-id">com.vscodium.codium.desktop</launchable>
   <content_rating type="oars-1.1" />
   <releases>
+    <release version="1.105.06808" date="2025-10-10" urgency="low">
+      <description>
+        <p>What's Changed</p>
+        <ul>
+          <li>update vscode to 1.105.0</li>
+          <li>feat(1.105): update patches by @daiyam in #2529</li>
+          <li>feat(1.105): update patches by @daiyam in #2541</li>
+          <li>fix(snap): fix snapcraft build files by @daiyam in #2543</li>
+          <li>feat(insider): generate buildinfo.json to track versions by @daiyam in #2544</li>
+          <li>feat: move and upload sourcemaps by @daiyam in #2545</li>
+          <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.104.36664...1.105.06808</li>
+        </ul>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.105.06808</url>
+    </release>
     <release version="1.104.36664" date="2025-10-04" urgency="low">
       <description>
         <p>What's Changed</p>
