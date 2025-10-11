@@ -1,7 +1,7 @@
 @@ -239,5 +239,5 @@
+   "optionalDependencies": {
      "windows-foreground-love": "0.5.0"
    },
-   "release": "24307",
 -  "desktopName": "codium.desktop"
 -}
 \ No newline at end of file

@@ -71,7 +71,7 @@ modules:
       - ar x codium.deb
       - tar xf data.tar.xz
         # fix kde wayland window icons
-      - patch --fuzz=3 usr/share/codium/resources/app/package.json -i package.json.patch
+      - patch -u usr/share/codium/resources/app/package.json -i package.json.patch
       - mv usr/share/codium /app/share
       - mv /app/share/codium/codium /app/share/codium/$FLATPAK_ID
         # use patches because desktop-file-edit can't modify different group keys

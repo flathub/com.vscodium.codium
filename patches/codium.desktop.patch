@@ -1,7 +1,7 @@
-@@ -2,8 +2,8 @@
- Name=VSCodium
+@@ -3,8 +3,8 @@
  Comment=Code Editing. Redefined.
  GenericName=Text Editor
+ GenericName[ar]=محرر نصوص
 -Exec=/usr/share/codium/codium %F
 -Icon=vscodium
 +Exec=com.vscodium.codium %F
@@ -9,7 +9,7 @@
  Type=Application
  StartupNotify=false
  StartupWMClass=VSCodium
-@@ -23,5 +23,5 @@ Name[ko]=새 빈 창
+@@ -25,5 +25,5 @@
  Name[ru]=Новое пустое окно
  Name[zh_CN]=新建空窗口
  Name[zh_TW]=開新空視窗
