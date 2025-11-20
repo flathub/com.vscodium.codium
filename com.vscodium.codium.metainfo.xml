@@ -51,6 +51,18 @@
   <launchable type="desktop-id">com.vscodium.codium.desktop</launchable>
   <content_rating type="oars-1.1" />
   <releases>
+    <release version="1.105.17075" date="2025-10-21" urgency="low">
+      <description>
+        <p>What's Changed</p>
+        <ul>
+          <li>update vscode to 1.105.1</li>
+          <li>fix(copilot): use disableAIFeatures setting instead of installed property by @daiyam in #2567</li>
+          <li>build(deps): bump actions/setup-node from 5 to 6 by @dependabot[bot] in #2568</li>
+          <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.105.17017...1.105.17075</li>
+        </ul>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.105.17075</url>
+    </release>
     <release version="1.105.17017" date="2025-10-19" urgency="low">
       <description>
         <p>What's Changed</p>
