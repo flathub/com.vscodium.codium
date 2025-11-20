@@ -194,3 +194,13 @@ modules:
         path: README.md
       - type: file
         path: sdk_update.md
+  - name: x-terminal-emulator
+    buildsystem: simple
+    build-commands:
+      - install -Dm755 x-terminal-emulator.sh /app/bin/x-terminal-emulator
+    sources:
+      - type: script
+        dest-filename: x-terminal-emulator.sh
+        commands:
+          - host-spawn x-terminal-emulator ${@}
+
