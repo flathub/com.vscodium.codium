@@ -4,6 +4,8 @@ runtime: org.freedesktop.Sdk
 runtime-version: '24.08'
 base: org.electronjs.Electron2.BaseApp
 base-version: '24.08'
+sdk-extensions:
+  - org.freedesktop.Sdk.Extension.golang
 command: com.vscodium.codium
 finish-args:
   - --share=ipc
@@ -63,6 +65,43 @@ modules:
           type: gnome
           name: libsecret
           stable-only: true
+  - name: host-spawn
+    buildsystem: simple
+    build-options:
+      append-path: /usr/lib/sdk/golang/bin
+      env:
+        GOBIN: /app/bin
+        GOFLAGS: -modcacherw
+        GOPATH: /run/build/host-spawn
+    sources:
+      - type: git
+        url: https://github.com/1player/host-spawn
+        commit: d76c3a5196a8e0943f6a1c7c9f1acde4bd83c40c
+        tag: v1.6.2
+        x-checker-data:
+          type: git
+          tag-pattern: ^v([\d.]+)$
+      # The below dependencies needs to be manually update avoid to add to external checker
+      - dest: vendor
+        path: modules.txt
+        type: file
+      - type: git
+        dest: vendor/github.com/godbus/dbus/v5
+        url: https://github.com/godbus/dbus.git
+        commit: e523abc905595cf17fb0001a7d77eaaddfaa216d
+        tag: v5.1.0
+      - type: git
+        dest: vendor/github.com/pkg/term
+        url: https://github.com/pkg/term.git
+        commit: d02e49dd31404f3c3cf4b5469b28942194e0ca23
+        tag: v1.1.0
+      - type: git
+        dest: vendor/golang.org/x/sys
+        url: https://go.googlesource.com/sys.git
+        commit: 13b15b780d9013988b1fb0e79e30b2528a877638
+        tag: v0.15.0
+    build-commands:
+      - go install -mod=vendor -ldflags "-X main.Version=$(git describe --tags)"
   - name: codium
     buildsystem: simple
     build-commands:
@@ -123,35 +162,6 @@ modules:
         path: patches/codium.desktop.patch
       - type: file
         path: patches/codium-url-handler.desktop.patch
-  - name: host-spawn
-    buildsystem: simple
-    build-commands:
-      - install -Dm755 host-spawn /app/bin/host-spawn
-    sources:
-      - type: file
-        url: https://github.com/1player/host-spawn/releases/download/v1.6.2/host-spawn-x86_64
-        sha256: 077bc09a087292447ba17cfe2156a93f71bf56c4c6be8e38d3abe65c1240f34c
-        dest-filename: host-spawn
-        only-arches: [x86_64]
-        x-checker-data:
-          type: json
-          url: https://api.github.com/repos/1player/host-spawn/releases/latest
-          tag-query: .tag_name
-          version-query: .tag_name
-          timestamp-query: .published_at
-          url-query: .assets[] | select(.name|test(".+x86_64$")).browser_download_url
-      - type: file
-        url: https://github.com/1player/host-spawn/releases/download/v1.6.2/host-spawn-aarch64
-        sha256: 8b30215b0b6b66c8c34a3e22d372dd39020295cd0904608bc2c5f5ecff829e5f
-        dest-filename: host-spawn
-        only-arches: [aarch64]
-        x-checker-data:
-          type: json
-          url: https://api.github.com/repos/1player/host-spawn/releases/latest
-          tag-query: .tag_name
-          version-query: .tag_name
-          timestamp-query: .published_at
-          url-query: .assets[] | select(.name|test(".+aarch64$")).browser_download_url
   - name: wrapper-flatpak-wrapper
     buildsystem: meson
     config-opts:
