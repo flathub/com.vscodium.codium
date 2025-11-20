@@ -51,7 +51,18 @@
   <launchable type="desktop-id">com.vscodium.codium.desktop</launchable>
   <content_rating type="oars-1.1" />
   <releases>
-<release version="1.105.16999" date="2025-10-18" urgency="low">
+    <release version="1.105.17017" date="2025-10-19" urgency="low">
+      <description>
+        <p>What's Changed</p>
+        <ul>
+          <li>update vscode to 1.105.1</li>
+          <li>fix(copilot): add installed condition to all actions or menus by @daiyam in #2563</li>
+          <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.105.16999...1.105.17017</li>
+        </ul>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.105.17017</url>
+    </release>
+    <release version="1.105.16999" date="2025-10-18" urgency="low">
       <description>
         <p>What's Changed</p>
         <ul>
@@ -80,8 +91,10 @@
         <p>What's Changed</p>
         <ul>
           <li>update vscode to 1.105.0</li>
-          <li>feat(fix-npm-postinstall): use tonistiigi/binfmt:latest for loong64 by @darkyzhou in #2549</li>
-          <li>build(deps): bump peter-evans/repository-dispatch from 3 to 4 by @dependabot[bot] in #2537</li>
+          <li>feat(fix-npm-postinstall): use tonistiigi/binfmt:latest for loong64 by @darkyzhou in
+            #2549</li>
+          <li>build(deps): bump peter-evans/repository-dispatch from 3 to 4 by @dependabot[bot] in
+            #2537</li>
           <li>fix(snap): re-add desktop entries by @daiyam in #2553</li>
           <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.105.06808...1.105.06922</li>
         </ul>
