@@ -51,6 +51,19 @@
   <launchable type="desktop-id">com.vscodium.codium.desktop</launchable>
   <content_rating type="oars-1.1" />
   <releases>
+    <release version="1.105.06922" date="2025-10-15" urgency="low">
+      <description>
+        <p>What's Changed</p>
+        <ul>
+          <li>update vscode to 1.105.0</li>
+          <li>feat(fix-npm-postinstall): use tonistiigi/binfmt:latest for loong64 by @darkyzhou in #2549</li>
+          <li>build(deps): bump peter-evans/repository-dispatch from 3 to 4 by @dependabot[bot] in #2537</li>
+          <li>fix(snap): re-add desktop entries by @daiyam in #2553</li>
+          <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.105.06808...1.105.06922</li>
+        </ul>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.105.06922</url>
+    </release>
     <release version="1.105.06808" date="2025-10-10" urgency="low">
       <description>
         <p>What's Changed</p>
