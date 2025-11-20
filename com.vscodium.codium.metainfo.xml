@@ -51,6 +51,68 @@
   <launchable type="desktop-id">com.vscodium.codium.desktop</launchable>
   <content_rating type="oars-1.1" />
   <releases>
+    <release version="1.105.17075" date="2025-10-21" urgency="low">
+      <description>
+        <p>What's Changed</p>
+        <ul>
+          <li>update vscode to 1.105.1</li>
+          <li>fix(copilot): use disableAIFeatures setting instead of installed property by @daiyam in #2567</li>
+          <li>build(deps): bump actions/setup-node from 5 to 6 by @dependabot[bot] in #2568</li>
+          <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.105.17017...1.105.17075</li>
+        </ul>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.105.17075</url>
+    </release>
+    <release version="1.105.17017" date="2025-10-19" urgency="low">
+      <description>
+        <p>What's Changed</p>
+        <ul>
+          <li>update vscode to 1.105.1</li>
+          <li>fix(copilot): add installed condition to all actions or menus by @daiyam in #2563</li>
+          <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.105.16999...1.105.17017</li>
+        </ul>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.105.17017</url>
+    </release>
+    <release version="1.105.16999" date="2025-10-18" urgency="low">
+      <description>
+        <p>What's Changed</p>
+        <ul>
+          <li>update vscode to 1.105.1</li>
+          <li>feat: disable Copilot UI elements by @daiyam in #2560</li>
+          <li>fix: use correct binary name by @daiyam in #2561</li>
+          <li>Improve telemetry docs by @Tiagoquix in #2534</li>
+          <li>feat: disable broken features by @daiyam in #2562</li>
+          <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.105.16954...1.105.16999</li>
+        </ul>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.105.16999</url>
+    </release>
+    <release version="1.105.16954" date="2025-10-16" urgency="low">
+      <description>
+        <p>What's Changed</p>
+        <ul>
+          <li>update vscode to 1.105.1</li>
+          <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.105.06922...1.105.16954</li>
+        </ul>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.105.16954</url>
+    </release>
+    <release version="1.105.06922" date="2025-10-15" urgency="low">
+      <description>
+        <p>What's Changed</p>
+        <ul>
+          <li>update vscode to 1.105.0</li>
+          <li>feat(fix-npm-postinstall): use tonistiigi/binfmt:latest for loong64 by @darkyzhou in
+            #2549</li>
+          <li>build(deps): bump peter-evans/repository-dispatch from 3 to 4 by @dependabot[bot] in
+            #2537</li>
+          <li>fix(snap): re-add desktop entries by @daiyam in #2553</li>
+          <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.105.06808...1.105.06922</li>
+        </ul>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.105.06922</url>
+    </release>
     <release version="1.105.06808" date="2025-10-10" urgency="low">
       <description>
         <p>What's Changed</p>
