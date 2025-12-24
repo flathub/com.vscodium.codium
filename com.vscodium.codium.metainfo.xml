@@ -51,6 +51,26 @@
   <launchable type="desktop-id">com.vscodium.codium.desktop</launchable>
   <content_rating type="oars-1.1" />
   <releases>
+    <release version="1.107.18605" date="2025-12-24" urgency="low">
+      <description>
+        <p>What's Changed</p>
+        <ul>
+          <li>update vscode to 1.107.1</li>
+          <li>feat(1.107): update patches by @daiyam in #2618</li>
+          <li>feat(1.107): improvements by @daiyam in #2631</li>
+          <li>feat(1.107): update patches by @daiyam in #2632</li>
+          <li>fix(windows): disable versioned resources by @daiyam in #2633</li>
+          <li>feat(linux): use XDG_STATE_HOME for logs by @daiyam in #2636</li>
+          <li>feat: update electron to 39.2.7 by @daiyam in #2637</li>
+          <li>fix: personalize global policy file by @daiyam in #2638</li>
+          <li>build: update LOONG64 image from beige to crimson by @darkyzhou in #2640</li>
+          <li>docs: remove extra announcement by @daiyam in #2641</li>
+          <li>feat(1.107): merge insider into stable by @daiyam in #2642</li>
+          <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.106.37943...1.107.18605</li>
+        </ul>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.107.18605</url>
+    </release>
     <release version="1.106.37943" date="2025-11-26" urgency="low">
       <description>
         <p>What's Changed</p>
