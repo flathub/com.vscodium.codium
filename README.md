@@ -92,6 +92,13 @@ you can add one of the following configurations for flatpak-spawn or host-spawn 
 - You can change **bash** to any terminal you are using: zsh, fish, sh.
 - `overrideName` allows for the 'name' (or whatever you set it to) of the shell you're using to appear (e.g. normally zsh, fish, sh).
 
+For external shell, you can add this to the setting to make it work (Linux only, for now)
+```json
+  {
+    "terminal.external.linuxExec": "x-terminal-emulator"
+  }
+```
+
 ### SDKs
 
 This flatpak provides a standard development environment (gcc, python, etc).
