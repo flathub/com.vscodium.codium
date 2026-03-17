@@ -51,6 +51,17 @@
   <launchable type="desktop-id">com.vscodium.codium.desktop</launchable>
   <content_rating type="oars-1.1" />
   <releases>
+    <release version="1.110.11607" date="2026-03-07" urgency="low">
+      <description>
+        <p>What's Changed</p>
+        <ul>
+          <li>update vscode to 1.110.1</li>
+          <li>fix(font-size): detect and apply padding and margin at 0 by @daiyam in #2737</li>
+          <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.110.11602...1.110.11607</li>
+        </ul>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.110.11607</url>
+    </release>
     <release version="1.110.11602" date="2026-03-07" urgency="low">
       <description>
         <p>What's Changed</p>
