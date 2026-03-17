@@ -51,6 +51,19 @@
   <launchable type="desktop-id">com.vscodium.codium.desktop</launchable>
   <content_rating type="oars-1.1" />
   <releases>
+    <release version="1.110.11631" date="2026-03-08" urgency="low">
+      <description>
+        <p>What's Changed</p>
+        <ul>
+          <li>update vscode to 1.110.1</li>
+          <li>fix(copilot): disable inline actions by @daiyam in #2743</li>
+          <li>fix(font): icon size of bottom pane and searchs by @daiyam in #2742</li>
+          <li>fix(font): icon and spacing in tabs by @daiyam in #2744</li>
+          <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.110.11607...1.110.11631</li>
+        </ul>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.110.11631</url>
+    </release>
     <release version="1.110.11607" date="2026-03-07" urgency="low">
       <description>
         <p>What's Changed</p>
