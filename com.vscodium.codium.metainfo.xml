@@ -51,6 +51,37 @@
   <launchable type="desktop-id">com.vscodium.codium.desktop</launchable>
   <content_rating type="oars-1.1" />
   <releases>
+    <release version="1.110.01571" date="2026-03-06" urgency="low">
+      <description>
+        <p>What's Changed</p>
+        <ul>
+          <li>update vscode to 1.110.0</li>
+          <li>feat: add per-area font customization (fontFamily + fontSize) by @xiaolai in #2626</li>
+          <li>feat(1.109): update patches by @daiyam in #2688</li>
+          <li>feat(windows): use versioned update by @daiyam in #2690</li>
+          <li>feat(windows): disable versioned update by @daiyam in #2691</li>
+          <li>fix(snap): re-add snap update service by @daiyam in #2697</li>
+          <li>feat(1.110): update patches by @daiyam in #2704</li>
+          <li>feat: add patch for workbench's font family by @daiyam in #2706</li>
+          <li>feat(1.110): update patches by @daiyam in #2715</li>
+          <li>fix: use correct org for admx by @daiyam in #2716</li>
+          <li>fix: scm panel by @daiyam in #2718</li>
+          <li>fix(font): button on extensions panel by @daiyam in #2719</li>
+          <li>build(deps): bump crazy-max/ghaction-import-gpg from 6 to 7 by @dependabot[bot] in
+            #2726</li>
+          <li>build(deps): bump actions/download-artifact from 7 to 8 by @dependabot[bot] in #2727</li>
+          <li>build(deps): bump actions/upload-artifact from 6 to 7 by @dependabot[bot] in #2728</li>
+          <li>build(deps): bump docker/setup-qemu-action from 3 to 4 by @dependabot[bot] in #2729</li>
+          <li>feat: update patch by @daiyam in #2731</li>
+          <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.109.51242...1.110.01571</li>
+        </ul>
+        <p>New Contributors</p>
+        <ul>
+          <li>@xiaolai made their first contribution in #2626</li>
+        </ul>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.110.01571</url>
+    </release>
     <release version="1.109.51242" date="2026-02-20" urgency="low">
       <description>
         <p>What's Changed</p>
