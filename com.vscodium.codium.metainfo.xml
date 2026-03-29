@@ -51,6 +51,21 @@
   <launchable type="desktop-id">com.vscodium.codium.desktop</launchable>
   <content_rating type="oars-1.1" />
   <releases>
+    <release version="1.112.01907" date="2026-03-20" urgency="low">
+      <description>
+        <p>What's Changed</p>
+        <ul>
+          <li>update vscode to 1.112.0</li>
+          <li>fix update info in insiders appimage by @DetachHead in #2747</li>
+          <li>feat(1.112): update patches by @daiyam in #2750</li>
+          <li>fix: update css to fix order by @daiyam in #2755</li>
+          <li>build(deps-dev): bump flatted from 3.3.3 to 3.4.2 in /font-size by @dependabot[bot] in
+            #2757</li>
+          <li>Full Changelog: https://github.com/VSCodium/vscodium/compare/1.110.11631...1.112.01907</li>
+        </ul>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.112.01907</url>
+    </release>
     <release version="1.110.11631" date="2026-03-08" urgency="low">
       <description>
         <p>What's Changed</p>
