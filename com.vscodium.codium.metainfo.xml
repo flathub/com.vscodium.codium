@@ -53,6 +53,58 @@
   <launchable type="desktop-id">com.vscodium.codium.desktop</launchable>
   <content_rating type="oars-1.1" />
   <releases>
+    <release version="1.116.02821" date="2026-04-27" urgency="low">
+      <description>
+        <p>What's Changed</p>
+        <ul>
+          <li>update vscode to 1.116.0</li>
+          <li>build: bump Node version pins for loong64 and riscv64 by @CSharperMantle in #2760</li>
+          <li>docs: fix typo 'anouncements' → 'announcements' in telemetry.md by @bhaskarvilles in
+            #2721</li>
+          <li>Add/docs windows build commands by @bhaskarvilles in #2722</li>
+          <li>docs: add Windows troubleshooting section (GPO, context menu, Defender) by
+            @bhaskarvilles in #2723</li>
+          <li>Clarify incompatibility by @Chealer in #2601</li>
+          <li>build(deps): bump picomatch in /font-size by @dependabot[bot] in #2763</li>
+          <li>feat: update electron to 39.8.4 by @daiyam in #2764</li>
+          <li>Fix DEB issue with PowerPC64 Little Endian by @lex-ibm in #2766</li>
+          <li>Enable RPMs, DEBs, and CLI for PowerPC64 Little Endian by @lex-ibm in #2767</li>
+          <li>Enable PowerPC64 Little Endian to build with Electron 41.y.z by @lex-ibm in #2771</li>
+          <li>build(deps-dev): bump lodash-es from 4.17.23 to 4.18.1 in /font-size by
+            @dependabot[bot] in #2773</li>
+          <li>build(deps-dev): bump lodash from 4.17.23 to 4.18.1 in /font-size by @dependabot[bot]
+            in #2774</li>
+          <li>fix(ppc64): update sysroot checksum by @daiyam in #2775</li>
+          <li>refactor: split some scripts by os by @daiyam in #2776</li>
+          <li>Fix issue with RPMs and DEBs when packaging for PowerPC64 LE by @lex-ibm in #2778</li>
+          <li>Use vscode sysroot prefix -glibc-2.28 for ppc64le by @lex-ibm in #2785</li>
+          <li>fix(update): update isLatestVersion() to compare versions by @daiyam in #2777</li>
+          <li>ci: improve workflows by @daiyam in #2795</li>
+          <li>feat(1.116): update patches by @daiyam in #2796</li>
+          <li>build(deps): bump zizmorcore/zizmor-action from 0.5.2 to 0.5.3 by @dependabot[bot] in
+            #2798</li>
+          <li>refactor: patches by @daiyam in #2797</li>
+          <li>feat: add cooldown setting to update by @daiyam in #2799</li>
+          <li>docs: replace old url with archived one by @daiyam in #2800</li>
+          <li>enable having space-separated args for terminal.external.linuxExec by @timkenhan in
+            #2790</li>
+          <li>build(font-size): update and lock dependencies by @daiyam in #2803</li>
+          <li>build(win32): appx contextmenu by @daiyam in #2801</li>
+          <li>feat: disable onboarding screen by @daiyam in #2804</li>
+          <li>ci: update actions by @daiyam in #2805</li>
+          <li>fix: disable wip appx by @daiyam in #2807</li>
+          <li>feat(1.116): update apis by @daiyam in #2808</li>
+        </ul>
+        <p>New Contributors</p>
+        <ul>
+          <li>@CSharperMantle made their first contribution in #2760</li>
+          <li>@bhaskarvilles made their first contribution in #2721</li>
+          <li>@Chealer made their first contribution in #2601</li>
+          <li>@timkenhan made their first contribution in #2790</li>
+        </ul>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.116.02821</url>
+    </release>
     <release version="1.112.01907" date="2026-03-20" urgency="low">
       <description>
         <p>What's Changed</p>
