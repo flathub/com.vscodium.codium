@@ -53,6 +53,44 @@
   <launchable type="desktop-id">com.vscodium.codium.desktop</launchable>
   <content_rating type="oars-1.1" />
   <releases>
+    <release version="1.121.03429" date="2026-05-22" urgency="low">
+      <description>
+        <p>What's Changed</p>
+        <ul>
+          <li>update vscode to 1.121.0</li>
+          <li>appimage - fix "no version information available" error by @DetachHead in #2740</li>
+          <li>feat(1.118): update patches by @daiyam in #2820</li>
+          <li>feat: remove update version since we use gh releases by @daiyam in #2821</li>
+          <li>Fixed arguments on appimage by @redsigma in #2818</li>
+          <li>feat: move secrets to environments by @daiyam in #2835</li>
+          <li>revert: #2821 by @daiyam in #2838</li>
+          <li>feat(1.120): update patches by @daiyam in #2837</li>
+          <li>fix: set state to idle by @daiyam in #2840</li>
+          <li>fix: remove all references to onboarding screen by @daiyam in #2841</li>
+          <li>feat: make sure that ai-coauthor is off by @daiyam in #2842</li>
+          <li>fix(msi): use .msi as extension for updater file by @daiyam in #2843</li>
+          <li>Fix codium invocation from wsl by @whoami730 in #2789</li>
+          <li>feat(reh): add flag to to disable client validation by @daiyam in #2847</li>
+          <li>refactor(update): move and merge log by @daiyam in #2848</li>
+          <li>fix(ui): resize find widget by @daiyam in #2849</li>
+          <li>fix(ui): show icons correctly by @daiyam in #2851</li>
+          <li>enhance(reh): add log for validation by @daiyam in #2852</li>
+          <li>fix(msi): install update by @daiyam in #2853</li>
+          <li>build(deps): bump actions-rust-lang/setup-rust-toolchain from 1.16.0 to 1.16.1 by
+            @dependabot[bot] in #2859</li>
+          <li>feat(1.121): update patches by @daiyam in #2860</li>
+          <li>fix(ui): make sure that css variable is always created by @daiyam in #2862</li>
+          <li>feat: minAge in hours and add it to extensions by @daiyam in #2868</li>
+          <li>fix(msi): add msi install on second method... by @daiyam in #2867</li>
+        </ul>
+        <p>New Contributors</p>
+        <ul>
+          <li>@redsigma made their first contribution in #2818</li>
+          <li>@whoami730 made their first contribution in #2789</li>
+        </ul>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.121.03429</url>
+    </release>
     <release version="1.116.02821" date="2026-04-27" urgency="low">
       <description>
         <p>What's Changed</p>
