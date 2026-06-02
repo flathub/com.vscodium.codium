@@ -17,6 +17,7 @@ finish-args:
   - --device=all
   - --filesystem=host
   - --persist=.vscode-oss
+  - --persist=.vscode-oss-shared
   - --allow=devel
   - --talk-name=org.freedesktop.secrets
   - --talk-name=org.kde.kwalletd5
