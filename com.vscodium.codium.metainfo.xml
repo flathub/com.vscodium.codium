@@ -53,6 +53,25 @@
   <launchable type="desktop-id">com.vscodium.codium.desktop</launchable>
   <content_rating type="oars-1.1" />
   <releases>
+    <release version="1.126.04524" date="2026-07-07" urgency="low">
+      <description>
+        <p>What's Changed</p>
+        <ul>
+          <li>update vscode to 1.126.0</li>
+          <li>feat(1.126): update patches by @daiyam in #2903</li>
+          <li>ci: update gh actions by @daiyam in #2907</li>
+          <li>build(deps-dev): bump js-yaml from 4.1.1 to 4.3.0 in /font-size by @dependabot[bot] in
+            #2901</li>
+          <li>(fix): Don't set VSCODE_SKIP_SETUPENV on ppc64le by @lex-ibm in #2908</li>
+          <li>fix: overwrite update uses version number not commit id by @daiyam in #2909</li>
+          <li>ci: use macos-14 runner by @daiyam in #2910</li>
+          <li>fix(loong64): update electron by @daiyam in #2912</li>
+          <li>fix(update): use common function to normalize version by @daiyam in #2914</li>
+          <li>feat(ppc64le): Use GCC-10.5.0 for REH and BIN by @lex-ibm in #2915</li>
+        </ul>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.126.04524</url>
+    </release>
     <release version="1.121.03429" date="2026-05-22" urgency="low">
       <description>
         <p>What's Changed</p>
