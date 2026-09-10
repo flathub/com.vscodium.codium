@@ -53,6 +53,68 @@
   <launchable type="desktop-id">com.vscodium.codium.desktop</launchable>
   <content_rating type="oars-1.1" />
   <releases>
+    <release version="1.135.06055" date="2026-09-09" urgency="low">
+      <description>
+        <p>What's Changed</p>
+        <ul>
+          <li>update vscode to 1.135.0</li>
+          <li>build(deps): bump actions-rust-lang/setup-rust-toolchain from 1.16.1 to 1.17.0 by
+            @dependabot[bot] in #2920</li>
+          <li>fix(riscv64): fix REH builds by @kxxt in #2921</li>
+          <li>build(deps): bump actions/setup-node from 6.4.0 to 7.0.0 by @dependabot[bot] in #2936</li>
+          <li>build(deps): bump actions/stale from 10.3.0 to 10.4.0 by @dependabot[bot] in #2937</li>
+          <li>build(deps): bump zizmorcore/zizmor-action from 0.5.7 to 0.6.0 by @dependabot[bot] in
+            #2935</li>
+          <li>build(deps-dev): bump fast-uri from 3.1.2 to 3.1.4 in /font-size by @dependabot[bot]
+            in #2938</li>
+          <li>build(deps): bump postcss from 8.5.14 to 8.5.18 in /font-size by @dependabot[bot] in
+            #2939</li>
+          <li>build(deps-dev): bump brace-expansion from 1.1.14 to 1.1.16 in /font-size by
+            @dependabot[bot] in #2940</li>
+          <li>build(deps): bump actions/checkout from 7.0.0 to 7.0.1 by @dependabot[bot] in #2941</li>
+          <li>build(deps): bump actions/setup-python from 6.3.0 to 7.0.0 by @dependabot[bot] in
+            #2942</li>
+          <li>build(deps): bump zizmorcore/zizmor-action from 0.6.0 to 0.6.1 by @dependabot[bot] in
+            #2953</li>
+          <li>build(deps): bump actions/stale from 10.4.0 to 11.0.0 by @dependabot[bot] in #2954</li>
+          <li>build(deps-dev): bump fast-uri from 3.1.4 to 3.1.5 in /font-size by @dependabot[bot]
+            in #2955</li>
+          <li>build(deps): bump postcss from 8.5.18 to 8.5.23 in /font-size by @dependabot[bot] in
+            #2956</li>
+          <li>build(deps): bump signpath/github-action-submit-signing-request from 2.2 to 2.3 by
+            @dependabot[bot] in #2971</li>
+          <li>build(deps): bump zizmorcore/zizmor-action from 0.6.1 to 0.6.2 by @dependabot[bot] in
+            #2964</li>
+          <li>build(font-size): replace xo with eslint by @daiyam in #2972</li>
+          <li>feat(1.135): update patches by @daiyam in #2973</li>
+          <li>build: use nodejs-v24.20 by @daiyam in #2974</li>
+          <li>Fix inverted enableASARSupport() guard by @0zitro in #2978</li>
+          <li>wip: fixing oom and slow build by @daiyam in #2977</li>
+          <li>fix: replace max-old-space-size with our own limit by @daiyam in #2979</li>
+          <li>Honor custom product branding by @ThadHouse in #2981</li>
+          <li>Honor disabled CLI builds by @ThadHouse in #2982</li>
+          <li>Preserve the update-disable patch by @ThadHouse in #2983</li>
+          <li>fix(windows): update by @daiyam in #2986</li>
+          <li>Add anylinux-appimage by @Shikakiben in #2950</li>
+          <li>build(linux): update location of electron version by @daiyam in #2985</li>
+          <li>Address EditorConfig violations by @BaumiCoder in #2905</li>
+          <li>enhance: use binary by @daiyam in #2993</li>
+          <li>ci: update actions by @daiyam in #2994</li>
+          <li>feat: add arm32 back by @daiyam in #2992</li>
+          <li>fix(ci): install nodejs to publish appimage by @daiyam in #2996</li>
+          <li>feat: update dependencies by @daiyam in #2998</li>
+          <li>fix(appimage): fixes unprivileged restrictions by @daiyam in #2999</li>
+        </ul>
+        <p>New Contributors</p>
+        <ul>
+          <li>@0zitro made their first contribution in #2978</li>
+          <li>@ThadHouse made their first contribution in #2981</li>
+          <li>@Shikakiben made their first contribution in #2950</li>
+          <li>@BaumiCoder made their first contribution in #2905</li>
+        </ul>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.135.06055</url>
+    </release>
     <release version="1.126.04524" date="2026-07-07" urgency="low">
       <description>
         <p>What's Changed</p>
