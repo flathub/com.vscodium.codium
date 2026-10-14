@@ -91,11 +91,13 @@ modules:
       - mv usr/share/codium /app/share
       - mv /app/share/codium/codium /app/share/codium/$FLATPAK_ID
         # use patches because desktop-file-edit can't modify different group keys
-      - patch -u usr/share/applications/codium.desktop -i codium.desktop.patch
-      - patch -u usr/share/applications/codium-url-handler.desktop -i codium-url-handler.desktop.patch
+      - patch -u usr/share/applications/com.visualstudio.CodeOSS.desktop -i codium.desktop.patch
+      - patch -u usr/share/applications/com.visualstudio.CodeOSS.UrlHandler.desktop
+        -i codium-url-handler.desktop.patch
         # use install instead of desktop-file-install because can't rename the output file
-      - install -Dm644 usr/share/applications/codium.desktop /app/share/applications/$FLATPAK_ID.desktop
-      - install -Dm644 usr/share/applications/codium-url-handler.desktop /app/share/applications/$FLATPAK_ID-url-handler.desktop
+      - install -Dm644 usr/share/applications/com.visualstudio.CodeOSS.desktop /app/share/applications/$FLATPAK_ID.desktop
+      - install -Dm644 usr/share/applications/com.visualstudio.CodeOSS.UrlHandler.desktop
+        /app/share/applications/$FLATPAK_ID-url-handler.desktop
       - install -Dm644 usr/share/mime/packages/codium-workspace.xml /app/share/mime/packages/$FLATPAK_ID-workspace.xml
         # Sugested by desktop-file-validate
       - desktop-file-edit --add-category="Utility" /app/share/applications/$FLATPAK_ID.desktop
