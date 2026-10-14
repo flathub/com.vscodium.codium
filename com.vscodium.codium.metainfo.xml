@@ -53,6 +53,34 @@
   <launchable type="desktop-id">com.vscodium.codium.desktop</launchable>
   <content_rating type="oars-1.1" />
   <releases>
+    <release version="1.140.06880" date="2026-10-13" urgency="low">
+      <description>
+        <p>What's Changed</p>
+        <ul>
+          <li>update vscode to 1.140.0</li>
+          <li>build: update dependencies by @daiyam in #3007</li>
+          <li>Fix rg missing for PPC64LE by @lex-ibm in #3040</li>
+          <li>fix zsync metadata for insiders appimage pointing to the wrong repo by @DetachHead in #3027</li>
+          <li>feat(1.140): update patches and build scripts by @daiyam in #3046</li>
+          <li>build: update dependencies by @daiyam in #3048</li>
+          <li>fix(snap): enable core20 by building on ubuntu-24.04 by @rroessler in #3018</li>
+          <li>fix(deb): support libasound2t64 by @zetneteork in #2976</li>
+          <li>fix: libasound patch by @daiyam in #3049</li>
+          <li>fix: correctly exclude dependency's binaries by @daiyam in #3050</li>
+          <li>build(deps): bump vedantmgoyal9/winget-releaser from 4ffc7888bffd451b357355dc214d43bb9f23917e to 8e1180065275ff8d815d981788ee8592c8735b8c by @dependabot[bot] in #3051</li>
+          <li>Remove branding from terminal suggestion text by @lex-ibm in #3056</li>
+          <li>Fix ppc64le build by @lex-ibm in #3054</li>
+          <li>fix: remove ai sdks by @daiyam in #3060</li>
+          <li>ci(windows): fix winget publishing for insiders by @vedantmgoyal9 in #3062</li>
+        </ul>
+        <p>New Contributors</p>
+        <ul>
+          <li>@rroessler made their first contribution in #3018</li>
+          <li>@zetneteork made their first contribution in #2976</li>
+        </ul>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.140.06880</url>
+    </release>
     <release version="1.135.06055" date="2026-09-09" urgency="low">
       <description>
         <p>What's Changed</p>
