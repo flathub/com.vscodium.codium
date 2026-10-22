@@ -1,9 +1,9 @@
 id: com.vscodium.codium
 sdk: org.freedesktop.Sdk
 runtime: org.freedesktop.Sdk
-runtime-version: '25.08'
+runtime-version: '26.08'
 base: org.electronjs.Electron2.BaseApp
-base-version: '25.08'
+base-version: '26.08'
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.golang
 command: com.vscodium.codium
