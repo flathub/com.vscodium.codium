@@ -5,6 +5,12 @@ Please open issues under: https://github.com/flathub/com.vscodium.codium/issues
 
 ## FAQ
 
+### Runtime Updates
+
+It was decided that the runtime will be updated 3 months later after the release
+of it, this gives some time for the SDKs to also migrate to the latest runtime
+[see](https://github.com/flathub/com.vscodium.codium/issues/469).
+
 ### Running X11 applications from Wayland session
 In order to run X11 applications from a Wayland session of VSCodium, close VSCodium and run this command:
 
