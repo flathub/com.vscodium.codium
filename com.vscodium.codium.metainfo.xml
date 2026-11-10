@@ -53,6 +53,16 @@
   <launchable type="desktop-id">com.vscodium.codium.desktop</launchable>
   <content_rating type="oars-1.1" />
   <releases>
+    <release version="1.143.17232" date="2026-10-28" urgency="low">
+      <description>
+        <p>What's Changed</p>
+        <ul>
+          <li>update vscode to 1.143.1</li>
+          <li>fix: replace removed variable with correct variable by @daiyam in #3094</li>
+        </ul>
+      </description>
+      <url>https://github.com/VSCodium/vscodium/releases/tag/1.143.17232</url>
+    </release>
     <release version="1.143.17183" date="2026-10-26" urgency="low">
       <description>
         <p>What's Changed</p>
